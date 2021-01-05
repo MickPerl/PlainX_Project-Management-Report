@@ -19,4 +19,33 @@ In altri termini, il segmento di utenza cui è indirizzata la nostra riprogettaz
 
 L'individuazione delle attività sopra elencate deriva dalla lettura di numerosi articoli sul tema e dai risultati del questionario sottosposto ai giornalisti, nonché dall'intervista alla giornalista Roberta, di \textit{SkyTg24}: rivolgendoci ai diretti interessati, abbiamo potuto scoprire attività che ignoravamo precedentemente, riuscendo ad ottenere una panoramica completa del lavoro di chi crea informazione sul tema.
 
-
+\subsubsection{Vincoli tecnici e d'ambiente}
+A partire dalle risposte raccolte mediante il questionario sottoposto ai giornalisti e dai feedback preziosi tratti dall'intervista alla giornalista Roberta di cui sopra, abbiamo individuato i seguenti vincoli di natura tecnica o imposti dall'ambiente il cui il nostro utente di riferimento opera:
+\begin{itemize}
+    \item Il layout della dashboard deve essere adatto a schermi in modalità orizzontale dai 13 pollici in sù;
+    \begin{itemize}
+        \item Il giornalista è in redazione o in smart working, ha dinanzi a sé uno schermo sufficientemente grande per lavorare agevolmente oppure un insieme di schermi grandi a parete  per la visione comoda dell'intero ufficio: conseguentemente, il sistema è pensato principalmente per essere fruito su schermi in modalità panoramica (orizzontale) dai 13 pollici in su. Un fallback per dispositivi mobili può essere disponibile, ma non è la priorità.
+    \end{itemize}
+    \item Notifica presenza di nuovi dati
+    \begin{itemize}
+        \item Il giornalista sta lavorando, è concentrato e non vuole uscire dal flow raggiunto: essendo a conoscenza del fatto che i dati giornalieri sulla Covid-19 sono pubblicati attorno alle ore 17:30±30min, potrebbe aver aperto la dashboard in precedenza e vuole essere notificato non appena i nuovi dati sono disponibili.
+    \end{itemize}
+	\item Comunicazione delle informazioni in maniera diretta e chiara, senza fronzoli
+	\begin{itemize}
+        \item Ricevuta la notifica vuole, con rapidi sguardi, ottenere le informazioni di interesse, in un formato leggibile, chiaro e comprensibile, così da avere immediatamente il materiale necessario per procedere alla stesura del suo articolo in materia.
+        \item Sistema militare, dritto al punto!
+        \item Esempio da non emulare: articoli di blog sull'uscita di una stagione successiva di una serie tv (la risposta che si vuole ottenere è un sì/no, ma l'articolo inserisce trama, immagini, informazioni sugli attori, pubblicità e infine un paragrafo inutile in cui probabilmente scrivono "non si sa")
+    \end{itemize}
+	\item Il contenuto informativo visualizzato deve poter filtrato su più criteri
+	\begin{itemize}
+        \item Nell'ottica di una comprensione più profonda/ampia dell'argomento, il giornalista vuole interagire con i vari elementi della dashboard così da personalizzarne il contenuto informativo e ottenere informazioni aderenti ai suoi bisogni (filtro su regioni, finestre temporali specifiche…).
+    \end{itemize}
+	\item Il sistema deve essere usabile, ma allo stesso tempo fornire funzionalità avanzate
+	\begin{itemize}
+        \item sulla base di quanto emerso dal questionario, i giornalisti hanno tendenzialmente un'alta familiarità con la tecnologie, pertanto si attendono un sistema che permetta loro di svolgere task complessi, che utilizzi terminologia specifica e che non li tratti da novizi (ben venga, un tasto di help che espliciti su richiesta la semantica di un elemento, ma evitare suggerimenti permanenti o tutorial iniziali).
+    \end{itemize}
+	\item Devono essere presentati dati relativi e/o aggregati
+	\begin{itemize}
+        \item Uno dei principali motivi che, a quanto appreso dal questionario, porta i giornalisti a non consultare la dashboard della Protezione civile è la presenza, pressocchè esclusiva, di dati assoluti, non relativizzati ai contesti in cui emergono (nr positivi su 100.000 abitanti, nr positivi su nr tamponi molecolari effettuati…);
+    \end{itemize}
+\end{itemize}
