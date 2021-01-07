@@ -1,1 +1,140 @@
 \subsection{Scenari}
+In prima battuta, per ogni scenario, abbiamo descritto solo l'\textit{happy path}\footnote{Nel contesto del software o della modellazione delle informazioni, un \textit{happy path} è uno scenario predefinito che non presenta condizioni eccezionali o di errore.}: ritornando a riflettere sulla loro prima versione, abbiamo ritenuto necessario dettagliare anche situazioni anomale, ad esempio la presenza di \textit{outlier}\footnote{Gli \textit{outlier} sono valori anomali, considerevolmente differenti dalla maggiorparte dei dati dell'insieme a cui appartengono} o di aggiornamenti tardivi dei dati, al fine di giungere a scenari quanto più vicini alla realtà.
+
+\subsubsection*{Scenario 1: Analisi dei dati quotidiani sull'andamento dell'epidemia Covid-19 in Italia}
+Dopo una lunga giornata di lavoro, alle 17, il giornalista Maurizio che si occupa degli articoli sull'andamento dell'epidemia Covid-19 in Italia, si collega alla dashboard del DPC dal suo portatile da 15".\\
+Tempo stimato per l'apertura e il caricamento della dashboard: \textit{20 s}.
+
+Vuole scrivere l'articolo del giorno nel quale comunica ai lettori i nuovi valori delle metriche principali, tra cui il numero di nuovi positivi, il numero di deceduti, il numero di nuovi ingressi in terapia intensiva, il rapporto tra i nuovi positivi e i tamponi effettuati. Dal momento che queste metriche sono consultate giornalmente, la dashboard le presenta in maniera immediata ed evidente: Maurizio le coglie con rapide occhiate, senza dover effettuare operazioni o calcoli particolari e, tantomeno, dover rivolgersi ad altri strumenti o fonti.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la visione dei dati: \textit{5 s};
+    \item l'analisi dei dati per la successiva scrittura dell'articolo: \textit{50 s}.
+\end{enumerate}
+
+Inoltre, Maurizio intende studiare l'andamento delle metriche in rapporto ai giorni precedenti, per cui chiede alla dashboard di restituirgli, oltre ai dati relativi alla giornata corrente, anche quelli del/dei periodo/i temporale/i di suo interesse: la dashboard prontamente presenta quanto richiesto in un formato che favorisce agili confronti e permette di trarre conclusioni di valore.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la visualizzazione dei dati, la selezione del periodo e il caricamento dei dati: \textit{8 s};
+    \item l'analisi dei dati \textit{100 s}.
+\end{enumerate}
+
+Ancora, Maurizio richiede alla dashboard di visualizzare i valori di certe metriche a livello regionale: in dettaglio, la dashboard soddisfa la richiesta e permette di ordinare le regioni in base al valore che assumono per una o più delle metriche indicate, così da fornire a Maurizio una panoramica sulla loro situazione.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la selezione delle metriche e l'ordinamento: \textit{40 s};
+    \item l'analisi confrontando ordinamenti per diverse metriche: \textit{130 s}.
+\end{enumerate}
+
+Maurizio nota degli \textit{outlier}:  leggendo le note del giorno, appura che certe regioni hanno avuto problemi con la comunicazione dei dati.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item individuare la nota di riferimento, verificare la presenza dell'outlier: \textit{35 s};
+    \item l'analisi delle possibili implicazioni di questi outlier sull'andamento della metrica/e coinvolta/e: \textit{115 s}.
+\end{enumerate}
+\noindent
+Attività svolte: \ref{itm:1}, \ref{itm:2}.\\ 
+Tempo totale: \textit{8' 23''}. 
+
+\subsubsection*{Scenario 2: Analisi dei dati quotidiani sull'andamento dell'epidemia Covid-19 in Emilia Romagna}
+Alle 17, Giulia, la giornalista che si occupa degli articoli sull'epidemia in Emilia Romagna, si collega alla dashboard del DPC dal suo portatile da 13". Al momento, Giulia, è in smart-working.\\
+Tempo stimato per l'apertura e il caricamento: \textit{20 s}. 
+
+Vuole scrivere l'articolo del giorno nel quale comunica ai lettori l'andamento di varie metriche, per esempio il rapporto tra nuovi positivi e tamponi effettuati in quel giorno oppure le nuove ospedalizzazioni. Essendo di suo interesse solo la regione Emilia Romagna richiede alla dashboard di visualizzare solo i dati ad essa relativi. Le metriche di interesse vengono subito presentate, per cui Giulia non necessita di compiere operazioni o calcoli particolari, tantomeno di consultare altri strumenti o fonti.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la selezione della regione e la visione dei dati: \textit{10 s};
+    \item l'analisi dei dati per la successiva scrittura dell'articolo: \textit{50 s}.
+\end{enumerate}
+
+Inoltre, Giulia intende studiare l'andamento delle metriche rispetto ai giorni precedenti, per cui chiede alla dashboard che le siano restituite, oltre ai dati relativi alla giornata corrente, anche quelli del/dei periodo/i temporale/i di suo interesse: la dashboard prontamente presenta quanto richiesto in un formato che favorisce agili confronti e permette di trarre conclusioni di valore.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la visualizzazione dei dati, la selezione del periodo e il caricamento: \textit{8 s};
+    \item l'analisi dei dati \textit{100 s}.
+\end{enumerate}
+
+Giulia nota degli \textit{outlier}, per cui controlla le note del giorno e legge che l'Emilia Romagna ha avuto problemi con la comunicazione degli ultimi dati.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item individuare la nota di riferimento, verificare la presenza dell'outlier: \textit{35 s};
+    \item l'analisi delle possibili implicazioni di questi outlier sull'andamento della metrica/e coinvolta/e: \textit{115 s}.
+\end{enumerate}
+
+Proprio quando Giulia ha terminato il suo articolo e sta per chiudere la dashboard, riceve una notifica che le segnala la correzione degli outlier. In dettaglio, la ASL di Bologna ha dovuto aggiornato il numero delle terapie intensive alle 17:25 perché tre pazienti, pochi minuti dopo la pubblicazione giornaliera dei nuovi dati, erano stati spostati, sfortunatamente, dalla terapia sub-intensiva a quella intensiva: la regione ha quindi prontamente comunicato i dati corretti, la dashboard ha riflettuto il cambiamento e lo ha notificato agli utenti che la stavano consultando, evitando che Giulia pubblicasse un articolo con dati errati.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item notare la notifica: \textit{5 s};
+    \item l'analisi delle possibili implicazioni dell'aggiornamento: \textit{95 s}.
+\end{enumerate}
+\noindent
+Attività svolte: \ref{itm:1}, \ref{itm:2}.\\  
+Tempo totale: \textit{7' 18''}. 
+
+\subsubsection*{Scenario 3: Analisi sull'andamento del tasso di letalità e sulla distribuzione dei numeri dell'epidemia relativamente alle due settimane precedenti}
+Francesco, ogni due settimane, deve analizzare il tasso di letalità e la distribuzione dei numeri dell’epidemia sulla popolazione per scrivere un articolo di giornale che sarà pubblicato da un importante editore italiano. Durante il periodo che precede la pubblicazione, accede diverse volte alla dashboard per analizzare i dati di suo interesse.\\
+Tempo stimato per l'apertura e il caricamento: \textit{20 s}. 
+
+Quindi, Francesco indica il periodo che vuole analizzare e i dati anagrafici (età, genere, impiego, malattie pregresse) su cui vuole analizzare la distribuzione dei dati epidemiologici.
+I dati ottenuti gli permettono di scrivere un articolo preciso e approfondito. Inoltre, riesce a dare informazioni più dettagliate ai suoi lettori su chi sono le persone dietro i numeri dell'epidemia: la loro età, il loro genere, se hanno avuto malattie pregresse o meno, il loro impiego.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la selezione del periodo, dei dati anagrafici di interesse e il caricamento: \textit{12 s};
+    \item l'analisi dei dati \textit{125 s}.
+\end{enumerate}
+
+Esplorando i dati ed ordinandoli per numero di decessi, ravvisa una possibile correlazione tra la mortalità e l'età: nell'intenzione di validare questa sua ipotesi, richiede alla dashboard che gli presenti, ad una granularità maggiore e con aggregazioni più significative, i valori relativamente a queste due variabili. 
+Questa nuova visione della dashboard incuriosisce Francesco al punto da fargli emergere nuove domande tra cui qual è la relazione tra numero di decessi e impiego; purtroppo, il dato relativo all'impiego non è ancora disponibile: la dashboard avvisa Francesco che sarà inserito quanto prima.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la scoperta di alcune correlazioni, l'impostazione della dashboard per visualizzare i dati di suo interesse e il caricamento: \textit{210 s};
+    \item l'analisi dei dati \textit{140 s}.
+\end{enumerate}
+\noindent
+Attività svolte: \ref{itm:3}, \ref{itm:4}.\\ 
+Tempo totale: \textit{8' 27''} 
+
+\subsubsection*{Scenario 4: Confronto dell'andamento dell'epidemia nelle regioni Emilia Romagna, Veneto e Molise nelle precedenti due settimane}
+Matteo, il giornalista che nei suoi articoli confronta l'andamento della pandemia in regioni diverse, alle ore 17 si collega alla dashboard del DPC dalla postazione di lavoro adibita in casa sua, ove dispone di un comodo schermo curvo da 32".\\
+Tempo stimato per l'apertura e il caricamento: \textit{20 s}. 
+
+In dettaglio, vuole scrivere l'articolo a cadenza bisettimanale in cui confronta i dati della pandemia nelle  regioni che si sono distinte sullo scenario nazionale per l'evoluzione di una o più metriche: l'obiettivo di Matteo è quello di far emergere tratti comuni e aspetti distintivi che permettano di trarre conclusioni significative per comprendere al meglio il livello di gravità e rischio di ogni regione.
+
+Vuole recuperare le varie metriche pubblicate negli articoli giornalieri, ma sintetizzate con riferimento al periodo delle due settimane appena trascorse (il rapporto medio tra nuovi positivi e tamponi nel periodo, la media del numero di ospedalizzazioni giornaliere, decessi cumulati…).
+Precisamente, per l'articolo corrente, intende concentrarsi sulle regioni Emilia Romagna, Veneto e Molise.\\
+Tempo per impostare la dashboard sul periodo e sulle regioni di interesse: \textit{15 s}.
+
+Procede quindi col richiedere alla dashboard di visualizzare contemporaneamente i dati della pandemia relativi alle tre regioni di interesse, in un formato chiaro e che gli permetta un agile confronto: la dashboard, immediatamente, gli restituisce calcoli automatici, come rapporti e differenze, tramite cui può comprendere, con dati alla mano, le reali differenze o somiglianze.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la selezione dei dati di interesse, delle metriche aggregate e il caricamento: \textit{20 s};
+    \item l'analisi dei dati \textit{135 s}.
+\end{enumerate}
+
+A Matteo pare di notare degli \textit{outlier} ma analizzando le note del giorno si accorge che in realtà i dati sono stati comunicati correttamente e che quindi non vi sono errori. Matteo può quindi procedere alla redazione del suo articolo.\\
+Tempo richiesto per cercare le note e non trovarle: \textit{30 s}.
+
+\noindent
+Attività svolte: \ref{itm:5}.\\  
+Tempo totale: \textit{3' 40''}. 
+
+\subsubsection*{Scenario 5: Confronto dell'andamento dell'epidemia in Italia nel mese corrente rispetto ai due mesi precedenti}
+Dopo una settimana in cui Maurizio, il giornalista che si occupa degli articoli sull'andamento dell'epidemia Covid-19 in Italia, ha raccontato ai suoi lettori come la situazione si stava evolvendo giorno per giorno e dopo aver redatto anche l'articolo quotidiano, resta collegato sulla dashboard del DPC col suo portatile da 15" per scrivere un ulteriore articolo, questa volta sul confronto fra il mese corrente e i precedenti due.\\
+Tempo stimato per l'apertura e il caricamento: \textit{0 s}.
+
+Maurizio inserisce i periodi temporali che vuole confrontare e la dashboard gli presenta i dati che sono stati raccolti in un formato che agevola confronti diretti e indiretti. In particolare, è interessato all'andamento del rapporto di positività, del tasso di letalità, delle ospedalizzazioni e dell'occupazione delle terapie intensive.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la selezione dei periodi, la raccolta dei dati e l'impostazione della visualizzazione per il confronto: \textit{35 s};
+    \item l'analisi dei dati \textit{210 s}.
+\end{enumerate}
+
+Analizzando i dati dei mesi di settembre, ottobre e novembre nota che vi è una significativa diminuzione del numero di contagi con l'inasprimento delle misure restrittive soprattutto a fine novembre, esattamente due settimane dopo l'entrata in vigore del DPCM più recente.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item individuare la sezione con i provvedimenti normativi approvati in materia di contrasto all'epidemia, espansione e lettura dei punti salienti dei provvedimenti: \textit{100 s};
+    \item l'analisi delle possibili correlazioni di questi provvedimenti sui dati: \textit{140 s}.
+\end{enumerate}
+\noindent
+Attività svolte: \ref{itm:6}.\\ 
+Tempo totale: \textit{8' 5''}. 
