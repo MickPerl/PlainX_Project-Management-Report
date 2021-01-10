@@ -2,6 +2,7 @@
 \usepackage[left=2cm, right=2cm, top=3cm, bottom=3cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
+\usepackage{colorprofiles}
 \usepackage{subfiles}
 \usepackage{flafter}
 \usepackage{graphicx}
@@ -18,6 +19,20 @@
 \usepackage[most]{tcolorbox}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=blue,      
+    urlcolor=blue,
+    pdftitle={Plain X - Project Management Report},
+    pdfauthor={X-Spark (Marco Ferrati, Michele Perlino, Tommaso Azzalin)}
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+}
 
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt} 
@@ -29,5 +44,5 @@
 \setlength{\headheight}{13.6pt}
 
 \newcommand{\e}[1]{#1 \euro{}}
-\newcommand{\strong}[1]{\textbf{#1}}
-% \newcommand{\em}[1]{\textit{#1}}
+
+\graphicspath{{assets/images/}}
