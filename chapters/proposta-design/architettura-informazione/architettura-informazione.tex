@@ -1,1 +1,35 @@
 \subsection{Architettura dell'informazione}
+
+In questa sezione spieghiamo quali sono state le nostre scelte riguardanti come le informazioni vengono veicolate nella nostra riprogettazione.
+Seguendo i principi dell'Information Architecture abbiamo organizzato le informazioni in modo che siano comprensibili ai giornalisti in maniera efficace ed efficiente: in particolare, il formato con cui i dati sono presentati  è affine alle loro necessità così da permettere la riduzione dei tempi della loro analisi e della scrittura degli articoli. 
+
+Abbiamo riflettuto anche secondo l'Information Design, nella consapevolezza che la maniera in cui i dati sono comunicati riflette e, allo stesso tempo, influenza la percezione degli utenti sul fenomeno in considerazione.
+
+Approcio
+Abbiamo deciso di adottare un approcio di tipo top-down per poter governare la complessità nell'organizzazione di una dashboard che deve mostrare al segmento di utenza diverse informazioni correlate fra loro.
+Procedendo top-down possiamo fin da subito avere una visione d'insieme delle funzionalità che vanno fornite all'utente e le relazioni fra loro, evitando sovrapposizioni che potrebbero presentarsi progettando le diverse parti della dashboard in maniera bottom-up.
+Inoltre, in un design necessariamente iterativo, si adatta a nostro avviso meglio questo  approcio, partendo esso da artefatti dalla definizione provvisoria e quindi facilmente modificabile.
+
+Organizzazione delle funzionalità e del contenuto
+Le caratteristiche dell'information architecture da noi adottate sono le seguenti:
+\begin{itemize}
+	\item Strutturazione: abbiamo previsto elementi grafici interattivi su cui l'utente possa ottenere un determinato livello di granularità;
+	\begin{itemize}
+		\item mappa geografica: province > regioni,
+		\item evoluzioni temporali: giorno > settimana > mese > trimestre > semestre > anno
+	\end{itemize}
+	\item Classificazione: dati aggregati, dati assoluti, dati relativi, serie temporali
+	\item Organizzazione: abbiamo previsto che ogni metrica venga visualizzata in componenti grafiche distinte;
+	\begin{itemize}
+		\item tali componenti sono intese a mo' di schermate, essendo la nostra app di tipo single-page;
+	\end{itemize}
+	\item Ricercabilità: non presenti funzionalità di ricerca, essendo l'intero contenuto informativo mostrato, mentre sono presenti invece numerose funzionalità di filtro;
+	\item Gestione:
+	\begin{itemize}
+		\item abbiamo previsto la possibilità di configurare il layout delle varie componenti, al fine di aborare visioni personalizzate;
+	\end{itemize}
+\end{itemize}
+
+
+Struttura
+Abbiamo scelto di adottare una struttura di tipo Table of content, in quanto è quella che si adatta meglio ad una dashboard che, solitamente, è nella forma di una single-page application: in dettaglio, consideriamo la schermata della dashboard essere la pagina radice e i vari indicatori e grafici le sue pagine di secondo livello. 
