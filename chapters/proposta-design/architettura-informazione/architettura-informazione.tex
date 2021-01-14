@@ -1,1 +1,28 @@
 \subsection{Architettura dell'informazione}
+
+In questa sezione, esplichiamo le scelte compiute circa l'organizzazione delle informazioni presentate dalla dashboard.\\
+Seguendo i principi dell'\textit{Information Architecture}, abbiamo articolato le informazioni con l'obiettivo di permettere ai giornalisti di comprenderle in maniera efficace ed efficiente: in particolare, il formato con cui i dati sono presentati è affine alle loro necessità informative e alle attività che realizzano, con la conseguenza di una significativa riduzione dei tempi necessari alla loro analisi e alla scrittura degli articoli. 
+
+Abbiamo riflettuto anche secondo l'\textit{Information Design}, nella consapevolezza che la maniera in cui i dati sono comunicati riflette e, allo stesso tempo, influenza la percezione degli utenti sul fenomeno in considerazione.
+
+\paragraph{Approcio}\mbox{}\\
+Abbiamo deciso di adottare un approcio di tipo top-down per governare la complessa organizzazione di una dashboard che deve comunicare informazioni eterogenee e correlate fra loro.
+Procedendo in questa maniera, possiamo, sin da subito, avere una visione d'insieme delle funzionalità che vanno fornite all'utente e le relazioni fra esse, evitando le sovrapposizioni che potrebbero presentarsi seguendo l'approccio bottom-up.
+Inoltre, in un design necessariamente iterativo quale quello di specie, il top-down, partendo da una definizione provvisoria degli artefatti, ne supporta e favorisce la modifica e il raffinamento continuo.
+
+\paragraph{Organizzazione delle funzionalità e del contenuto}\mbox{}\\
+Le caratteristiche dell'\textit{Information Architecture} da noi adottate sono le seguenti:
+\begin{itemize}
+	\item \textbf{Strutturazione}: abbiamo previsto elementi grafici interattivi che permettono all'utente di specificare il livello di granularità desiderato;
+	\begin{itemize}
+		\item mappa geografica: province > regioni;
+		\item evoluzioni temporali: giorno > settimana > mese > trimestre > semestre > anno;
+	\end{itemize}
+	\item \textbf{Classificazione}: dati aggregati, assoluti, relativi, serie temporali;
+	\item \textbf{Organizzazione}: abbiamo previsto che ogni metrica venga visualizzata in componenti grafiche, intese a mo' di schermate, essendo la nostra app di tipo single-page\footnote{Le Single-Page Application (o più comunemente SPA) sono delle applicazioni o dei siti web interamente costruiti su un’unica pagina: quando vengono visitate, vengono caricate tutte le risorse necessaria alla sua navigazione, col risultato di fornire una esperienza utente più fluida e simile alle applicazioni desktop dei sistemi operativi tradizionali.};
+	\item \textbf{Ricercabilità}: sono assenti funzionalità di ricerca, essendo l'intero contenuto informativo mostrato, mentre sono presenti invece numerose funzionalità di filtro;
+	\item \textbf{Gestione}: abbiamo previsto la possibilità di configurare il layout delle varie componenti, al fine di elaborare visioni personalizzate.
+\end{itemize}
+
+\paragraph{Struttura}\mbox{}\\
+Abbiamo scelto di adottare una struttura di tipo \textit{Table of content}, in quanto è quella che si adatta meglio ad una dashboard, le quali, solitamente, sono nella forma di una \textit{single-page application}: in dettaglio, consideriamo la schermata della dashboard essere la pagina radice e i vari indicatori e grafici le sue pagine di secondo livello. 
