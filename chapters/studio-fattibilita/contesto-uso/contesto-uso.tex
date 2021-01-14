@@ -1,50 +1,50 @@
 \subsection{Contesto d'uso}
 \subsubsection{Utenti del sistema}
-Da una prima analisi delle dashboard esistenti sul Coronavirus, inclusa quella oggetto della riprogettazione, siamo giunti alla consapevolezza che fosse necessario un background scientifico per consultarle agevolmente e trarne informazioni.\\
+Da una prima analisi delle dashboard esistenti sul Covid-19, inclusa quella oggetto della riprogettazione, siamo giunti alla consapevolezza che fosse necessario un background scientifico per consultarle agevolmente e trarne informazioni.\\
 A seguito di una valutazione più approfondita, abbiamo ravvisato innumerevoli criticità in termini di presentazione ed elaborazione dei dati: queste criticità sono le cause principali della scarsa usabilità e della misera esperienza utente che  fanno preferire ai giornalisti i bollettini e i lanci di agenzia.\\
-Il nostro processo iterativo, a questo punto, si è spinto a considerare possibile una riprogettazione della Dashboard ufficiale, ossia quella pubblicata dal Dipartimento della Protezione Civile, indirizzando il nostro design a giornalisti con solo background umanistico; tuttavia, ci siamo resi conto che questa impostazione avrebbe reso la dashboard certamente chiara per chiunque, ma forse limitata nelle funzionalità.\\ 
+Il nostro processo iterativo, a questo punto, si è spinto a considerare possibile una riprogettazione della dashboard principale, ossia quella pubblicata dal Dipartimento della Protezione Civile, indirizzando il nostro design a giornalisti con solo background umanistico; tuttavia, ci siamo resi conto che questa impostazione avrebbe reso la dashboard certamente chiara per chiunque, ma forse limitata nelle funzionalità.\\ 
 Ancora una volta, pertanto, abbiamo cambiato la nostra platea di riferimento, decidendo di rivolgerci tanto a giornalisti con background umanistico quanto a quelli dalla formazione scientifica: l'inesperienza dei primi ci imporrà la progettazione di un sistema all'insegna dell'usabilità, la perizia dei secondi ci porterà a implementare funzionalità più avanzate.\\
-In maggior dettaglio, il segmento di utenza cui è indirizzata la nostra riprogettazione considera i giornalisti che pubblicano articoli sull'andamento di vari aspetti (quantitativi) della pandemia Covid-19 (contagi giornalieri, decessi, guariti, tamponi, occupazione terapie intensive, ricoveri...): questi possono vantare una formazione umanistica (Liceo classico, facoltà di area umanistica) ovvero scientifica (Liceo scientifico, Scienze matematiche, fisiche e naturali (in sigla MM.FF.NN.)).
+In maggior dettaglio, il segmento di utenza cui è indirizzata la nostra riprogettazione considera i giornalisti che pubblicano articoli sull'andamento di vari aspetti (quantitativi) della pandemia Covid-19 (contagi giornalieri, decessi, guariti, tamponi, occupazione terapie intensive, ricoveri, ecc.): questi possono vantare una formazione umanistica (per esempio avendo frequentato corsi di studio superiori e/o universitari in ambito umanistico) oppure scientifica (avendo frequentato corsi di studio superiori o universitari in Scienze matematiche, fisiche e naturali (in sigla MM.FF.NN.)).
 
 \subsubsection{Elenco delle attività}
-L'individuazione delle attività seguitamente elencate deriva dalla lettura di numerosi articoli sul tema e dai risultati del questionario sottosposto ai giornalisti, nonché dall'intervista alla giornalista Roberta, di \textit{SkyTg24}: rivolgendoci ai soggetti che beneficeranno direttamente della nostra dashboard riprogettata, abbiamo potuto scoprire tecnicismi professionali e attività da essi svolte che ignoravamo precedentemente.
+L'individuazione delle attività di seguito elencate deriva dalla lettura di numerosi articoli sul tema e dai risultati del questionario sottoposto ai giornalisti, nonché dall'intervista alla giornalista Roberta, di \textit{SkyTg24}, presentata in §1.2.1: rivolgendoci ai soggetti che beneficeranno direttamente della nostra dashboard riprogettata, abbiamo potuto scoprire tecnicismi professionali e attività da essi svolte che ignoravamo precedentemente.
 \noindent
 Le attività individuate sono:
 \begin{enumerate}
-    \item Comprendere l'andamento della curva epidemiologica sulla base del rapporto tra i nuovi positivi e il numero di tamponi effettuati;\label{itm:1}
-    \item Monitorare l'occupazione delle strutture sanitarie (ricoveri con sintomi, ricoveri in terapia intensiva);\label{itm:2}
-    \item Monitorare l'andamento del tasso di mortalità;\label{itm:3}
-    \item Valutare la distribuzione dei numeri dell'epidemia sulla popolazione (età, malattie pregresse, impiego, …);\label{itm:4}
-    \item Confronto dell'andamento dell'epidemia tra due o più regioni;\label{itm:5}
-    \item Confronto dell'andamento dell'epidemia tra periodi temporali diversi.\label{itm:6}
+    \item Comprendere l'andamento della curva epidemiologica sulla base di alcune metriche (per esempio, i nuovi casi positivi, i tamponi effettuati, il tasso di positività, i decessi e i guariti odierni) a livello nazionale e regionale;\label{itm:1}
+    \item Monitorare l'occupazione delle strutture sanitarie (le ospedalizzazioni e i ricoveri in terapia intensiva) a livello nazionale e regionale;\label{itm:2}
+    \item Monitorare l'andamento del tasso di letalità in un periodo predeterminato;\label{itm:3}
+    \item Monitorare come i numeri della pandemia si distribuiscono sulla popolazione in un determinato periodo (età, malattie pregresse, impiego, ecc.);\label{itm:4}
+    \item Confronto dell'andamento della pandemia tra due o più regioni;\label{itm:5}
+    \item Confronto dell'andamento della pandemia in periodi temporali differenti.\label{itm:6}
 \end{enumerate}
 
 \subsubsection{Vincoli tecnici e d'ambiente}
-A partire dalle risposte raccolte mediante il questionario sottoposto ai giornalisti e dai feedback preziosi della giornalista Roberta di cui sopra, abbiamo individuato i seguenti vincoli di natura tecnica o imposti dall'ambiente in cui il nostro utente di riferimento opera:
+A partire dalle risposte raccolte mediante il questionario sottoposto ai giornalisti e dai feedback preziosi della giornalista di \emph{SkyTg24} di cui sopra, abbiamo individuato i seguenti vincoli di natura tecnica o imposti dall'ambiente in cui il nostro utente di riferimento opera:
 \begin{itemize}
-    \item Il layout della dashboard deve essere adatto a schermi in modalità orizzontale dai 13 pollici in sù;
+    \item Il layout della dashboard deve essere adatto a schermi in modalità orizzontale dai 13" in su:
     \begin{itemize}
-        \item Il giornalista lavora in redazione o in smart working: nel primo caso, gli è assegnata una postazione di lavoro in cui dispone di un computer fisso con uno schermo sufficientemente grande e da cui ha visuale sui diversi schermi a parete per l'intero ufficio, mentre nel caso operi da casa, ha dinanzi a sè un notebook; 
-        \item Un \textit{fallback} per dispositivi mobili può essere disponibile, ma non è la priorità;
+        \item Il giornalista lavora in redazione o in smart working: nel primo caso, gli è assegnata una postazione di lavoro in cui dispone di un computer fisso con uno schermo sufficientemente grande e da cui ha visuale sui diversi schermi a parete per l'intero ufficio, mentre nel caso operi da casa, ha dinanzi a sé un notebook; 
+        \item Un \textit{fallback} per dispositivi mobili (ovvero smartphone e piccoli tablet) può essere disponibile, ma non è la priorità;
     \end{itemize}
-    \item La presenza di nuovi dati deve essere notificata;
+    \item La presenza di nuovi dati deve essere notificata:
     \begin{itemize}
-        \item Il giornalista sa che i nuovi dati sul Coronavirus sono caricati nella dashboard attorno alle ore 17:30 di ogni giorno. Vi si connette verso le 16:30 e continua le sue attività; non vuole controllare di tanto in tanto lo stato della dashboard, bensì si serve di una notifica che attira la sua attenzione solo quando i dati sono stati aggiornati: in questo modo, non viene distolto mentre è nel \textit{flow} ed è sicuro di essere avvisato immediatamente del nuovo contenuto disponibile;
+        \item Il giornalista sa che i nuovi dati sul Covid-19 sono caricati nella dashboard attorno alle ore 17:30 di ogni giorno. Vi si connette verso le 16:30 e continua le sue attività; non vuole controllare di tanto in tanto lo stato della dashboard, bensì si serve di una notifica che attira la sua attenzione solo quando i dati sono stati aggiornati: in questo modo, non viene distolto mentre è nel \textit{flow} ed è sicuro di essere avvisato immediatamente del nuovo contenuto disponibile;
     \end{itemize}
-	\item Le informazioni devono essere comunicate in maniera diretta e chiara;
+	\item Le informazioni devono essere comunicate in maniera diretta e chiara:
 	\begin{itemize}
         \item Ricevuta la notifica vuole, con rapidi sguardi, ottenere le informazioni di interesse, in un formato leggibile, chiaro e comprensibile, così da avere immediatamente il materiale necessario per procedere alla stesura del suo articolo in materia;
     \end{itemize}
-	\item Il contenuto informativo visualizzato deve poter essere filtrato su più criteri;
+	\item Il contenuto informativo visualizzato deve poter essere filtrato su più criteri:
 	\begin{itemize}
-        \item Nell'ottica di una comprensione più profonda e ampia dell'argomento, il giornalista vuole interagire con i vari elementi della dashboard così da personalizzarne il contenuto informativo e ottenere informazioni aderenti al suo interesse (filtro su regioni, finestre temporali specifiche…);
+        \item Nell'ottica di una comprensione più profonda e ampia dell'argomento, il giornalista vuole interagire con i vari elementi della dashboard così da personalizzarne il contenuto informativo e ottenere informazioni aderenti al suo interesse (filtro su regioni, finestre temporali specifiche, ecc.);
     \end{itemize}
-	\item Il sistema deve essere usabile, ma, allo stesso tempo,fornire funzionalità avanzate;
+	\item Il sistema deve essere usabile e, allo stesso tempo, fornire funzionalità avanzate:
 	\begin{itemize}
-        \item Sulla base di quanto emerso dal questionario, i giornalisti hanno tendenzialmente un'alta familiarità con la tecnologia, per cui si attendono un sistema che permetta loro di svolgere task complessi, utilizzi terminologia specifica e non li tratti da novizi (rimane ben accetto un bottone di help che espliciti su richiesta la semantica di un elemento, ma evitare suggerimenti permanenti o tutorial iniziali);
+        \item Sulla base di quanto emerso dal questionario, i giornalisti hanno tendenzialmente un'alta familiarità con la tecnologia, per cui si attendono un sistema che permetta loro di svolgere task complessi, utilizzi terminologia specifica e non li tratti da novizi (rimane ben accetto un bottone di \texit{help} che espliciti su richiesta la semantica di un elemento, ma evitare suggerimenti permanenti o tutorial iniziali);
     \end{itemize}
-	\item Devono essere presentati dati relativi e/o aggregati;
+	\item Devono essere presentati dati relativi e/o aggregati:
 	\begin{itemize}
-        \item Uno dei principali motivi che, a quanto appreso dal questionario, porta i giornalisti a non consultare la dashboard del DPC è la presenza, pressocchè esclusiva, di dati assoluti, non relativizzati ai contesti in cui emergono (nr positivi su 100.000 abitanti, nr positivi su nr tamponi molecolari effettuati…);
+        \item Uno dei principali motivi che, a quanto appreso dal questionario, porta i giornalisti a non consultare la dashboard del DPC è la presenza, pressoché esclusiva, di dati assoluti, ovvero non relativizzati ai contesti in cui emergono (per esempio, numero positivi su 100.000 abitanti, tasso di positività, ecc.);
     \end{itemize}
 \end{itemize}
