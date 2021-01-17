@@ -1,0 +1,42 @@
+\subsubsection[Scenario 2: Analisi dei dati quotidiani sull'andamento dell'epidemia Covid-19 in Emilia Romagna]{Scenario 2: Analisi dei dati quotidiani sull'andamento dell'epidemia Covid-19 in Emilia Romagna\footnote{Lo scenario è specifico, ma è chiaramente adattabile a qualsiasi regione italiana.}}
+Alle 17, Giulia, la giornalista che si occupa degli articoli sull'epidemia in Emilia Romagna, si collega alla dashboard del DPC dal suo portatile da 13". Al momento, Giulia, è in smart-working.\\
+Tempo stimato per:
+\begin{enumerate}
+    \item l'apertura e il caricamento della dashboard: \textit{20 s}.
+\end{enumerate}
+
+\noindent
+Vuole scrivere l'articolo del giorno nel quale comunica ai lettori l'andamento di varie metriche, per esempio il rapporto tra nuovi positivi e tamponi effettuati in quel giorno oppure le nuove ospedalizzazioni. Essendo di suo interesse solo la regione Emilia Romagna richiede alla dashboard di visualizzare solo i dati ad essa relativi. Le metriche di interesse vengono subito presentate, per cui Giulia non necessita di compiere operazioni o calcoli particolari, tantomeno di consultare altri strumenti o fonti.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la selezione della regione e la visione dei dati: \textit{10 s};
+    \item l'analisi dei dati per la successiva scrittura dell'articolo: \textit{50 s}.
+\end{enumerate}
+
+\noindent
+Inoltre, Giulia intende studiare l'andamento delle metriche rispetto ai giorni precedenti, per cui chiede alla dashboard che le siano restituite, oltre ai dati relativi alla giornata corrente, anche quelli del periodo temporale di suo interesse: la dashboard prontamente presenta quanto richiesto in un formato che favorisce agili confronti e permette di trarre conclusioni di valore.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item la visualizzazione dei dati, la selezione del periodo e il caricamento: \textit{8 s};
+    \item l'analisi dei dati \textit{100 s}.
+\end{enumerate}
+
+\noindent
+Giulia nota degli \textit{outlier}, per cui controlla le note del giorno e legge che l'Emilia Romagna ha avuto problemi con la comunicazione degli ultimi dati.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item individuare la nota di riferimento, verificare la presenza dell'outlier: \textit{35 s};
+    \item l'analisi delle possibili implicazioni di questi outlier sull'andamento della metrica/e coinvolta/e: \textit{115 s}.
+\end{enumerate}
+
+\noindent
+Proprio quando Giulia ha terminato il suo articolo e sta per chiudere la dashboard, riceve una notifica che le segnala la correzione degli outlier. In dettaglio, la ASL di Bologna ha dovuto aggiornato il numero delle terapie intensive alle 17:25 perché tre pazienti, pochi minuti dopo la pubblicazione giornaliera dei nuovi dati, erano stati spostati, sfortunatamente, dalla terapia sub-intensiva a quella intensiva: la regione ha quindi prontamente comunicato i dati corretti, la dashboard ha riflettuto il cambiamento e lo ha notificato agli utenti che la stavano consultando, evitando che Giulia pubblicasse un articolo con dati errati.\\
+Tempo richiesto per:
+\begin{enumerate}
+    \item notare la notifica: \textit{5 s};
+    \item l'analisi delle possibili implicazioni dell'aggiornamento: \textit{95 s}.
+\end{enumerate}
+
+\noindent
+Attività svolte: \hyperref[itm:1]{\textit{1}}, \hyperref[itm:2]{\textit{2}}.\\  
+Tempo totale: \textit{7' 18''}. 
