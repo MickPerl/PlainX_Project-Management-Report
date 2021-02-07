@@ -21,7 +21,8 @@
 \usepackage{fancyhdr}
 \usepackage{enumitem}
 \usepackage{wrapfig}
-\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{float}
 
 \hypersetup{
     colorlinks=true,
@@ -40,7 +41,7 @@
 \fancyhead[L]{Plain X - Project Management Report}
 \fancyhead[R]{Alma Mater Studiorum - Università di Bologna}
 \fancyfoot[L]{X-Spark (Marco Ferrati, Michele Perlino, Tommaso Azzalin)}
-\fancyfoot[R]{Pagina \thepage\ di \pageref{LastPage}}
+\fancyfoot[R]{Pagina \thepage\ di \pageref*{LastPage}}
 \setlength{\headheight}{13.6pt}
 
 \newcommand{\e}[1]{#1 \euro{}}
