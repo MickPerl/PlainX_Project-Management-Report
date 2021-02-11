@@ -1,0 +1,8 @@
+1-Situazione odierna nazionale: TUTTO CHIUSO
+2-Situazione odierna nazionale: CALENDARIO APERTO
+3-Situazione odierna nazionale: SELETTORE METRICHE APERTO
+4-Situazione odierna nazionale: TASSO DI POSITIVITA' GRAFICO
+5-Situazione odierna nazionale: TASSO OCCUPAZIONE T.I. GAUGE
+6-Situazione odierna nazionale: ANDAMENTO (Decessi)
+7-Situazione odierna nazionale: HELP (Attuali positivi)
+8-Situazione odierna nazionale: METRICHE MAPPA
