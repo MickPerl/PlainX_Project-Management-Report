@@ -1,3 +1,4 @@
+Situazione odierna nazionale (caricamento dashboard)
 1-Situazione odierna nazionale: TUTTO CHIUSO
 2-Situazione odierna nazionale: CALENDARIO APERTO
 3-Situazione odierna nazionale: SELETTORE METRICHE APERTO
@@ -9,3 +10,15 @@
 9-Situazione odierna nazionale: METRICHE TABELLA
 10-Situazione odierna nazionale: NOTE
 11-Situazione odierna nazionale: PROVVEDIMENTI
+1-Situazione regionale: MOLISE 
+1-Confronto fra regioni: REGIONE MOLISE
+2-Confronto fra regioni: SELETTORE REGIONI
+3-Confronto fra regioni: SLIDER ANDAMENTO % Attuali positivi
+1-Confronto fra periodi: TUTTO CHIUSO
+2-Confronto fra periodi: WIDGET DATA PRIMO PERIODO
+3-Confronto fra periodi: WIDGET DATA SECONDO PERIODO
+4-Confronto fra periodi: SELETTORE METRICHE
+5-Confronto fra periodi: SELETTORE METRICHE (Tasso di letalità)
+6-Confronto fra periodi: SELETTORE METRICHE
+7-Confronto fra periodi: SELETTORE METRICHE (Isolamento domiciliare)
+1-Distribuzione dati anagrafici: TUTTO CHIUSO
