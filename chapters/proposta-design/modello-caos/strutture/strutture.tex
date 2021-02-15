@@ -1,1 +1,83 @@
 \subsubsection{Strutture}
+
+\paragraph{Diagramma principale di CAO=S}\mbox{}\\
+Nelle seguenti tabelle del diagramma a tre assi principale di CAO=S sono stati raccolti assieme tutti gli attori con gli stessi ruoli.
+Per questa ragione il risultato è la presentazione di tre tabelle, di cui due relative a ruoli effettivamente influenti nella progettazione.\\
+\textit{Nota}: Per ragioni di spazio, nella riga di intestazione delle tabelle vengono utilizzate le seguenti sigle per riferirsi ai concetti:
+\begin{itemize}
+    \item \textbf{RGN}: Resoconto del giorno a livello nazionale;
+    \item \textbf{RGR}: Resoconto del giorno a livello regionale;
+    \item \textbf{RGP}: Resoconto del giorno a livello provinciale;
+    \item \textbf{SLN}: Situazione a livello nazionale;
+    \item \textbf{SLR}: Situazione a livello regionale;
+    \item \textbf{SLP}: Situazione a livello provinciale;
+    \item \textbf{PRO}: Provvedimento;
+    \item \textbf{PDI}: Personalizzazione dell'interfaccia.
+\end{itemize}
+
+{
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h]{| c | c | c | c | c | c | c | c | c |}
+    \hline
+    \textit{Fruizione} & \textbf{RGN} & \textbf{RGR} & \textbf{RGP} & \textbf{SLN} & \textbf{SLR} & \textbf{SLP} & \textbf{PRO} & \textbf{PDI} \\
+    \hline
+    \endhead
+    \textbf{Create} & No & No & No & No & No & No & No & Sì \\
+    \hline
+    \textbf{View}   & Sì & Sì & Sì & Sì & Sì & Sì & Sì & Sì \\
+    \hline
+    \textbf{Update} & No & No & No & No & No & No & No & Sì \\
+    \hline
+    \textbf{Remove} & No & No & No & No & No & No & No & Sì \\
+    \hline
+\end{longtable}
+}
+\noindent
+Gli attori come il giornalista di una testata nazionale, il giornalista d'agenzia, il giornalista di una testata locale, il cittadino esperto e il blogger possono solamente visualizzare i concetti e interagire con essi solo per modificare la loro modalità di visualizzazione.
+Infatti, possono effettuare tutti i tipi di operazione per la gestione del concetto ``Personalizzazione dell'interfaccia".
+Le altre operazioni, ad esclusione della rimozione, sono di competenza dell'amministratore di database.
+
+{
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h]{| c | c | c | c | c | c | c | c | c |}
+    \hline
+    \textit{Amministrazione database e dashboard} & \textbf{RGN} & \textbf{RGR} & \textbf{RGP} & \textbf{SLN} & \textbf{SLR} & \textbf{SLP} & \textbf{PRO} & \textbf{PDI} \\
+    \hline
+    \endhead
+    \textbf{Create} & Sì & Sì & Sì & Sì & Sì & Sì & Sì & No \\
+    \hline
+    \textbf{View}   & No & No & No & No & No & No & No & No \\
+    \hline
+    \textbf{Update} & Sì & Sì & Sì & Sì & Sì & Sì & Sì & No \\
+    \hline
+    \textbf{Remove} & No & No & No & No & No & No & No & No \\
+    \hline
+\end{longtable}
+}
+\noindent
+L'amministratore di database può solamente inserire e modificare i concetti, ad eccezione della personalizzazione dell'interfaccia, in quanto non è un utilizzatore della dashboard.
+Per lo stesso motivo, non può visualizzare alcun concetto.
+
+{
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h]{| c | c | c | c | c | c | c | c | c |}
+    \hline
+    \textit{Fruizione da dispositivo mobile} & \textbf{RGN} & \textbf{RGR} & \textbf{RGP} & \textbf{SLN} & \textbf{SLR} & \textbf{SLP} & \textbf{PRO} & \textbf{PDI} \\
+    \hline
+    \endhead
+    \textbf{Create} & No & No & No & No & No & No & No & No \\
+    \hline
+    \textbf{View}   & No & No & No & No & No & No & No & No \\
+    \hline
+    \textbf{Update} & No & No & No & No & No & No & No & No \\
+    \hline
+    \textbf{Remove} & No & No & No & No & No & No & No & No \\
+    \hline
+\end{longtable}
+}
+\noindent
+L'attore che riveste il ruolo di fruizione da dispositivo mobile corrisponde alla persona negativa di Christian che, per definizione stessa di persona negativa, non rientra tra gli utenti cui gli sforzi progettuali sono stati indirizzati: conseguentemente, non può consultare la dashboard e, se tenta di accedervi, viene avvisato che il dispositivo che sta utilizzando non è supportato, a causa dell'impossibilità di presentazione dei numerosi dati su uno schermo così piccolo.
+
+\paragraph{Strutture dati}\mbox{}\\
+In questa sezione esplicitiamo come crediamo che la base di dati a supporto della dashboard riprogettata debbano essere organizzati. Nel definire i concetti, abbiamo previsto anche una loro articolazione per proprietà: queste ultime saranno le entità nel modello concettuale della base di dati, percepiti dall'utente in termini del concetto corrispondente.
+I modelli di navigazione e le interfacce verranno discusse più approfonditamente nella sezione blueprint e wireframe.
