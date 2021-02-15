@@ -46,7 +46,6 @@ I task specificati sono i seguenti:
 \end{itemize}
 In questa maniera, abbiamo potuto registrare il numero di errori compiuto da ciascuno e una misura di gravità degli stessi: in dettaglio, i dati sono stati raccolti in una tabella.
 
-{
 \renewcommand{\arraystretch}{2}
 \begin{longtable}{|c|p{7cm}|p{5cm}|c|}
     \hline
@@ -61,4 +60,14 @@ In questa maniera, abbiamo potuto registrare il numero di errori compiuto da cia
     6 & L'utente può recuperare il dato dei nuovi positivi nazionali e regionali, ma manca un etichetta chiara (questo dato è chiamato "Incremento" quando ci si riferisce al totale dei casi riscontrati dall'inizio della pandemia) & 100\% & Basso \\ \hline
     7 & L'utente vuole calcolare l'incremento di nuovi positivi di un periodo predeterminato, ma ha avuto difficoltà a raccogliere i dati relativi a questo periodo (ha dovuto manualmente effettuare le sottrazioni raccogliendo prima i dati per la giornata di inizio e fine del periodo) dato che la dashboard non permette di selezionare range di date. & 20\% & Basso \\ \hline
 \end{longtable}
-}
+
+\subsubsection{Valutazione finale e report}
+Abbiamo valutato i dati raccolti calcolando la frequenza degli errori dei diversi giornalisti a fronte di ciascun task e tracciando una curva di urgenza (\ref{fig:urgency-curves}) in termini di frequenza e impatto dei problemi emersi.
+Dal grafico  si evince che i problemi maggiori e quindi più urgenti da risolvere sono 1, 3, 5 e 6. Il problema nr. 5 ha un impatto molto alto anche se è poco frequente e  6 in quanto anche se è poco impattante è molto frequente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/urgency_curve}
+    \caption{Curva delle urgenze.}
+    \label{fig:urgency-curves}
+\end{figure}
