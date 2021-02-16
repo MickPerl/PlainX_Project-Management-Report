@@ -1,6 +1,8 @@
 \section{Testing da parte degli utenti}
+\label{s:verifica-risorse-esistenti-testing-utenti}
 In questa sezione, è riportato il protocollo di testing definito, una descrizione circa la sua esecuzione e la valutazione dei risultati raccolti
 \subsection{Progettazione del test}
+\label{ss:progettazione-test}
 \label{subsubsection:progettazione-del-test}
 Per testare le risorse esistenti, abbiamo ritenuto opportuno adottare l'approccio \textit{Discount Usability testing} (anche detto \textit{Guerrilla Usability Testing}), in quanto è maggiormente rispondente alle nostre esigenze: 
 \begin{itemize}
@@ -9,6 +11,7 @@ Per testare le risorse esistenti, abbiamo ritenuto opportuno adottare l'approcci
 \end{itemize}
 
 \subsubsection{Task testati}
+\label{sss:task-testati}
 I task che abbiamo sottoposto agli utenti sono istanze dei task individuati nella fase ``Analisi dei task" e sono i seguenti:
 \begin{enumerate}
     \item calcolare il tasso di positività (calcolato come il rapporto tra nuovi positivi e i tamponi effettuati) relativo al 17 novembre '20;    
@@ -20,19 +23,24 @@ I task che abbiamo sottoposto agli utenti sono istanze dei task individuati nell
 \end{enumerate}
 
 \subsubsection{Tipologia di test}
+\label{sss:tipologia-test}
 Per quanto riguarda la tipologia di test, abbiamo adottato quella sommativa, in quanto la dashboard del DPC su cui realizzare i test è un applicazione web la cui fase di progettazione è stata già completata: conseguentemente, il fine del test è la ricerca di eventuali problemi che non sono stati scoperti e risolti dagli sviluppatori, nonché la verifica del soddisfacimento delle necessità raccolte all'inizio della progettazione.
 
 \subsubsection{Ambito di test}
+\label{sss:ambito-test}
 L'ambito del test è stato globale, dal momento che la dashboard del DPC fornisce a tutti i suoi utenti la possibilità di interagire con ogni sua funzione.
 
 \subsubsection{Ambiente di test}
+\label{sss:ambiente-test}
 Il setting in cui verranno condotti i test ha visto l'utilizzo di software di videoconferenza. Gli assistenti del test siamo stati noi stessi, in qualità di membri del team di design. La selezione dei partecipanti è avvenuta mediante l'invio di una mail agli indirizzi dei giornalisti precedentemente contattati in occasione della ricerca etnografica.
 
 \subsubsection{Dati raccolti}
+\label{sss:dati-raccolti}
 I dati che sono stati raccolti hanno natura quantitativa: in dettaglio, abbiamo chiesto ad ogni giornalista di condurre certi task sull'interfaccia della dashboard del DPC e abbiamo preso nota del numero di problemi emersi, nonché una misura del loro impatto sull'esperienza dell'utente. L'output del test si è concretizzato, pertanto, in un insieme di valori numerici relativi ai giornalisti per ogni task, da cui abbiamo potuto calcolarci la frequenza di ogni problema.
 Dato l'esiguo numero di giornalisti che si sono offerti per il test (7), non abbiamo potuto estrarre informazioni statisticamente significative, tuttavia abbiamo potuto raccogliere importanti suggerimenti di miglioramento circa l'usabilità dell'interfaccia.
 
 \subsection{Selezione e preparazione degli assistenti}
+\label{ss:selezione-preparazione-assistenti}
 Come riportato sopra, il test non ha previsto assistenti esterni, bensì è stato svolto interamente dai noi stessi, in qualità di membri del team di design. Abbiamo, a tal fine, studiato l'interfaccia della dashboard in oggetto, nonché applicato le nozioni apprese durante il corso di \textit{Usability \& User Experience Design}.
 
 \subsection{Test pilota}
@@ -91,15 +99,19 @@ Di seguito è riportato l'happy path definito per ogni task che è stato poi sot
 \end{enumerate}
 
 \subsection{Scelta dei partecipanti}
+\label{ss:seclta-partecipanti}
 Per la scelta dei partecipanti, abbiamo cercato contatti di soggetti afferenti alla segmentazione dell'utenza elaborata nella sezione "Ricerca etnografica". Un criterio che abbiamo seguito è la diversificazione della redazione di riferimento (testata locale, nazionale, d'agenzia ecc.), al fine di avere risultati privi di bias.
 
 \subsection{Esecuzione del test}
+\label{ss:esecuzione-test}
 Il test è stato eseguito sulla dashboard del DPC (\href{https://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1}): trattasi di un'applicazione web totalmente funzionante.
 \subsubsection{Approccio adottato}
+\label{sss:approccio-adottato}
 L'approccio seguito è stato quello del \textit{"Thinking aloud"} per cui abbiamo chiesto a ciascun giornalista di eseguire task pre-determinati sull'interfaccia e di riferirci, appunto a voce alta, le sue impressioni e intenzioni step by step.
 
 In questa maniera, abbiamo potuto registrare il numero di errori compiuto da ciascuno e una misura di gravità degli stessi: in dettaglio, i dati sono stati raccolti in una tabella.
 
+{
 \renewcommand{\arraystretch}{2}
 \begin{longtable}{|c|p{7cm}|p{5cm}|c|}
     \hline
@@ -114,6 +126,7 @@ In questa maniera, abbiamo potuto registrare il numero di errori compiuto da cia
     6 & L'utente può recuperare il dato dei nuovi positivi nazionali e regionali, ma manca un etichetta chiara (questo dato è chiamato "Incremento" quando ci si riferisce al totale dei casi riscontrati dall'inizio della pandemia) & 100\% & Basso \\ \hline
     7 & L'utente vuole calcolare l'incremento di nuovi positivi di un periodo predeterminato, ma ha avuto difficoltà a raccogliere i dati relativi a questo periodo (ha dovuto manualmente effettuare le sottrazioni raccogliendo prima i dati per la giornata di inizio e fine del periodo) dato che la dashboard non permette di selezionare range di date. & 20\% & Basso \\ \hline
 \end{longtable}
+}
 
 \subsection{Valutazione finale e report}
 Abbiamo valutato i dati raccolti calcolando la frequenza degli errori dei diversi giornalisti a fronte di ciascun task e tracciando una curva di urgenza (\ref{fig:urgency-curves}) in termini di frequenza e impatto dei problemi emersi.
@@ -121,7 +134,7 @@ Dal grafico  si evince che i problemi maggiori e quindi più urgenti da risolver
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/urgency_curve}
+    \includegraphics[width=0.5\columnwidth]{verifica-risorse-esistenti/urgency_curve}
     \caption{Curva delle urgenze.}
     \label{fig:urgency-curves}
 \end{figure}

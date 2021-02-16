@@ -1,4 +1,5 @@
 \subsection{Concetti}
+\label{ss:concetti}
 I concetti sono stati più volte rielaborati per raggiungere la loro forma finale.
 In particolare, la prima loro definizione conteneva solo proprietà pure, non inclusive di dati aggregati. Successivamente sono stati aggiunti dati aggregati come i tassi, le percentuali, i saldi.
 Ancora, sono stati aggiunte proprietà quali la data di riferimento e i nomi delle regioni/provincie.
@@ -7,6 +8,7 @@ In battuta finale, abbiamo aggiunto anche i dati anagrafici, quali l'età e il g
 
 Di seguito vengono elencati i concetti che vengono manipolati dagli attori che utilizzano il sistema.
 \subsubsection{Resoconto del giorno a livello nazionale}
+\label{sss:resoconto-del-giorno-livello-nazionale}
 Rappresenta le informazioni sull'evoluzione della pandemia a livello nazionale relative alla data di interesse.\\
 È caratterizzato dalle seguenti proprietà:
 \begin{itemize}
@@ -23,6 +25,7 @@ Rappresenta le informazioni sull'evoluzione della pandemia a livello nazionale r
 In una precedente iterazione questo concetto era stato denominato ``Andamento giornaliero nazionale" ma, potendo confondersi con alcune parti dell'interfaccia presentate nella Sezione 4.5, abbiamo ritenuto necessario di rinominarlo.
 
 \subsubsection{Resoconto del giorno a livello regionale}
+\label{sss:resoconto-del-giorno-livello-regionale}
 Rappresenta le informazioni sull'evoluzione della pandemia a livello regionale (ovvero di una singola regione) relative alla data di interesse.\\
 È caratterizzato dalle seguenti proprietà:
 \begin{itemize}
@@ -33,6 +36,7 @@ Rappresenta le informazioni sull'evoluzione della pandemia a livello regionale (
 In una precedente iterazione questo concetto era stato denominato ``Andamento giornaliero regionale" ma, per le stesse ragioni per cui è stato rinominato il concetto ``Resoconto del giorno a livello nazionale", è stato modificato anche questo.
 
 \subsubsection{Resoconto del giorno a livello provinciale}
+\label{sss:resoconto-del-giorno-livello-provinciale}
 Rappresenta le informazioni sull'evoluzione della pandemia a livello provinciale (ovvero di una singola provincia) relative alla data di interesse.\\
 È caratterizzato dalle seguenti proprietà:
 \begin{itemize}
@@ -44,6 +48,7 @@ Rappresenta le informazioni sull'evoluzione della pandemia a livello provinciale
 In una precedente iterazione questo concetto era stato denominato ``Andamento giornaliero provinciale" ma, per le stesse ragioni per cui sono stato rinominati i concetti ``Resoconto del giorno a livello nazionale" e ``Resoconto del giorno a livello regionale", è stato modificato anche questo.
 
 \subsubsection{Situazione a livello nazionale}
+\label{sss:situazione-livello-nazionale}
 Rappresenta la situazione epidemiologica in Italia ad oggi, ossia il cumulato dei dati a partire dall'inizio della pandemia.\\
 È caratterizzato dalle seguenti proprietà:
 \begin{itemize}
@@ -76,6 +81,7 @@ Rappresenta la situazione epidemiologica in Italia ad oggi, ossia il cumulato de
 In corrispondenza della proprietà ``Attuali positivi" abbiamo riscontrato un problema di standardizzazione: gli attori diretti, quali i giornalisti, usano l'espressione ``Attuali positivi" mentre l'attore indiretto rivestito dall'Amministratore della base di dati è solito riferirsi alla medesima proprietà con l'espressione di ``totale\_casi". Abbiamo risolto questa discrepanza, adottando l'espressione utilizzata dall'attore diretto nella consapevolezza che, per definizione, è lui a consultare direttamente la dashboard.
 
 \subsubsection{Situazione a livello regionale}
+\label{sss:situazione-livello-regionale}
 Rappresenta la situazione epidemiologica in una regione ad oggi, ossia il cumulato dei dati a partire dall'inizio della pandemia.\\
 È caratterizzato dalle seguenti proprietà:
 \begin{itemize}
@@ -84,6 +90,7 @@ Rappresenta la situazione epidemiologica in una regione ad oggi, ossia il cumula
 \end{itemize}
 
 \subsubsection{Situazione a livello provinciale}
+\label{sss:situazione-livello-provinciale}
 Rappresenta la situazione epidemiologica in una provincia ad oggi, ossia il cumulato dei dati a partire dall'inizio della pandemia.\\
 È caratterizzato dalle seguenti proprietà:
 \begin{itemize}
@@ -94,6 +101,7 @@ Rappresenta la situazione epidemiologica in una provincia ad oggi, ossia il cumu
 \end{itemize}
 
 \subsubsection{Provvedimento}
+\label{sss:provvedimento}
 Rappresenta un provvedimento emanato dal Presidente del Consiglio, dal Governo o dai Ministeri, dal Parlamento, dai Consigli Regionali o Comunali.\\
 È caratterizzato dalle seguenti proprietà:
 \begin{itemize}
@@ -105,6 +113,7 @@ Rappresenta un provvedimento emanato dal Presidente del Consiglio, dal Governo o
 \end{itemize}
 
 \subsubsection{Personalizzazione dell'interfaccia}
+\label{sss:personalizzazione-interfaccia}
 Rappresenta quali parti dell'interfaccia sono correntemente visualizzate all'utente.\\
 È caratterizzato dalle seguenti proprietà:
 \begin{itemize}
