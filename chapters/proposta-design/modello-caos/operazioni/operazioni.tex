@@ -1,9 +1,11 @@
 \subsection{Operazioni}
+\label{ss:operazioni}
 Di seguito vengono elencati le operazioni che vengono eseguite sui concetti del sistema.
 \noindent
 \textit{Nota}: La operazione \textit{Remove} in tutti i concetti, escluso il concetto ``Personalizzazione dell'interfaccia", non è reso possibile perché la dashboard mostra serie temporali che hanno senso solo se tutti i dati facente parte di queste serie vengono conservati per intero.
 
 \subsubsection{Resoconto del giorno a livello nazionale}
+\label{sss:operazioni-resoconto-del-giorno-livello-nazionale}
 \begin{itemize}
     \item \textit{Create}: la creazione avviene manualmente, e i valori di default sono 0 per tutte le proprietà, ad eccezione di data di riferimento che è di default impostata a quella corrente.
     La creazione deve avvenire in maniera singola poiché l'istanza è univoca e persistente nel tempo.
@@ -16,10 +18,12 @@ Di seguito vengono elencati le operazioni che vengono eseguite sui concetti del 
 \end{itemize}
 
 \subsubsection{Resoconto del giorno a livello regionale}
+\label{sss:operazioni-resoconto-del-giorno-livello-regionale}
 Vale quanto indicato per \textbf{Resoconto del giorno a livello nazionale} ma, nell'operazione \textit{Create}, il nome della regione è un dato necessario da inserire e non è possibile fornire un valore di default.
 Nel caso in cui il nome della regione non fosse esistente l'attore verrebbe notificato.
 
 \subsubsection{Resoconto del giorno a livello provinciale}
+\label{sss:operazioni-resoconto-del-giorno-livello-provinciale}
 \begin{itemize}
     \item \textit{Create}: come per \textit{Create} nei concetti \textbf{Resoconto del giorno a livello nazionale} e \textbf{Resoconto del giorno a livello regionale} ma, anche in questo caso, il nome della provincia è un dato necessario da inserire e di cui non si può fornire un valore di default.
     Nel caso in cui il nome della provincia non fosse esistente o non appartenesse alla regione indicata l'attore verrebbe notificato.;
@@ -29,15 +33,19 @@ Nel caso in cui il nome della regione non fosse esistente l'attore verrebbe noti
 \end{itemize}
 
 \subsubsection{Situazione a livello nazionale}
+\label{sss:operazioni-situazione-livello-nazionale}
 Vale quanto indicato per \textbf{Resoconto del giorno a livello nazionale}.
 
 \subsubsection{Situazione a livello regionale}
+\label{sss:operazioni-situazione-livello-regionale}
 Vale quanto indicato per \textbf{Resoconto del giorno a livello regionale}.
 
 \subsubsection{Situazione a livello provinciale}
+\label{sss:operazioni-situazione-livello-provinciale}
 Vale quanto indicato per \textbf{Resoconto del giorno a livello provinciale}.
 
 \subsubsection{Provvedimento}
+\label{sss:operazioni-provvedimento}
 \begin{itemize}
     \item \textit{Create}: la creazione di un'istanza di questo concetto avviene manualmente ogni qual volta un ente istituzionale pubblica un provvedimento per il contrasto del Covid-19.
     Non ci sono valori di default perché tutti i provvedimenti sono unici e non ha senso fornire valori iniziali.
@@ -51,6 +59,7 @@ Vale quanto indicato per \textbf{Resoconto del giorno a livello provinciale}.
 \end{itemize}
 
 \subsubsection{Personalizzazione dell'interfaccia}
+\label{sss:operazioni-personalizzazione-interfaccia}
 \begin{itemize}
     \item \textit{Create}: la creazione di una personalizzazione avviene implicitamente, apportando delle modifiche alle schermate della dashboard (ad esempio tramite drag \& drop delle componenti visive oppure la scelta di visualizzarne o nasconderne altre).
     È fornita una personalizzazione di default che è quella presentata al primo caricamento della dashboard ed è quella che viene presentata in Sezione 4.5.

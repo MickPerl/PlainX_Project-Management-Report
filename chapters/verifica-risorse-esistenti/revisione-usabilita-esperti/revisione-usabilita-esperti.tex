@@ -1,8 +1,11 @@
 \section{Revisione dell'usabilità da parte di esperti}
+\label{s:revisione-usabilita-esperti}
 
 \subsection{Linee guida}
+\label{ss:linee-guida}
 
 \subsubsection{Fonti}
+\label{sss:fonti}
 Le linee guida sono state scelte partendo dalle seguenti fonti:
 \begin{itemize}
     \item A. Dix et alii, \textit{HCI}, Prentice Hall, 1998;
@@ -19,6 +22,7 @@ Le linee guida sono state scelte partendo dalle seguenti fonti:
 \end{itemize}
 
 \subsubsection{Elenco}
+\label{sss:elenco}
 Ogni linea guida individuata ha un codice identificativo nel formato x.y dove x è un numero e y è una lettera.
 \begin{enumerate}
     \item Evitare font decorativi, non familiari o piccoli e background rumorosi/confusionari; \label{lg:1}
@@ -97,10 +101,13 @@ Ogni linea guida individuata ha un codice identificativo nel formato x.y dove x 
 \end{enumerate}
 
 \section{Analisi del sistema}
+\label{s:analisi-sistema}
 
 \subsection{Analisi diretta}
+\label{ss:analisi-diretta}
 
 \subsubsection{Header (logo dashboard, selettore data, regione, menù)}
+\label{sss:header}
 \begin{itemize}
     \item Nel selettore della data è possibile sia selezionare la data tramite tendina a calendario oppure digitandola. La digitazione permette a un utente più impaziente di essere più rapido ma al contempo implica che la data deve essere controllata in correttezza. Il feedback in questo elemento non è ben funzionante:
     \begin{itemize}
@@ -121,6 +128,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \end{itemize}
 
 \subsubsection{Attuali positivi, Dimessi/Guariti, Deceduti, Totale casi}
+\label{sss:attuali_positivi-dimessi_guariti-deceduti-totale_casi}
 \begin{itemize}
     \item \`E possibile ingrandire questi quattro box a schermo intero ma è una funzione effettivamente utile solo quando si ha il grafico (tab Andamento), perché nell'altro caso mostra solo numeri di uguale dimensione;
     \item I numeri sono correttamente separati alle migliaia;
@@ -139,6 +147,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \end{itemize}
 
 \subsubsection{Altri dati e informazioni}
+\label{sss:altri-dati-informazioni}
 \begin{itemize}
     \item Non c'è consistenza per i link: l'elenco qui presente è fatto solo di link ma hanno una formattazione diversa, in particolare non sono blu e nemmeno sottolineati, come un utente web si aspetta;
     \item Lo spazio è utilizzato in maniera inefficiente: solo metà. Poteva essere usata l'altra metà per mettere i link presenti nel menu hamburger dell'header;
@@ -153,6 +162,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \end{itemize}
 
 \subsubsection{Andamento nazionale}
+\label{sss:andamento-nazionale}
 \begin{itemize}
     \item Il grafico non presenta problemi particolari: ha un filtro per il range di date (approssimativo perché non indica la data precisa in cui inizia-finisce) ma permette il ritorno alla selezione iniziale sia tramite pulsante che tramite slider;
     \item Manca una legenda per i colori delle curve, che sono consistenti però a quelle dei box sovrastanti;
@@ -172,6 +182,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \end{itemize}
 
 \subsubsection{Mappa}
+\label{sss:mappa}
 \begin{itemize}
     \item Le etichette con nome regione e il numero degli attuali positivi è particolarmente piccolo ed inoltre ha un bordo bianco su testo nero per farlo risaltare sulla mappa grigetta risultando poco leggibile;
     \item Comportamento diverso se si clicca il pallino giallo e se si clicca sulla regione. Il pallino giallo apre una finestrella in cui sono presentati tutti i dati a disposizione per la regione. Mentre se si clicca sulla regione vengono visualizzati pochi dati relativi ad alcuni codici identificativi poco utili all'utilizzatore della dashboard;
@@ -200,6 +211,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \end{itemize}
 
 \subsubsection{Regioni, totale casi, attuali, incremento / Province, totali casi, incremento}
+\label{sss:regioni_province-totale_casi-attuali-incremento}
 \begin{itemize}
     \item Il titolo è del colore e del livello di grassetto corretto (rispetto agli altri titoli) ma ha un font più piccolo rendendolo non conforme al resto della dashboard;
     \item Le regioni sono cliccabili, ovvero ogni riga della lista delle regioni è cliccabile , ma al clic non succede nulla;
@@ -215,12 +227,14 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
     \item \ref{lg:32}
 \end{itemize}
 \subsubsection{Nuovi positivi}
+\label{sss:nuovi-positivi}
 \begin{itemize}
         \item Vale quanto detto per ``Andamento nazionale";
         \item Etichette poco leggibili: sarebbe stato meglio formattare il testo in maniera diversa per data e valore, raggruppandoli in una maniera più significativa per confronti.
 \end{itemize}
 
 \subsubsection{Footer}
+\label{sss:footer}
 \begin{itemize}
     \item Il logo del DPC potrebbe essere più grande dato che lo spazio c'è e il logo è leggermente sgranato perché è piccolo;
     \item Il font di alcune scritte risulta un po' piccolo;
@@ -233,6 +247,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \end{itemize}
 
 \subsubsection{Note}
+\label{sss:note}
 \begin{itemize}
     \item Il font di alcune scritte risulta un po' piccolo;
     \item Il titolo ``Note" non è consistente come nel caso di ``Altri dati e informazioni";
@@ -247,6 +262,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \end{itemize}
 
 \subsubsection{Sidebar informativa sulla dashboard}
+\label{sss:sidebar-informativa-dashboard}
 \begin{itemize}
     \item Il logo è di grandezza sufficiente;
     \item Aprendola copre una sezione di dashboard; una soluzione migliore sarebbe stata farla comparire come una finestra modale\footnote{Nella progettazione delle interfacce utente, una finestra modale è una finestra ``figlia" che richiede all'utente di interagire con essa prima di ritornare ad operare con la finestra ``madre", impedendo la prosecuzione del flusso di lavoro sulla finestra principale dell'applicazione in esecuzione.};
@@ -260,7 +276,9 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
 \end{itemize}
 
 \subsection{Analisi indiretta}
+\label{ss:analisi-indiretta}
 \subsubsection{Analisi rispetto alle linee guida}
+\label{sss:analisi-rispetto-linee-guida}
 \`E stato analizzato il rispetto di ogni linea guida identificata:
 \begin{enumerate}
     \item Il font è comune ovunque, adeguato (sans-serif) ma, in alcuni punti, fin troppo grande a discapito di altri in cui è troppo piccolo (riquadri rosa). Nella mappa, in presenza di schermi molto piccoli i testi risultano poco leggibili come si nota dai riquadri viola in ~\ref{fig:guidelines-violations-1};
