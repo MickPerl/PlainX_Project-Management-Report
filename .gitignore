@@ -2,6 +2,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/latex,git,code,intellij
 # Edit at https://www.toptal.com/developers/gitignore?templates=latex,git,code,intellij
 
+*.DS_Store
+
 ### Code ###
 .vscode/*
 !.vscode/tasks.json
