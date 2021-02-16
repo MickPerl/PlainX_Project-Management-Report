@@ -13,14 +13,14 @@ Per testare le risorse esistenti, abbiamo ritenuto opportuno adottare l'approcci
 \subsubsection{Task testati}
 \label{sss:task-testati}
 I task che abbiamo sottoposto agli utenti sono istanze dei task individuati nella fase ``Analisi dei task" e sono i seguenti:
-\begin{itemize}
-    \item calcolare il tasso di positività (calcolato come il rapporto tra nuovi positivi e i tamponi effettuati) relativo al 17 novembre;
-    \item valutare l'occupazione dei reparti di terapia intensiva al 17 novembre
-    \item calcolare il tasso di letalità (calcolato come il rapporto tra numero di deceduti e numero di casi) nel mese di Aprile
-    \item calcolare il numero totale dei casi e il numero dei decessi per diverse fasce di età;
-    \item confrontare l'andamento dei nuovi positivi giornalieri tra Emilia Romagna e Lombardia
+\begin{enumerate}
+    \item calcolare il tasso di positività (calcolato come il rapporto tra nuovi positivi e i tamponi effettuati) relativo al 17 novembre '20;    
+    \item valutare l'occupazione delle strutture sanitare (tasso di occupazione dei reparti di terapia intensiva) al 17 novembre '20;
+    \item calcolare il tasso di letalità (calcolato come il rapporto tra il numero dei deceduti e il numero dei casi) medio nel mese di Aprile;
+    \item analizzare la distribuzione del totale dei casi e dei decessi per diverse fasce di età;
+    \item confrontare l'andamento dei nuovi positivi giornalieri tra Emilia Romagna e Lombardia;
     \item confrontare la media dei nuovi positivi giornalieri tra il mese di Aprile e il mese di Maggio;
-\end{itemize}
+\end{enumerate}
 
 \subsubsection{Tipologia di test}
 \label{sss:tipologia-test}
@@ -44,8 +44,59 @@ Dato l'esiguo numero di giornalisti che si sono offerti per il test (7), non abb
 Come riportato sopra, il test non ha previsto assistenti esterni, bensì è stato svolto interamente dai noi stessi, in qualità di membri del team di design. Abbiamo, a tal fine, studiato l'interfaccia della dashboard in oggetto, nonché applicato le nozioni apprese durante il corso di \textit{Usability \& User Experience Design}.
 
 \subsection{Test pilota}
-\label{ss:test-pilota}
-Il test pilota è stato condotto da noi stessi, in qualità di membri del team, tramite cui si è validato il protocollo definito in \ref{ss:progettazione-test}: in dettaglio, si è verificata l'esistenza del c.d. happy path, il corretto funzionamento della piattaforma di videoconferenza scelta, il timing totale del test e l'appropriatezza delle richieste.
+Il test pilota è stato condotto da noi stessi, in qualità di membri del team, tramite cui si è validato il protocollo definito in \ref{subsubsection:progettazione-del-test}: in dettaglio, si è verificata l'esistenza del c.d. happy path, il corretto funzionamento della piattaforma di videoconferenza scelta, il timing totale del test che ammonta a venti minuti e l'appropriatezza delle richieste.
+
+Di seguito è riportato l'happy path definito per ogni task che è stato poi sottoposto ai tester:
+\begin{enumerate}
+    \item calcolare il tasso di positività (calcolato come il rapporto tra nuovi positivi e i tamponi effettuati) relativo al 17 novembre '20;    
+    \begin{enumerate}[label=\alph*.]
+        \item aprire la dashboard del DPC;
+        \item selezione della data del 17 novembre '20 dal widget calendario;
+        \item lettura del valore numerico sottostante l'etichetta "Incremento" nel box "Totale casi";\label{ta:c}
+        \item click sul cerchio di ogni regione italiana, lettura del valore numerico relativo all'etichetta "Tamponi" presente nella componente che appare a schermo, somma di tutti i valori così raccolti e memorizzazione del risultato;
+        \item selezione della data del 16 novembre '20 dal widget calendario;
+        \item click sul cerchio di ogni regione italiana, lettura del valore numerico relativo all'etichetta "Tamponi" presente nella componente che appare a schermo, somma di tutti i valori così raccolti e memorizzazione del risultato;
+        \item calcolo della differenza tra i due valori memorizzati;\label{ta:g}
+        \item calcolo del rapporto tra il numero dei nuovi positivi letto allo step \ref{ta:c} e la differenza calcolata allo step \ref{ta:g};
+    \end{enumerate}
+    \item valutare l'occupazione delle strutture sanitare (tasso di occupazione dei reparti di terapia intensiva) al 17 novembre '20;
+    \begin{enumerate}[label=\alph*.]
+        \item  Non è stato possibile definire alcun happy path, dal momento che la dashboard non fornisce il dato relativo alle disponibilità dei reparti di terapia intensiva;
+    \end{enumerate}
+    \item calcolare il tasso di letalità (calcolato come il rapporto tra il numero dei deceduti e il numero dei casi) medio nel mese di Aprile;
+    \begin{enumerate}[label=\alph*.]
+        \item aprire la dashboard del DPC;
+        \item selezione della data del 1 aprile '20 dal widget calendario;
+        \item lettura del valore numerico nel box "Deceduti"; \label{taa:c}
+        \item lettura del valore numerico nel box "Totale casi"; \label{taa:d}
+        \item calcolo del rapporto tra di due valori letti e memorizzazione; \label{taa:e}
+        \item selezione della data del giorno seguente dal widget calendario; \label{taa:f}
+        \item ripetere gli step \ref{taa:c}, \ref{taa:d}, \ref{taa:e} e \ref{taa:f} finquando non si è raggiunto il 30 aprile '20;
+    \end{enumerate}
+    \item analizzare la distribuzione del totale dei casi e dei decessi per diverse fasce di età;
+    \begin{enumerate}[label=\alph*.]
+        \item  Non è stato possibile definire alcun happy path, dal momento che la dashboard non fornisce il dato relativo alle disponibilità dei reparti di terapia intensiva;
+    \end{enumerate}
+    \item confrontare l'andamento dei nuovi positivi giornalieri tra Emilia Romagna e Lombardia;
+    \begin{enumerate}[label=\alph*.]
+        \item aprire la dashboard del DPC;
+        \item selezione della regione ``Emilia Romagna";
+        \item memorizzazione del grafico ``Nuovi positivi";
+        \item selezione della regione ``Lombardia";
+        \item memorizzazione del grafico ``Nuovi positivi";
+        \item confronto dei due grafici memorizzati;
+    \end{enumerate}
+    \item confrontare la media dei nuovi positivi giornalieri tra il mese di aprile e il mese di maggio;
+    \begin{enumerate}[label=\alph*.]
+        \item aprire la dashboard del DPC;
+        \item selezione della data del 1 aprile '20 dal widget calendario; \label{at:b}
+        \item lettura del valore numerico sottostante l'etichetta "Incremento" nel box "Totale casi" e sua memorizzazione; \label{at:c}
+        \item ripetere gli step \ref{at:b}, \ref{at:c} finquando non si è raggiunto il 30 aprile '20; \label{at:d}
+        \item calcolo della media dei valori memorizzati; \label{at:e}
+        \item ripetere gli step \ref{at:b}, \ref{at:c}, \ref{at:d} ed \ref{at:e} per il mese di maggio; 
+        \item confronto delle due medie calcolate;
+    \end{enumerate}
+\end{enumerate}
 
 \subsection{Scelta dei partecipanti}
 \label{ss:seclta-partecipanti}
