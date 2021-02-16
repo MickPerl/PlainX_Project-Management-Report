@@ -1,9 +1,9 @@
-\subsubsection{Operazioni}
+\subsection{Operazioni}
 Di seguito vengono elencati le operazioni che vengono eseguite sui concetti del sistema.
 \noindent
 \textit{Nota}: La operazione \textit{Remove} in tutti i concetti, escluso il concetto ``Personalizzazione dell'interfaccia", non è reso possibile perché la dashboard mostra serie temporali che hanno senso solo se tutti i dati facente parte di queste serie vengono conservati per intero.
 
-\paragraph{Resoconto del giorno a livello nazionale}\mbox{}\\
+\subsubsection{Resoconto del giorno a livello nazionale}
 \begin{itemize}
     \item \textit{Create}: la creazione avviene manualmente, e i valori di default sono 0 per tutte le proprietà, ad eccezione di data di riferimento che è di default impostata a quella corrente.
     La creazione deve avvenire in maniera singola poiché l'istanza è univoca e persistente nel tempo.
@@ -15,11 +15,11 @@ Di seguito vengono elencati le operazioni che vengono eseguite sui concetti del 
     \item \textit{Remove}: non possibile.
 \end{itemize}
 
-\paragraph{Resoconto del giorno a livello regionale}\mbox{}\\
+\subsubsection{Resoconto del giorno a livello regionale}
 Vale quanto indicato per \textbf{Resoconto del giorno a livello nazionale} ma, nell'operazione \textit{Create}, il nome della regione è un dato necessario da inserire e non è possibile fornire un valore di default.
 Nel caso in cui il nome della regione non fosse esistente l'attore verrebbe notificato.
 
-\paragraph{Resoconto del giorno a livello provinciale}\mbox{}\\
+\subsubsection{Resoconto del giorno a livello provinciale}
 \begin{itemize}
     \item \textit{Create}: come per \textit{Create} nei concetti \textbf{Resoconto del giorno a livello nazionale} e \textbf{Resoconto del giorno a livello regionale} ma, anche in questo caso, il nome della provincia è un dato necessario da inserire e di cui non si può fornire un valore di default.
     Nel caso in cui il nome della provincia non fosse esistente o non appartenesse alla regione indicata l'attore verrebbe notificato.;
@@ -28,16 +28,16 @@ Nel caso in cui il nome della regione non fosse esistente l'attore verrebbe noti
     \item \textit{Remove}: non possibile.
 \end{itemize}
 
-\paragraph{Situazione a livello nazionale}\mbox{}\\
+\subsubsection{Situazione a livello nazionale}
 Vale quanto indicato per \textbf{Resoconto del giorno a livello nazionale}.
 
-\paragraph{Situazione a livello regionale}\mbox{}\\
+\subsubsection{Situazione a livello regionale}
 Vale quanto indicato per \textbf{Resoconto del giorno a livello regionale}.
 
-\paragraph{Situazione a livello provinciale}\mbox{}\\
+\subsubsection{Situazione a livello provinciale}
 Vale quanto indicato per \textbf{Resoconto del giorno a livello provinciale}.
 
-\paragraph{Provvedimento}\mbox{}\\
+\subsubsection{Provvedimento}
 \begin{itemize}
     \item \textit{Create}: la creazione di un'istanza di questo concetto avviene manualmente ogni qual volta un ente istituzionale pubblica un provvedimento per il contrasto del Covid-19.
     Non ci sono valori di default perché tutti i provvedimenti sono unici e non ha senso fornire valori iniziali.
@@ -50,7 +50,7 @@ Vale quanto indicato per \textbf{Resoconto del giorno a livello provinciale}.
     \item \textit{Remove}: non possibile.
 \end{itemize}
 
-\paragraph{Personalizzazione dell'interfaccia}\mbox{}\\
+\subsubsection{Personalizzazione dell'interfaccia}
 \begin{itemize}
     \item \textit{Create}: la creazione di una personalizzazione avviene implicitamente, apportando delle modifiche alle schermate della dashboard (ad esempio tramite drag \& drop delle componenti visive oppure la scelta di visualizzarne o nasconderne altre).
     È fornita una personalizzazione di default che è quella presentata al primo caricamento della dashboard ed è quella che viene presentata in Sezione 4.5.

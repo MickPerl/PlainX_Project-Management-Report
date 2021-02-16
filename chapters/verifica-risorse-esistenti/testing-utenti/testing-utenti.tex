@@ -1,6 +1,6 @@
-\subsection{Testing da parte degli utenti}
+\section{Testing da parte degli utenti}
 In questa sezione, è riportato il protocollo di testing definito, una descrizione circa la sua esecuzione e la valutazione dei risultati raccolti
-\subsubsection{Progettazione del test}
+\subsection{Progettazione del test}
 \label{subsubsection:progettazione-del-test}
 Per testare le risorse esistenti, abbiamo ritenuto opportuno adottare l'approccio \textit{Discount Usability testing} (anche detto \textit{Guerrilla Usability Testing}), in quanto è maggiormente rispondente alle nostre esigenze: 
 \begin{itemize}
@@ -8,7 +8,7 @@ Per testare le risorse esistenti, abbiamo ritenuto opportuno adottare l'approcci
     \item a causa della emergenza sanitaria in atto, minori sono le probabilità di riuscire a coinvolgere un numero elevato di soggetti da sottoporre al test;
 \end{itemize}
 
-\paragraph{Task testati}
+\subsubsection{Task testati}
 I task che abbiamo sottoposto agli utenti sono istanze dei task individuati nella fase ``Analisi dei task" e sono i seguenti:
 \begin{itemize}
     \item calcolare il tasso di positività (calcolato come il rapporto tra nuovi positivi e i tamponi effettuati) relativo al 17 novembre;
@@ -19,31 +19,31 @@ I task che abbiamo sottoposto agli utenti sono istanze dei task individuati nell
     \item confrontare la media dei nuovi positivi giornalieri tra il mese di Aprile e il mese di Maggio;
 \end{itemize}
 
-\paragraph{Tipologia di test}
+\subsubsection{Tipologia di test}
 Per quanto riguarda la tipologia di test, abbiamo adottato quella sommativa, in quanto la dashboard del DPC su cui realizzare i test è un applicazione web la cui fase di progettazione è stata già completata: conseguentemente, il fine del test è la ricerca di eventuali problemi che non sono stati scoperti e risolti dagli sviluppatori, nonché la verifica del soddisfacimento delle necessità raccolte all'inizio della progettazione.
 
-\paragraph{Ambito di test}
+\subsubsection{Ambito di test}
 L'ambito del test è stato globale, dal momento che la dashboard del DPC fornisce a tutti i suoi utenti la possibilità di interagire con ogni sua funzione.
 
-\paragraph{Ambiente di test}
+\subsubsection{Ambiente di test}
 Il setting in cui verranno condotti i test ha visto l'utilizzo di software di videoconferenza. Gli assistenti del test siamo stati noi stessi, in qualità di membri del team di design. La selezione dei partecipanti è avvenuta mediante l'invio di una mail agli indirizzi dei giornalisti precedentemente contattati in occasione della ricerca etnografica.
 
-\paragraph{Dati raccolti}
+\subsubsection{Dati raccolti}
 I dati che sono stati raccolti hanno natura quantitativa: in dettaglio, abbiamo chiesto ad ogni giornalista di condurre certi task sull'interfaccia della dashboard del DPC e abbiamo preso nota del numero di problemi emersi, nonché una misura del loro impatto sull'esperienza dell'utente. L'output del test si è concretizzato, pertanto, in un insieme di valori numerici relativi ai giornalisti per ogni task, da cui abbiamo potuto calcolarci la frequenza di ogni problema.
 Dato l'esiguo numero di giornalisti che si sono offerti per il test (7), non abbiamo potuto estrarre informazioni statisticamente significative, tuttavia abbiamo potuto raccogliere importanti suggerimenti di miglioramento circa l'usabilità dell'interfaccia.
 
-\subsubsection{Selezione e preparazione degli assistenti}
+\subsection{Selezione e preparazione degli assistenti}
 Come riportato sopra, il test non ha previsto assistenti esterni, bensì è stato svolto interamente dai noi stessi, in qualità di membri del team di design. Abbiamo, a tal fine, studiato l'interfaccia della dashboard in oggetto, nonché applicato le nozioni apprese durante il corso di \textit{Usability \& User Experience Design}.
 
-\subsubsection{Test pilota}
+\subsection{Test pilota}
 Il test pilota è stato condotto da noi stessi, in qualità di membri del team, tramite cui si è validato il protocollo definito in \ref{subsubsection:progettazione-del-test}: in dettaglio, si è verificata l'esistenza del c.d. happy path, il corretto funzionamento della piattaforma di videoconferenza scelta, il timing totale del test e l'appropriatezza delle richieste.
 
-\subsubsection{Scelta dei partecipanti}
+\subsection{Scelta dei partecipanti}
 Per la scelta dei partecipanti, abbiamo cercato contatti di soggetti afferenti alla segmentazione dell'utenza elaborata nella sezione "Ricerca etnografica". Un criterio che abbiamo seguito è la diversificazione della redazione di riferimento (testata locale, nazionale, d'agenzia ecc.), al fine di avere risultati privi di bias.
 
-\subsubsection{Esecuzione del test}
+\subsection{Esecuzione del test}
 Il test è stato eseguito sulla dashboard del DPC (\href{https://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1}): trattasi di un'applicazione web totalmente funzionante.
-\paragraph{Approccio adottato}
+\subsubsection{Approccio adottato}
 L'approccio seguito è stato quello del \textit{"Thinking aloud"} per cui abbiamo chiesto a ciascun giornalista di eseguire task pre-determinati sull'interfaccia e di riferirci, appunto a voce alta, le sue impressioni e intenzioni step by step.
 
 In questa maniera, abbiamo potuto registrare il numero di errori compiuto da ciascuno e una misura di gravità degli stessi: in dettaglio, i dati sono stati raccolti in una tabella.
@@ -63,7 +63,7 @@ In questa maniera, abbiamo potuto registrare il numero di errori compiuto da cia
     7 & L'utente vuole calcolare l'incremento di nuovi positivi di un periodo predeterminato, ma ha avuto difficoltà a raccogliere i dati relativi a questo periodo (ha dovuto manualmente effettuare le sottrazioni raccogliendo prima i dati per la giornata di inizio e fine del periodo) dato che la dashboard non permette di selezionare range di date. & 20\% & Basso \\ \hline
 \end{longtable}
 
-\subsubsection{Valutazione finale e report}
+\subsection{Valutazione finale e report}
 Abbiamo valutato i dati raccolti calcolando la frequenza degli errori dei diversi giornalisti a fronte di ciascun task e tracciando una curva di urgenza (\ref{fig:urgency-curves}) in termini di frequenza e impatto dei problemi emersi.
 Dal grafico  si evince che i problemi maggiori e quindi più urgenti da risolvere sono 1, 3, 5 e 6. Il problema nr. 5 ha un impatto molto alto anche se è poco frequente e  6 in quanto anche se è poco impattante è molto frequente.
 
