@@ -1,59 +1,59 @@
 \subsection{Operazioni}
 \label{ss:operazioni}
-Di seguito vengono elencati le operazioni che vengono eseguite sui concetti del sistema.
+Di seguito sono elencate le operazioni eseguite sui concetti del sistema.
 \noindent
-\textit{Nota}: La operazione \textit{Remove} in tutti i concetti, escluso il concetto ``Personalizzazione dell'interfaccia", non è reso possibile perché la dashboard mostra serie temporali che hanno senso solo se tutti i dati facente parte di queste serie vengono conservati per intero.
+\textit{Nota}: L'operazione \textit{Remove} in tutti i concetti, ad eccezione di ``Personalizzazione dell'interfaccia", non è permessa perché la dashboard mostra serie temporali che, per loro natura, hanno bisogno che tutti i valori siano conservati.
 
 \subsubsection{Resoconto del giorno a livello nazionale}
 \label{sss:operazioni-resoconto-del-giorno-livello-nazionale}
 \begin{itemize}
-    \item \textit{Create}: la creazione avviene manualmente, e i valori di default sono 0 per tutte le proprietà, ad eccezione di data di riferimento che è di default impostata a quella corrente.
+    \item \textit{Create}: la creazione avviene manualmente e i valori di default sono 0 per tutte le proprietà, ad eccezione della data di riferimento che è impostata a quella corrente.
     La creazione deve avvenire in maniera singola poiché l'istanza è univoca e persistente nel tempo.
-    Non viene fornita alcuna memoria per l'inserimento perché potrebbe portare ad errori di inserimento dell'istanza; i valori di default sono sufficienti.
-    Dovendo essere l'istanza univoca, viene verificato che non vi siano già presenti istanze con la data di riferimento indicata e nel caso vi siano, viene notificato l'attore dell'operazione;
-    \item \textit{View}: modalità di base \textit{Individual Reduced View} perché vengono mostrate immediatamente una serie di proprietà (data di riferimento, nuovi positivi, \dots) che sono ritenute dagli attori fondamentali.
-    Altre ritenute meno importanti sono disponibili su richiesta, mostrando il concetto in modalità \textit{Full Individual View};
+    Non viene fornita alcuna memoria per l'inserimento perché potrebbe portare ad errori: i valori di default sono sufficienti.
+    Dovendo essere l'istanza univoca, viene verificata la presenza di istanze con la stessa data e, in caso affermativo, viene restituita una notifica di errore all'attore che ha svolto quell'operazione;
+    \item \textit{View}: modalità di base \textit{Individual Reduced View} perché vengono mostrate immediatamente una serie di proprietà (data di riferimento, nuovi positivi, \dots) che sono ritenute fondamentali dagli attori.
+    Altre considerate meno importanti sono disponibili su richiesta e mostrano il concetto in modalità \textit{Full Individual View};
     \item \textit{Update}: è permessa solamente la modalità \textit{Specific Update} (la data di riferimento, una volta inserita, non può essere modificata);
     \item \textit{Remove}: non possibile.
 \end{itemize}
 
 \subsubsection{Resoconto del giorno a livello regionale}
 \label{sss:operazioni-resoconto-del-giorno-livello-regionale}
-Vale quanto indicato per \textbf{Resoconto del giorno a livello nazionale} ma, nell'operazione \textit{Create}, il nome della regione è un dato necessario da inserire e non è possibile fornire un valore di default.
-Nel caso in cui il nome della regione non fosse esistente l'attore verrebbe notificato.
+Vale quanto indicato in \hyperref[sss:operazioni-resoconto-del-giorno-livello-nazionale]{Resoconto del giorno a livello nazionale} ma, nell'operazione \textit{Create}, il nome della regione è un dato necessario da inserire e non è possibile fornire un valore di default.
+Nel caso in cui il nome della regione non fosse esistente, viene restituita una notifica di errore all'attore.
 
 \subsubsection{Resoconto del giorno a livello provinciale}
 \label{sss:operazioni-resoconto-del-giorno-livello-provinciale}
 \begin{itemize}
-    \item \textit{Create}: come per \textit{Create} nei concetti \textbf{Resoconto del giorno a livello nazionale} e \textbf{Resoconto del giorno a livello regionale} ma, anche in questo caso, il nome della provincia è un dato necessario da inserire e di cui non si può fornire un valore di default.
-    Nel caso in cui il nome della provincia non fosse esistente o non appartenesse alla regione indicata l'attore verrebbe notificato.;
+    \item \textit{Create}: come per \textit{Create} in \hyperref[sss:operazioni-resoconto-del-giorno-livello-nazionale]{Resoconto del giorno a livello nazionale} e \hyperref[sss:operazioni-resoconto-del-giorno-livello-regionale]{Resoconto del giorno a livello regionale}, eccetto che per il nome della provincia che è un dato necessario da inserire e di cui non si può fornire un valore di default.
+    Nel caso in cui il nome della provincia non esistesse o non appartenesse alla regione indicata, viene restituita una notifica di errore all'attore;
     \item \textit{View}: date le poche proprietà, viene sfruttata la visualizzazione \textit{Full Individual View};
-    \item \textit{Update}: come per \textit{Update} nei concetti \textbf{Resoconto del giorno a livello nazionale} e \textbf{Resoconto del giorno a livello regionale};
+    \item \textit{Update}: come per \textit{Update} in \hyperref[sss:operazioni-resoconto-del-giorno-livello-nazionale]{Resoconto del giorno a livello nazionale} e \hyperref[sss:operazioni-resoconto-del-giorno-livello-regionale]{Resoconto del giorno a livello regionale};
     \item \textit{Remove}: non possibile.
 \end{itemize}
 
 \subsubsection{Situazione a livello nazionale}
 \label{sss:operazioni-situazione-livello-nazionale}
-Vale quanto indicato per \textbf{Resoconto del giorno a livello nazionale}.
+Vale quanto indicato in \hyperref[sss:operazioni-resoconto-del-giorno-livello-nazionale]{Resoconto del giorno a livello nazionale}.
 
 \subsubsection{Situazione a livello regionale}
 \label{sss:operazioni-situazione-livello-regionale}
-Vale quanto indicato per \textbf{Resoconto del giorno a livello regionale}.
+Vale quanto indicato in \hyperref[sss:operazioni-resoconto-del-giorno-livello-regionale]{Resoconto del giorno a livello regionale}.
 
 \subsubsection{Situazione a livello provinciale}
 \label{sss:operazioni-situazione-livello-provinciale}
-Vale quanto indicato per \textbf{Resoconto del giorno a livello provinciale}.
+Vale quanto indicato in \hyperref[sss:operazioni-resoconto-del-giorno-livello-provinciale]{Resoconto del giorno a livello provinciale}.
 
 \subsubsection{Provvedimento}
 \label{sss:operazioni-provvedimento}
 \begin{itemize}
-    \item \textit{Create}: la creazione di un'istanza di questo concetto avviene manualmente ogni qual volta un ente istituzionale pubblica un provvedimento per il contrasto del Covid-19.
+    \item \textit{Create}: la creazione di un'istanza avviene manualmente ogni qual volta un ente istituzionale emana un provvedimento in materia di contrasto alla pandemia.
     Non ci sono valori di default perché tutti i provvedimenti sono unici e non ha senso fornire valori iniziali.
     La creazione può avvenire in contemporanea per più istanze di più provvedimenti.
-    Una volta creata l'istanza essa resta memorizzata.
+    Una volta creata l'istanza, resta memorizzata.
     Non vi è alcun suggerimento di valori precedentemente inseriti per il carattere eterogeneo delle istanze.
-    In caso sia già stato inserito un provvedimento con lo stesso nome o manchino alcune proprietà non è possibile la creazione dell'istanza.
-    \item \textit{View}: viene utilizzata la visualizzazione \textit{Full Individual View}, in quanto le proprietà sono poche ed essenziali, quindi vanno mostrate per intero.
+    In caso sia già stato inserito un provvedimento con lo stesso nome o manchino alcune proprietà, la creazione viene impedita.
+    \item \textit{View}: viene utilizzata la visualizzazione \textit{Full Individual View}, in quanto le proprietà sono poche ed essenziali, quindi vanno mostrate per intero;
     \item \textit{Update}: è permessa la modalità \textit{Global Update} poiché ogni proprietà è modificabile;
     \item \textit{Remove}: non possibile.
 \end{itemize}
@@ -62,10 +62,10 @@ Vale quanto indicato per \textbf{Resoconto del giorno a livello provinciale}.
 \label{sss:operazioni-personalizzazione-interfaccia}
 \begin{itemize}
     \item \textit{Create}: la creazione di una personalizzazione avviene implicitamente, apportando delle modifiche alle schermate della dashboard (ad esempio tramite drag \& drop delle componenti visive oppure la scelta di visualizzarne o nasconderne altre).
-    È fornita una personalizzazione di default che è quella presentata al primo caricamento della dashboard ed è quella che viene presentata in Sezione 4.5.
+    È fornita una personalizzazione di default che è quella presentata al primo caricamento della dashboard ed è quella che viene presentata nella sezione \hyperref[s:struttura-blueprint]{4.5 Blueprint}.
     Ogni attore può elaborare una personalizzazione della dashboard alla volta.
     Il concetto è persistente.
-    \item \textit{View}: la proprietà ``posizione delle componenti dell'interfaccia" è implicitamente visibile e la presenza/assenza è agevolmente mostrabile, di conseguenza viene sfruttata una visualizzazione ``Full Individual View";
+    \item \textit{View}: la proprietà ``posizione delle componenti dell'interfaccia" è implicitamente visibile e la presenza/assenza è visualizzabile agevolmente, per cui viene sfruttata una visualizzazione ``Full Individual View";
     \item \textit{Update}: è permessa la modalità \textit{Global Update} poiché ogni proprietà è modificabile;
     \item \textit{Remove}: il concetto è eliminabile (non archiviabile).
 \end{itemize}
