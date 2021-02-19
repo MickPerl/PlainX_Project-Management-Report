@@ -24,6 +24,20 @@
 \usepackage{subcaption}
 \usepackage{float}
 
+\usepackage[tikz]{bclogo}
+
+\newcommand\monimage{\includegraphics[height = 17 pt]{assets/images/iterate.png}}
+
+\presetkeys{bclogo}{
+    ombre=true,
+    epBord=3,
+    couleur = blue!15!white,
+    couleurBord = red,
+    arrondi = 0.2,
+    logo = \monimage
+}{}
+
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
