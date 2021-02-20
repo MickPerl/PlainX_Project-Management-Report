@@ -22,3 +22,4 @@ Panoramica (caricamento dashboard)
 6 - Analisi di periodi: SELETTORE METRICHE
 7 - Analisi di periodi: SELETTORE METRICHE (Isolamento domiciliare)
 1 - Distribuzione dati anagrafici: TUTTO CHIUSO
+2 - Distribuzione dati anagrafici: SELETTORE METRICHE
