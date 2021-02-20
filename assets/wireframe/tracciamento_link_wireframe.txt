@@ -10,7 +10,8 @@ Panoramica (caricamento dashboard)
 9 - Panoramica: METRICHE TABELLA
 10 - Panoramica: NOTE
 11 - Panoramica: PROVVEDIMENTI
-1 - Panoramica (filtro su regione): MOLISE 
+12 - Panoramica: GRAFICO ZOOMATO
+13 - Panoramica: Filtro su regione MOLISE 
 1 - Confronto fra regioni: REGIONE MOLISE
 2 - Confronto fra regioni: SELETTORE REGIONI
 3 - Confronto fra regioni: SLIDER ANDAMENTO % Attuali positivi
