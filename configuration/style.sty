@@ -24,6 +24,20 @@
 \usepackage{subcaption}
 \usepackage{float}
 
+\usepackage[tikz]{bclogo}
+
+\newcommand\monimage{\includegraphics[height = 17 pt]{assets/images/iterate.png}}
+
+\presetkeys{bclogo}{
+    ombre=true,
+    epBord=2,
+    couleur = blue!15!white,
+    couleurBord = blue,
+    arrondi = 0.2,
+    logo = \monimage
+}{}
+
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -38,11 +52,11 @@
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt} 
 \fancyhf{}
-\fancyhead[L]{Plain X - Project Management Report}
-\fancyhead[R]{Alma Mater Studiorum - Università di Bologna}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{Plain X - Project Management Report}
 \fancyfoot[L]{X-Spark (Marco Ferrati, Michele Perlino, Tommaso Azzalin)}
 \fancyfoot[R]{Pagina \thepage\ di \pageref*{LastPage}}
-\setlength{\headheight}{13.6pt}
+\setlength{\headheight}{14.5pt}
 
 \setcounter{tocdepth}{4}
 
