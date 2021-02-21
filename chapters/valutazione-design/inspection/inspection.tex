@@ -1,2 +1,326 @@
 \section{Inspection}
 \label{s:inspection}
+
+\subsection{Cognitive walkthrough}
+\label{ss:cognitive-walkthrough}
+
+\subsubsection{Task 1}
+\label{sss:cw-task-1}
+Il giornalista di testata nazionale/locale accede alla dashboard del DPC attraverso il browser.
+Vuole raccogliere le seguenti metriche sull'andamento della pandemia a livello nazionale per la giornata odierna: nuovi positivi, tasso di positività, tamponi effettuati, decessi, i dimessi e i guariti, gli attuali positivi.
+Vuole inoltre sapere quali sono i colori (secondo i DPCM 03/11/2020 e DPCM 16/01/2021) delle regioni.
+Raccoglie le metriche indicate nei modi seguenti:
+\begin{enumerate}[label=\alph*.]
+    \item Nuovi positivi: il giornalista, per esperienza su altre dashboard, sa che il dato dei nuovi positivi viene scritto solitamente come variazione nel box dei Totale casi; tuttavia, essendo la prima visita a questa dashboard, legge le etichette di tutti gli altri box, per essere sicuro che non sia indicato in altre parti; non trovando un esplicito riferimento altrove, assume che anche in questa dashboard sia mantenuta la convenzione di cui sopra;
+    \item Tasso di positività e tamponi effettuati: il giornalista, individua a colpo d'occhio l'etichetta "Tasso di positività" nel box "Totale casi" e legge il valore subito sottostante, tuttavia si accorge della presenza di un bottone sotto il box con la stessa etichetta; premendolo viene visualizzato un grafico con l'andamento temporale del tasso di positività dall'inizio della pandemia e per curiosità, posizionando il cursore al di sopra della curva appare un tooltip che visualizza il tasso effettivo alla posizione del cursore e i tamponi effettuati a quella data;
+    \item Decessi: il giornalista individua il box dei "Decessi" a colpo d'occhio e vedendo due numeri con magnitudo completamente diversi, capisce che il minore dei due è quello dei decessi odierni;
+    \item Dimessi e guariti: il giornalista individua il box dei "Dimessi e guariti" a colpo d'occhio e vedendo due numeri con magnitudo completamente diversi, capisce che il minore dei due è quello dei dimessi e guariti odierni;
+    \item Attuali positivi: il giornalista individua il box dei "Dimessi e guariti" a colpo d'occhio e vedendo due numeri con magnitudo completamente diversi, capisce che il minore dei due è quello dei dimessi e guariti odierni;
+    \item Colori delle regioni: il giornalista nota che la mappa presente nella schermata è divisa in regioni e ogni regione ha un colore fra arancio, giallo, rosso. Di conseguenza assume che quelli siano i colori relativi ai DPCM 03/11/2020 e DPCM 16/01/2021. Nota che nella mappa vi è un icona a forma di ingranaggio, che ricorda l'idea di "personalizzazione" o "impostazioni" come nelle principali applicazioni e sistemi operativi e, cliccandoci sopra, vede che è selezionata la voce "Monitoraggio regioni", avendo la conferma che i colori visualizzati sono effettivamente quelli introdotti dai DPCM.
+\end{enumerate}
+Una volta raccolti i valori delle metriche verifica come questi si rapportano fra di loro e infine li confronta con i dati della giornata precedente: ha compreso come raccogliere le metriche ma deve ora vedere quelle della giornata precedente.
+Per fare ciò, nota che nella barra di navigazione in alto vi è la data odierna e subito accanto un'icona di calendario e una freccia verso sinistra che sembra indicare la possibilità di cambiare la visualizzazione con i dati della giornata precedente.
+Premendo tale pulsante nota che la data cambia e di conseguenza anche tutti i dati visualizzati.
+Ha conferma quindi del cambio dei dati e può ora procedere alla redazione del suo articolo.
+
+\begin{bclogo}{Aggiustamenti apportati dopo il Cognitive Walkthrough sul Task 1}
+    Il CW risulta carente in tutti i punti fuori che l'ultimo, f).
+    Infatti, nei primi punti, l'incertezza del giornalista e il tempo che ha impiegato per leggere tutti i box ci ha spinto ad effettuare una nuova ITERAZIONE che si è concretizzata nell'aggiunta di un'etichetta che esplicita ciò a cui si riferiscono le variazioni di ogni box.
+    Per questo motivo, sopra ad ogni valore odierno dei box nella schermata "Situazione  odierna nazionale" viene aggiunta una nuova etichetta come già fatto per gli altri valori nei box medesimi.
+\end{bclogo}
+
+\subsubsection{Task 2}
+\label{sss:cw-task-2}
+
+Il giornalista di testata nazionale/locale accede alla dashboard del DPC attraverso il browser.
+Vuole raccogliere le seguenti metriche sull'andamento della pandemia a livello nazionale per la giornata odierna: nuovi ingressi in terapia intensiva, tasso di occupazione delle terapie intensive, capacità delle terapie intensive, le ospedalizzazioni.
+Raccoglie le metriche indicate nei modi seguenti:
+\begin{enumerate}[label=\alph*.]
+    \item Ingressi in terapia intensiva: il giornalista individua il box "Terapie intensive" ma non riesce a trovare il numero degli ingressi odierni in terapia intensiva. \textbf{È richiesta una riprogettazione};
+    \item Tasso di occupazione delle terapie intensive: il giornalista, individua il pulsante "Tasso di occupazione" sotto al box "Terapie intensive"; cliccando su di esso viene visualizzato un indicatore di livello (\textit{gauge}) con visualizzata la metrica richiesta;
+    \item Ospedalizzazioni: il giornalista non riesce a trovare un box che lo presenti, individua però nel box "Attuali positivi" il tasso di ospedalizzazioni sul totale degli attuali positivi. \textbf{È richiesta una riprogettazione}.
+\end{enumerate}
+
+\begin{bclogo}{Aggiustamenti apportati dopo il Cognitive Walkthrough sul Task 2}
+    L'utente non è in grado allo stato attuale dell'interfaccia di compiere quanto richiesto al punto a).
+    Viene quindi effettuata la seguente modifica:
+    \begin{itemize}
+        \item Viene sostituito nel box "Terapie intensive" l'etichetta "Tasso di occupazione" e il relativo valore con la nuova etichetta "Ingressi del giorno" e il valore numerico relativo ai pazienti entrati in terapia intensiva nella giornata correntemente visualizzata dalla dashboard;
+        \item "Tasso di occupazione" viene tranquillamente sostituito in quanto già presente in un'altra parte dell'interfaccia, come indicato al punto b).
+    \end{itemize}
+    Anche nel caso indicato al punto c), l'utente non è in grado di svolgere quanto voluto.
+    Per questo motivo viene nuovamente modificata l'interfaccia, come segue:
+    \begin{itemize}
+        \item si è proceduto col creare un nuovo tab del box "Attuali positivi" dall'etichetta "Tasso ospedalizzazione": cliccando sul bottone relativo, viene mostrato all'utente un indicatore di livello che indica la percentuale dei soggetti attualmente positivi e che sono ricoverati in ospedale.
+    \end{itemize}
+\end{bclogo}
+
+\subsubsection{Task 3}
+\label{sss:cw-task-3}
+
+Il giornalista di testata nazionale accede alla dashboard del DPC attraverso il browser.
+Vuole raccogliere le seguenti metriche: numero di deceduti e il totale dei casi al giorno di inizio e a quello di fine del periodo.
+Essendo interessato a valutare l'andamento di una metrica relativamente ad un periodo di tempo, ecco che si dirige sulla schermata "Confronto tra periodi", il cui titolo sembra essere particolarmente appropriato per il suo bisogno: usa il widget "calendario" attivabile mediante click sull'icona a forma di calendario per indicare la data di inizio e fine periodo, osserva sul grafico "decessi" i dati a cui è interessato.
+
+\begin{bclogo}{Aggiustamenti apportati dopo il Cognitive Walkthrough sul Task 3}
+    Questo task può essere completato con successo dal giornalista sulla dashboard riprogettata, tuttavia la sua rilettura ci ha dato l'idea di includere anche la metrica "Tasso di letalità", ossia l'aggregato ottenibile rapportando il numero dei decessi al numero dei casi totali: così facendo, l'utente è sollevato dalla necessità di compiere i calcoli e ottiene il valore della metrica di interesse con un semplice click.
+    In dettaglio, per questioni di spazio, abbiamo aggiunto un ulteriore bottone nell'header tramite cui l'utente può scegliere quali componenti grafiche devono apparire nella schermata.
+\end{bclogo}
+
+\subsubsection{Task 4}
+\label{sss:cw-task-4}
+
+Il giornalista di testata nazionale accede alla dashboard del DPC attraverso il browser.
+Vuole raccogliere le seguenti metriche: positivi nel periodo, deceduti nel periodo, ospedalizzati nel periodo, guariti nel periodo) all'inizio e alla fine del periodo. 
+Per farlo si reca nella sezione "Confronto tra periodi" utilizzando il link.
+Utilizza il widget "calendario" cliccando sull'icona a forma di calendario e inserisci il periodo di suo interesse.
+Si sposta nella sezione "Distribuzione anagrafica" con il link apposito e legge i valori mostrati: in dettaglio, legge valori aggregati da funzioni statistiche quali la mediana, la media aritmetica, proporzione percentuale che lo sollevano dalla necessità di compiere questi calcoli a mano.
+
+\subsubsection{Task 5}
+\label{sss:cw-task-5}
+
+Il giornalista di testata nazionale accede alla dashboard del DPC attraverso il browser.
+Vuole raccogliere le seguenti metriche relative alle regioni di interesse: nuovi positivi, tasso di positività, tamponi effettuati, decessi, i dimessi e i guariti, gli attuali positivi, nuovi ingressi in terapia intensiva, tasso di occupazione delle terapie intensive, capacità delle terapie intensive, le ospedalizzazioni,  numero di deceduti e il totale dei casi.
+Per farlo si reca nella sezione "Confronto tra regioni" e procede col selezionare sulla mappa le regioni che intende confrontare.
+Individua alcune delle metriche di interesse nei grafici a linea della schermata e opera sul bottone a ghiera per ottenere le metriche ancora non visibili.
+Sposta il puntatore sulle linee i cui rapporti intende analizzare e legge il tooltip che appare, così da riuscire a ricavare conclusioni sul confronto.
+
+\subsubsection{Task 6}
+\label{sss:cw-task-6}
+
+Il giornalista di testata nazionale accede alla dashboard del DPC attraverso il browser.
+Vuole raccogliere le seguenti metriche relative ai periodi di interesse: nuovi positivi, tasso di positività, tamponi effettuati, decessi, i dimessi e i guariti, gli attuali positivi, nuovi ingressi in terapia intensiva, tasso di occupazione delle terapie intensive, capacità delle terapie intensive, le ospedalizzazioni,  numero di deceduti e il totale dei casi.
+Per farlo si reca nella sezione "Confronto tra periodi" e procede col cliccare sulle icone del calendario, per poi indicare data di inizio e di fine dei periodi che intende confrontare.
+Legge quindi i valori delle metriche che vengono restituiti e analizza il loro andamento mediante i grafici a linea presenti nella parte inferiore della schermata; conseguentemente riesce a trarre conclusioni. 
+
+\subsection{Informal Action Analysis}
+\label{ss:informal-action-analysis}
+Peso delle azioni:
+\begin{itemize}
+    \item Molto breve (0-2 s) (1-2 azioni atomiche)
+    \item Breve (3-5s) (3-4 azioni atomiche)
+    \item Medio (6-10s) (5-7 azioni atomiche)
+    \item Lungo (11-20s) (8-10 azioni atomiche)
+    \item Molto lungo (> 20 s) (> 10 azioni atomiche)
+\end{itemize}
+
+\subsubsection{Task 1}
+\label{sss:iaa-task-1}
+{
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h]{| c | c |}
+    \hline
+    \textit{Azione atomica} & \textbf{Peso} \\
+    \hline
+    \endhead
+    Lettura del contenuto di un box relativo a ciascuna delle seguenti metriche: totale casi, decessi, attuali positivi, dimessi/guariti) mostrate a schermo & Molto lungo \\
+    \hline
+    Clicca sul bottone "Tasso di positività" del box numerico "totale casi" & Molto breve  \\
+    \hline
+    Lettura grafico apparso e interazione e lettura tooltip & Medio \\
+    \hline
+    Clicca su bottone "Andamento" dei box numerici di cui ha letto i valori al punto 1 & Molto breve \\
+    \hline
+    Lettura grafico apparso e interazione e lettura tooltip & Medio \\
+    \hline
+    Identifica la regione nella tabella (in caso scorrendola) e legge la riga di suo interesse & Medio \\
+    \hline
+    Clicca sulla regione di suo interesse & Molto breve \\
+    \hline
+\end{longtable}
+}
+
+\subsubsection{Task 2}
+\label{sss:iaa-task-2}
+
+{
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h]{| c | c |}
+    \hline
+    \textit{Azione atomica} & \textbf{Peso} \\
+    \hline
+    \endhead
+    Lettura delle nuove ospedalizzazioni del giorno dal box "Attuali positivi" & Molto breve \\
+    \hline
+    Clicca sul bottone "Tasso ospedalizzazione" & Molto breve  \\
+    \hline
+    Lettura grafico apparso e interazione e lettura tooltip & Medio \\
+    \hline
+    Lettura del numero di posti in terapia intensiva occupati dal box "Terapie intensive" & Molto breve \\
+    \hline
+    Clicca sul bottone "Tasso occupazione" & Molto breve \\
+    \hline
+    Lettura grafico apparso e interazione e lettura tooltip & Medio \\
+    \hline
+\end{longtable}
+}
+
+
+\subsubsection{Task 3}
+\label{sss:iaa-task-3}
+
+{
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h]{| c | c |}
+    \hline
+    \textit{Azione atomica} & \textbf{Peso} \\
+    \hline
+    \endhead
+    Cliccare su link "Confronto tra periodi" & Molto breve \\
+    \hline
+    Inserimento data inizio e fine & Breve  \\
+    \hline
+    Ricercare la metrica tasso di letalità, fallendo & Breve \\
+    \hline
+    Lettura veloce degli elementi della schermata con individuazione del ante "Metriche disponibili" & Breve \\
+    \hline
+    Cliccare sul bottone "Metriche disponibili" & Molto breve \\
+    \hline
+    Individuare metrica "Tasso di letalità"  & Breve \\
+    \hline
+    Cliccare su metrica individuata e lettura tooltip con istruzioni circa l'interazione necessaria per selezionarlo & Breve \\
+    \hline
+    Trascinare dentro alla dashboard la metrica in oggetto nella posizione desiderata & Molto breve \\
+    \hline
+    Lettura valori & Molto breve \\
+    \hline
+\end{longtable}
+}
+
+\subsubsection{Task 4}
+\label{sss:iaa-task-4}
+
+{
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h]{| c | c |}
+    \hline
+    \textit{Azione atomica} & \textbf{Peso} \\
+    \hline
+    \endhead
+    Cliccare su link "Distribuzione anagrafica" & Molto breve \\
+    \hline
+    Cliccare sull'icona del calendario e inserimento periodo di interesse & Breve  \\
+    \hline
+    Lettura metriche & Breve \\
+    \hline
+    Lettura veloce degli elementi della schermata con individuazione del bottone "Metriche disponibili" & Breve \\
+    \hline
+    Cliccare sul bottone "Metriche disponibili" & Molto breve \\
+    \hline
+    Individuare metrica "Tasso di letalità"  & Breve \\
+    \hline
+    Cliccare su metrica individuata e lettura tooltip con istruzioni circa l'interazione necessaria per selezionarlo & Breve \\
+    \hline
+    Trascinare dentro alla dashboard la metrica in oggetto nella posizione desiderata & Molto breve \\
+    \hline
+    Lettura valori & Molto breve \\
+    \hline
+\end{longtable}
+}
+
+\subsubsection{Task 5}
+\label{sss:iaa-task-5}
+
+L'utente seleziona le regioni di interesse (Breve) e quindi compie il task 1, 2 e 3.
+Interagisce coi grafici per analizzare l'andamento e legge il contenuto dei tooltip che appaiono (Medio).
+
+\subsubsection{Task 6}
+\label{sss:iaa-task-6}
+
+{
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h]{| c | c |}
+    \hline
+    \textit{Azione atomica} & \textbf{Peso} \\
+    \hline
+    \endhead
+    Cliccare sul link "Confronto tra periodi" & Molto breve \\
+    \hline
+    Inserimento periodi di interesse & Medio  \\
+    \hline
+    Lettura grafico apparso e interazione e lettura tooltip & Medio \\
+    \hline
+    Cliccare sul bottone "Metriche disponibili" & Molto breve \\
+    \hline
+    Individuare metriche di interesse & Breve \\
+    \hline
+    Cliccare su metriche di interesse e lettura tooltip con istruzioni circa l'interazione necessaria per selezionarlo & Breve \\
+    \hline
+    Trascinare dentro alla dashboard la metrica in oggetto nella posizione desiderata & Molto breve \\
+    \hline
+    Lettura valori & Molto breve \\
+    \hline
+\end{longtable}
+}
+
+\subsection{Heuristic Analysis}
+\label{ss:heuristic-analysis}
+
+\begin{enumerate}
+    \item Non valutabile
+    \item \begin{enumerate}[label=\Alph*]
+        \item Rispettato
+        \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+        \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+        \item Non valutabile
+        \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+    \end{enumerate}
+    \item Rispettato
+    \item Rispettato
+    \item \begin{enumerate}[label=\Alph*]
+        \item Rispettato
+        \item Rispettato
+    \end{enumerate}
+    \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+    \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item \begin{enumerate}[label=\Alph*]
+        \item Rispettato
+        \item Rispettato
+    \end{enumerate}
+    \item Non valutabile
+    \item \begin{enumerate}[label=\Alph*]
+        \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+        \item Non valutabile
+    \end{enumerate}
+    \item \begin{enumerate}[label=\Alph*]
+        \item Rispettato
+        \item Rispettato
+    \end{enumerate}
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item \begin{enumerate}[label=\Alph*]
+        \item Non valutabile
+        \item Rispettato
+    \end{enumerate}
+    \item \begin{enumerate}[label=\Alph*]
+        \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+        \item Non valutabile
+    \end{enumerate}
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Inizialmente non rispettato, sistemato nelle successive iterazioni dei wireframe
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Rispettato
+    \item Non valutabile
+    \item Rispettato
+    \item Non valutabile
+    \item Rispettato
+    \item Rispettato
+\end{enumerate}
