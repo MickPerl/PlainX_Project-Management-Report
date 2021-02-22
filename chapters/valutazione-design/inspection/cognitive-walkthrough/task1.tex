@@ -1,0 +1,24 @@
+\subsubsection{Task 1}
+\label{sss:cw-task-1}
+Il giornalista di testata nazionale/locale accede alla dashboard del DPC attraverso il browser.
+Vuole raccogliere le seguenti metriche sull'andamento della pandemia a livello nazionale per la giornata odierna: nuovi positivi, tasso di positività, tamponi effettuati, decessi, i dimessi e i guariti, gli attuali positivi.
+Vuole inoltre sapere quali sono i colori (secondo i DPCM 03/11/2020 e DPCM 16/01/2021) delle regioni.
+Raccoglie le metriche indicate nei modi seguenti:
+\begin{enumerate}[label=\alph*.]
+    \item Nuovi positivi: il giornalista, per esperienza su altre dashboard, sa che il dato dei nuovi positivi viene scritto solitamente come variazione nel box dei Totale casi; tuttavia, essendo la prima visita a questa dashboard, legge le etichette di tutti gli altri box, per essere sicuro che non sia indicato in altre parti; non trovando un esplicito riferimento altrove, assume che anche in questa dashboard sia mantenuta la convenzione di cui sopra;
+    \item Tasso di positività e tamponi effettuati: il giornalista, individua a colpo d'occhio l'etichetta "Tasso di positività" nel box "Totale casi" e legge il valore subito sottostante, tuttavia si accorge della presenza di un bottone sotto il box con la stessa etichetta; premendolo viene visualizzato un grafico con l'andamento temporale del tasso di positività dall'inizio della pandemia e per curiosità, posizionando il cursore al di sopra della curva appare un tooltip che visualizza il tasso effettivo alla posizione del cursore e i tamponi effettuati a quella data;
+    \item Decessi: il giornalista individua il box dei "Decessi" a colpo d'occhio e vedendo due numeri con magnitudo completamente diversi, capisce che il minore dei due è quello dei decessi odierni;
+    \item Dimessi e guariti: il giornalista individua il box dei "Dimessi e guariti" a colpo d'occhio e vedendo due numeri con magnitudo completamente diversi, capisce che il minore dei due è quello dei dimessi e guariti odierni;
+    \item Attuali positivi: il giornalista individua il box dei "Dimessi e guariti" a colpo d'occhio e vedendo due numeri con magnitudo completamente diversi, capisce che il minore dei due è quello dei dimessi e guariti odierni;
+    \item Colori delle regioni: il giornalista nota che la mappa presente nella schermata è divisa in regioni e ogni regione ha un colore fra arancio, giallo, rosso. Di conseguenza assume che quelli siano i colori relativi ai DPCM 03/11/2020 e DPCM 16/01/2021. Nota che nella mappa vi è un icona a forma di ingranaggio, che ricorda l'idea di "personalizzazione" o "impostazioni" come nelle principali applicazioni e sistemi operativi e, cliccandoci sopra, vede che è selezionata la voce "Monitoraggio regioni", avendo la conferma che i colori visualizzati sono effettivamente quelli introdotti dai DPCM.
+\end{enumerate}
+Una volta raccolti i valori delle metriche verifica come questi si rapportano fra di loro e infine li confronta con i dati della giornata precedente: ha compreso come raccogliere le metriche ma deve ora vedere quelle della giornata precedente.
+Per fare ciò, nota che nella barra di navigazione in alto vi è la data odierna e subito accanto un'icona di calendario e una freccia verso sinistra che sembra indicare la possibilità di cambiare la visualizzazione con i dati della giornata precedente.
+Premendo tale pulsante nota che la data cambia e di conseguenza anche tutti i dati visualizzati.
+Ha conferma quindi del cambio dei dati e può ora procedere alla redazione del suo articolo.
+
+\begin{bclogo}{Aggiustamenti apportati dopo il Cognitive Walkthrough sul Task 1}
+    Il CW risulta carente in tutti i punti fuori che l'ultimo, f).
+    Infatti, nei primi punti, l'incertezza del giornalista e il tempo che ha impiegato per leggere tutti i box ci ha spinto ad effettuare una nuova ITERAZIONE che si è concretizzata nell'aggiunta di un'etichetta che esplicita ciò a cui si riferiscono le variazioni di ogni box.
+    Per questo motivo, sopra ad ogni valore odierno dei box nella schermata "Situazione  odierna nazionale" viene aggiunta una nuova etichetta come già fatto per gli altri valori nei box medesimi.
+\end{bclogo}
