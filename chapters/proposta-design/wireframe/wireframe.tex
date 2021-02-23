@@ -249,7 +249,51 @@ La mappa (\ref{fig:mappa-panoramica}) è uno strumento utile per avere un colpo 
 
 Cliccando su di una regione della tabella è inoltre possibile passare alla vista regionale della schermata ``Panoramica'' come in~\ref{fig:panoramica-regione}. Oltre a cliccare sulla riga dell'Italia nella tabella, per tornare alla panoramica nazionale è possible anche cliccare al di fuori dei confini regionali nella mappa.
 
+\paragraph{Caricamento dei dati}
+Abbiamo previsto una schermata di caricamento in attesa che i dati vengano scaricati e computati prima di essere mostrati; abbiamo usato degli spinner per indicare ciò.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\columnwidth]{wireframes/panoramica-caricamento}
+    \caption{Schermata ``Panoramica'' durante il caricamento dei dati.}
+    \label{fig:panoramica-caricamento}
+\end{figure}
+
+
 \subsubsection{Confronto fra regioni}\label{ss:confronto-fra-regioni}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\columnwidth]{wireframes/confronto-regioni}
+    \caption{Schermata ``Confronto fra regioni''.}
+    \label{fig:confronto-regioni}
+\end{figure}
+La schermata ``Confronto fra regioni'' è raggiungibile cliccando sul link in alto a destra. In questa schermata è possibile selezionare una o più regioni per confrontare alcune metriche mediante dei grafici. La selezione avviene mediate una lista \textit{ComboBox} posizionata al di sopra dell mappa, come mostrato in~\ref{fig:seleziona-regione}, oppure cliccando direttamento sull'area della regione che si vuole aggiungere al confronto. Le regione selezionate sono indicate tramite una spunta (\checkmark) e i loro confini sono colorati con gli stessi colori assunti poi nei grafici.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\columnwidth]{wireframes/seleziona-regione}
+    \caption{ComboBox per la selezione delle regioni.}
+    \label{fig:seleziona-regione}
+\end{figure}
+
+I grafici presenti sulla parte sinistra della schermata, di cui~\ref{fig:esempio-grafico-confronto-regioni} ne è un esempio, sono formati da diverse linee, una per regione selezionata; ogni regione è riconoscibile tramite colore e tramite tratteggio, queste due caratteristiche sono uniche per ogni regione in modo che anche chi ha difficoltà a riconoscere i colori possa comprendere il grafico.
+
+\begin{figure}[H]
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{wireframes/esempio-grafico-confronto-regioni-poco-tempo}
+        \caption{Grafico per il quale è stato selezionato un range temporale di breve durata.}
+        \label{fig:esempio-grafico-confronto-regioni-poco-tempo}
+    \end{subfigure}
+\hfill
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{wireframes/esempio-grafico-confronto-regioni-molto-tempo}
+        \caption{Grafico per il quale è selezionato un range temporale di lunga durata.}
+        \label{fig:esempio-grafico-confronto-regioni-molto-tempo}
+    \end{subfigure}
+    \caption{Differenze tra un grafico in cui è selezionato un range di tempo di breve durata e uno di lunga.}
+    \label{fig:esempio-grafico-confronto-regioni}
+\end{figure}
 
 \subsubsection{Analisi di periodi}\label{ss:analisi-di-periodi}
 
