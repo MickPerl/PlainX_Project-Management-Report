@@ -1,0 +1,23 @@
+\subsubsection{Task 2}
+\label{sss:cw-task-2}
+
+Il giornalista di testata nazionale/locale accede alla dashboard del DPC attraverso il browser.\\
+Vuole raccogliere, relativamente alla giornata odierna, le seguenti metriche sull'andamento della pandemia a livello nazionale: nuovi ingressi in terapia intensiva, tasso di occupazione delle terapie intensive, capacità totale delle terapie intensive, le ospedalizzazioni.\\
+Raccoglie le metriche indicate nei modi seguenti:
+\begin{enumerate}
+    \item Ingressi in terapia intensiva: il giornalista individua il box ``Terapie intensive" ma non riesce a trovare il numero degli ingressi odierni in terapia intensiva. \textbf{È richiesta un'iterazione correttiva};\label{cw2:a}
+    \item Tasso di occupazione e capacità delle terapie intensive: il giornalista individua il pulsante ``Tasso di occupazione" sotto al box ``Terapie intensive"; cliccando su di esso viene visualizzato un indicatore di livello (\textit{gauge}) con visualizzati i valori della metriche richieste; \label{cw2:b}
+    \item Ospedalizzazioni: il giornalista non riesce a trovare un box che lo presenti, mentre individua nel box ``Attuali positivi" il tasso di ospedalizzazioni sul totale degli attuali positivi. \textbf{È richiesta un'iterazione correttiva}. \label{cw2:c}
+\end{enumerate}
+
+\begin{bclogo}{Nuova iterazione a seguito del CW sul Task 2}
+    L'utente non è in grado di compiere quanto richiesto al punto \hyperref[cw2:a]{1}, con l'interfaccia che gli è fornita, per cui sono apportate la seguente modifiche:
+    \begin{itemize}
+        \item nel box ``Terapie intensive", sostituzione dell'etichetta "Tasso di occupazione" e il valore corrispondente con la nuova etichetta ``Ingressi del giorno" e il valore relativo ai pazienti entrati in terapia intensiva nella giornata corrente;
+        \item l'etichetta ``Tasso di occupazione" e il relativo valore vengono tranquillamente sostituiti in quanto già presenti in un'altra parte dell'interfaccia, come indicato al punto \ref{cw2:b}.
+    \end{itemize}
+   L'utente non è in grado di svolgere neanche quanto richiesto  al punto \ref{cw2:c}, per cui viene nuovamente modificata l'interfaccia, come segue:
+    \begin{itemize}
+        \item si è proceduto col creare un nuovo tab del box ``Attuali positivi" dall'etichetta ``Tasso ospedalizzazione": cliccando sul pulsante relativo, viene mostrato all'utente un indicatore di livello che indica la percentuale dei soggetti ricoverati in ospedale sul totale degli attuali positivi.
+    \end{itemize}
+\end{bclogo}
