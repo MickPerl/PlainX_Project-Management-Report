@@ -46,6 +46,15 @@ Gli headers sono composti, partendo da destra:
     \caption{Pulsanti per aprire i widget per selezionare una data o un range di date.}
 \end{figure}
 
+\begin{bclogo}{Header}
+Le prime versione dell'header erano sprovviste del bottone per inserire le metriche e i nomi delle pagine erano differenti.~\ref{fig:header-vecchio} mostra lo stato dell'header prima che aggiungessimo il selettore delle metriche, prima ogni box aveva un pulsante con una ghiera che, al click, apriva la lista di possibile metriche visionabili in quel box. Mentre, i nomi delle schermate sono state cambiate per rendere più semplice capire quali contenuti contengono.
+Inoltre il pulsante per aprire il widget per selezionare la data era poco riconoscibile e, in successive iterazioni è stato sistemato anche questo problema.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\columnwidth]{wireframes/header-vecchio}
+    \caption{Prima versione dell'header.}\label{fig:header-vecchio}
+\end{figure}
+\end{bclogo}
 
 \paragraph{Seleziona metriche}
 Il pulsante ``Seleziona metriche'' è stato aggiunto per permettere all'utilizzatore della dashboard di selezionare quali metriche vuole avere all'interna dall schermata. Al suo click compare una lista (\ref{fig:seleziona-metriche}) con tutte le metriche disponibili per quella schermata; l'utente può trascinare una metrica dalla lista all'interno della schermata e rilasciarla in una posizione compatibile andando così a sostituire una delle metriche presenti. Le posizioni compatibili con la metrica trascinata vengono evidenziate in quanto le uniche a colori e con una griglia attorno. Una metrica già presente all'interno della schermata, indicata da una spunta (\checkmark) non sono trascinabili all'interno della schermata, e, in caso di tentativo viene mostrato un avviso all'utente. In caso l'utente clicchi semplicemente su una metrica invece di trascinarla, compare un tooltip sulla metrica cliccata che spiega il funzionamento della meccanica (\ref{fig:seleziona-metriche-tooltip}). \`E in oltre presente un pulsante per ripristinare la schermata alle metriche di default, questo pulsante ha l'etichetta ``Ripristina le metriche di default''.
@@ -94,6 +103,15 @@ Nel widget per selezionare una data singola (\ref{fig:header-data-singola}) vi �
 Nel widget per selezionare un range di date (\ref{fig:header-data-range}) vi sono diversi bottoni che permettono di velocizzare alcune operazioni come: andare al mese precedente, ai quindici giorni precedenti, ai sette giorni precedenti e per deselezionare il range.\\
 In~\ref{fig:header-data-aperta} vi è una dimostrazione di come il widget appare rispetto all'header.
 
+\begin{bclogo}{Selettore date}
+    Inizialmente avevamo usato un semplice selettore di date (\ref{fig:selettore-data-singola-vecchia}); solo successivamente lo abbiamo arricchito di funzionalità quali attivabili mediante i pulsanti sotto il calendario.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\columnwidth]{wireframes/selettore-data-singola-vecchia}
+    \caption{Prima versione del selettore di date.}\label{fig:selettore-data-singola-vecchia}
+\end{figure}
+\end{bclogo}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\columnwidth]{wireframes/footer}
@@ -107,6 +125,16 @@ Nel footer (\ref{fig:footer}) vi sono alcune informazioni e link per le pagine i
     \item link alle fonti e data dell'ultimo aggiornamento;
     \item link ai siti istituzionali.
 \end{itemize}
+
+\begin{bclogo}{Footer}
+    Le prime versioni del footer erano sprovviste della data dell'ultimo aggiornamento. Successivamente ci siamo resi conto che tale informazione era essenziale per i giornalisti per sapere se stavano osservando dati aggiornati o meno.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\columnwidth]{wireframes/footer-vecchio}
+    \caption{Prima versione del footer.}\label{fig:footer-vecchio}
+\end{figure}
+\end{bclogo}
+
 
 \subsubsection{Panoramica}\label{ss:panoramica}
 \begin{figure}[H]
