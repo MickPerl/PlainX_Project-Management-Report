@@ -4,6 +4,7 @@ La realizzazione dei wireframe è stata fatta mediante il software \textit{Balsa
 \subsubsection{Header e footer}\label{ss:header-e-footer}
 Ogni schermata possiede un header nella parte alta dello schermo e un footer nella parte bassa. I footer sono tutti uguali, gli header sono simili in quanto presentano tutti un selettore di data, l'unico che differisce è quello della schermata ``Analisi di periodi'' che ne presenta due in quanto in quella schermata deve essere possibile, per il giornalista, inserire due range di date.
 
+\paragraph{Header}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\columnwidth]{wireframes/header-una-data}
@@ -26,7 +27,7 @@ Gli headers sono composti, partendo da destra:
     \item selettore di date (due in~\ref{fig:header-due-date}) composto da:
         \begin{itemize}
             \item freccia a sinistra, un bottone per passare al giorno precedente a quello indicato;
-            \item bottone per aprire il widget per selezionare la data (~\ref{fig:selettore-data-singola} e~\ref{fig:selettore-range-date});
+            \item bottone per aprire il widget per selezionare la data (\ref{fig:selettore-data-singola} e~\ref{fig:selettore-range-date});
             \item freccia a destra, simile alla freccia a sinistra ma con comportamento opposto, cambia la data al giorno successivo rispetto a quello indicato (se la data è valida).
         \end{itemize}
 \end{itemize}
@@ -47,8 +48,9 @@ Gli headers sono composti, partendo da destra:
 \end{figure}
 
 \begin{bclogo}{Header}
-Le prime versione dell'header erano sprovviste del bottone per inserire le metriche e i nomi delle pagine erano differenti.~\ref{fig:header-vecchio} mostra lo stato dell'header prima che aggiungessimo il selettore delle metriche, prima ogni box aveva un pulsante con una ghiera che, al click, apriva la lista di possibile metriche visionabili in quel box. Mentre, i nomi delle schermate sono state cambiate per rendere più semplice capire quali contenuti contengono.
-Inoltre il pulsante per aprire il widget per selezionare la data era poco riconoscibile e, in successive iterazioni è stato sistemato anche questo problema.
+Le prime versione dell'header erano sprovviste del bottone per inserire le metriche e i nomi delle pagine erano differenti.~\ref{fig:header-vecchio} mostra lo stato dell'header prima che aggiungessimo il selettore delle metriche; ogni box aveva un pulsante con una ghiera che, al click, apriva la lista di possibile metriche visionabili in quel box.\\
+I nomi delle schermate sono state cambiate per rendere più semplice capire quali contenuti contengono.
+Inoltre il pulsante per aprire il widget per selezionare la data era poco riconoscibile e quindi, in successive iterazioni, è stato sistemato anche questo problema.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\columnwidth]{wireframes/header-vecchio}
@@ -57,7 +59,7 @@ Inoltre il pulsante per aprire il widget per selezionare la data era poco ricono
 \end{bclogo}
 
 \paragraph{Seleziona metriche}
-Il pulsante ``Seleziona metriche'' è stato aggiunto per permettere all'utilizzatore della dashboard di selezionare quali metriche vuole avere all'interna dall schermata. Al suo click compare una lista (\ref{fig:seleziona-metriche}) con tutte le metriche disponibili per quella schermata; l'utente può trascinare una metrica dalla lista all'interno della schermata e rilasciarla in una posizione compatibile andando così a sostituire una delle metriche presenti. Le posizioni compatibili con la metrica trascinata vengono evidenziate in quanto le uniche a colori e con una griglia attorno. Una metrica già presente all'interno della schermata, indicata da una spunta (\checkmark) non sono trascinabili all'interno della schermata, e, in caso di tentativo viene mostrato un avviso all'utente. In caso l'utente clicchi semplicemente su una metrica invece di trascinarla, compare un tooltip sulla metrica cliccata che spiega il funzionamento della meccanica (\ref{fig:seleziona-metriche-tooltip}). \`E in oltre presente un pulsante per ripristinare la schermata alle metriche di default, questo pulsante ha l'etichetta ``Ripristina le metriche di default''.
+Il pulsante ``Seleziona metriche'' è stato aggiunto per permettere all'utilizzatore della dashboard di selezionare quali metriche vuole avere all'interno della schermata. Al suo click compare una lista (\ref{fig:seleziona-metriche}) con tutte le metriche disponibili per quella schermata; l'utente può trascinare una metrica dalla lista all'interno della schermata e rilasciarla in una posizione compatibile andando così a sostituire una delle metriche presenti. Le posizioni compatibili con la metrica trascinata vengono evidenziate in quanto le uniche a colori e con una griglia attorno. Le metriche già presenti all'interno della schermata, indicate da una spunta (\checkmark) non sono trascinabili all'interno della schermata, e, in caso di tentativo viene mostrato un avviso all'utente. In caso l'utilizzatore della dashboard clicchi semplicemente su una metrica invece di trascinarla, compare un tooltip sulla metrica cliccata che spiega il funzionamento della meccanica (\ref{fig:seleziona-metriche-tooltip}). \`E in oltre presente un pulsante per ripristinare la schermata alle metriche di default, questo pulsante ha l'etichetta ``Ripristina le metriche di default''.
 
 \begin{figure}[H]
     \begin{subfigure}[b]{0.5\textwidth}
@@ -104,7 +106,7 @@ Nel widget per selezionare un range di date (\ref{fig:header-data-range}) vi son
 In~\ref{fig:header-data-aperta} vi è una dimostrazione di come il widget appare rispetto all'header.
 
 \begin{bclogo}{Selettore date}
-    Inizialmente avevamo usato un semplice selettore di date (\ref{fig:selettore-data-singola-vecchia}); solo successivamente lo abbiamo arricchito di funzionalità quali attivabili mediante i pulsanti sotto il calendario.
+    Inizialmente avevamo usato un semplice selettore di date (\ref{fig:selettore-data-singola-vecchia}); solo successivamente lo abbiamo arricchito di funzionalità  attivabili mediante i pulsanti sotto il calendario.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\columnwidth]{wireframes/selettore-data-singola-vecchia}
@@ -118,6 +120,7 @@ In~\ref{fig:header-data-aperta} vi è una dimostrazione di come il widget appare
     \caption{Footer comune a tutte le schermate}\label{fig:footer}
 \end{figure}
 
+\paragraph{Footer}
 Nel footer (\ref{fig:footer}) vi sono alcune informazioni e link per le pagine istituzionali e le fonti dai quali i dati sono stati recuperati; da destra ci sono:
 \begin{itemize}
     \item logo della Repubblica Italiana;
@@ -151,7 +154,7 @@ La schermata ``Panoramica'' è la prima schermata che un utente incontra aprendo
     \caption{Esempio di box numerico.}\label{fig:box-numerico}
 \end{figure}
 
-I cinque box numerici, di cui~\ref{fig:box-numerico} ne è un esempio, sono composti dal nome della metrica in basso e con una dimensione del font maggiore rispetto alle altre etichette, due tre valori numerici, ognuno dei quali ha al di sopra un'etichetta per spiegare a cosa quel valore si riferisce. Vi è inoltre un'icona, utile per aiutare la memoria e diminuire il carico cognitivo in quanto semplifica il riconoscimento del box. Come sfondo del box vi è la curva che rappresenta l'andamento della metrica.\\
+I cinque box numerici, di cui~\ref{fig:box-numerico} ne è un esempio, sono composti dal nome della metrica in basso e con una dimensione del font maggiore rispetto alle altre etichette e tre valori numerici, ognuno dei quali ha al di sopra un'etichetta per spiegare a cosa quel valore si riferisce. Vi è inoltre un'icona, utile per aiutare la memoria e diminuire il carico cognitivo in quanto semplifica il riconoscimento del box. Come sfondo del box vi è la curva che rappresenta l'andamento della metrica.\\
 Al di sotto di ogni box numerico vi sono due o tre pulsanti che cambiano il contenuto del box numerico: il pulsante ``Andamento'' mostra un grafico con l'andamento della metrica (\ref{fig:box-andamento}), il pulsante ``Tasso di \dots'' mostra una \textit{gauge} (\ref{fig:box-gauge}) mentre il pulsante ``Situazione'' mostra il box numerico mostrato di default all'apertura della pagina.
 
 \begin{figure}[H]
@@ -201,7 +204,7 @@ Infine, rendendoci conto che avevamo ancora spazio a disposizione abbiamo aggiun
 \end{bclogo}
 
 \paragraph{Box con andamento}
-I box con andamento possono avere due tipi di grafico in baso alla metrica rispetto alla quale si vuole osservare l'andamento: uno con una curva monotona crescente, utilizzato per mostrate l'andamento di metriche che possono solo salire (\ref{fig:box-andamento-monotono}) e un altro con una curva che non presenta monotonia (\ref{fig:box-andamento-no-monotonia}). 
+I box con andamento possono avere due tipi di grafico in basoe alla metrica rispetto alla quale si vuole osservare l'andamento: uno con una curva monotona crescente, utilizzato per mostrate l'andamento di metriche che possono solo aumentare (\ref{fig:box-andamento-monotono}) e un altro con una curva che non presenta monotonia (\ref{fig:box-andamento-no-monotonia}). 
 \begin{figure}[H]
     \begin{subfigure}[b]{0.5\textwidth}
         \centering
@@ -218,7 +221,7 @@ I box con andamento possono avere due tipi di grafico in baso alla metrica rispe
 \end{figure}
 
 In~\ref{fig:box-andamento-no-monotonia} è presente un indicatore al valore massimo raggiunto, che, a differenza, in~\ref{fig:box-andamento-monotono} non è presente.\\
-Comune a entrambi in grafici vi è uno slider vicino all'asse delle X con duplice selettore; questo slider può essere utilizzato per restringere il range di date che il grafico rappresenta. Inoltre in caso si passi sopra al grafico con il cursore, compare un tooltip che indica con precisione i valori raggiunti il giorno indicato dalla proiezione sull'asse delle X.\\
+In comune a entrambi in grafici vi è uno slider vicino all'asse delle X con duplice selettore; questo slider può essere utilizzato per restringere il range di date che il grafico rappresenta. Inoltre in caso si passi sopra al grafico con il cursore, compare un tooltip che indica con precisione i valori raggiunti il giorno indicato dalla proiezione sull'asse delle X.\\
 In questi grafici è presente un pulsante in alto a destra che permette di visualizzare il grafico a pieno schermo, un esempio di come la schermata cambia lo si può vedere in~\ref{fig:grafico-full-screen}. Lo stesso pulsante può essere utilizzato per far tornare il grafico alla sua dimensione originaria.
 \begin{figure}[H]
     \centering
@@ -228,7 +231,27 @@ In questi grafici è presente un pulsante in alto a destra che permette di visua
 
 
 \paragraph{Box con gauge}
-I box con gauge sono utili per avere il colpo d'occhio di una specifica situazione (tasso di positività, tasso di occupazione delle terapie intensive, tasso di ospedalizzazioni). In caso si passi sopra alla gauge con il cursore, compare un tooltip che mostra i valori non percentuali di quella metrica.
+I box con gauge sono utili per avere il colpo d'occhio di una specifica situazione (tasso di positività, tasso di occupazione delle terapie intensive, tasso di ospedalizzazioni). In caso si passi sopra alla gauge con il cursore, compare un tooltip che mostra i valori non percentuali di quella metrica (\ref{fig:box-gauge}).
+
+\begin{bclogo}{Box con gauge}
+    Inizialmente avevamo pensato a due possibili tipi di gauge, mostrati in~\ref{fig:opzioni-gauge}; abbiamo optato per l'opzione mostrata da~\ref{fig:opzione-gauge-finale} in quanto ci piaceva maggiormente e ci permetteva di occupare meglio gli spazi.
+
+    \begin{figure}[H]
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{wireframes/box-con-gauge-scelta}
+        \caption{Design finale di un box con gauge.}\label{fig:opzione-gauge-finale}
+    \end{subfigure}
+\hfill
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{wireframes/opzione-gauge-scartata}
+        \caption{Design scartata di un box con gauge.}\label{fig:opzione-gauge-scartata}
+    \end{subfigure}
+    \caption{Differenti tipi di box con gauge.}\label{fig:opzioni-gauge}
+\end{figure}
+
+\end{bclogo}
 
 \paragraph{Sidebar delle note e dei provvedimenti}
 Sulla destra, vi sono due pulsanti che al click aprono due sidebar: una che mostra le note (\ref{fig:note}), ordinate cronologicamente e, l'altro, che mostra i provvedimenti (\ref{fig:provvedimenti}), anch'essi ordinati cronologicamente. 
@@ -299,7 +322,7 @@ Abbiamo previsto una schermata di caricamento in attesa che i dati vengano scari
     \includegraphics[width=1\columnwidth]{wireframes/confronto-regioni}
     \caption{Schermata ``Confronto fra regioni''.}\label{fig:confronto-regioni}
 \end{figure}
-La schermata ``Confronto fra regioni'' è raggiungibile cliccando sul link in alto a destra. In questa schermata è possibile selezionare una o più regioni per confrontare alcune metriche mediante dei grafici. La selezione avviene mediate una lista \textit{ComboBox} posizionata al di sopra dell mappa, come mostrato in~\ref{fig:seleziona-regione}, oppure cliccando direttamente sull'area della regione che si vuole aggiungere al confronto. Le regione selezionate sono indicate tramite una spunta (\checkmark) e i loro confini sono colorati con gli stessi colori assunti poi nei grafici.
+La schermata ``Confronto fra regioni'' è raggiungibile cliccando sul link in alto a destra. In questa schermata è possibile selezionare una o più regioni per confrontare alcune metriche mediante dei grafici. La selezione avviene mediante una lista \textit{ComboBox} posizionata al di sopra dell mappa, come mostrato in~\ref{fig:seleziona-regione}, oppure cliccando direttamente sull'area della regione che si vuole aggiungere al confronto. Le regione selezionate sono indicate tramite una spunta (\checkmark) e i loro confini sono colorati con gli stessi colori assunti poi nei grafici.
 
 \begin{figure}[H]
     \centering
@@ -334,11 +357,28 @@ La schermata ``Analisi di periodi'' è raggiungibile dal link in alto a destra. 
 La schermata può, per semplicità essere divisa in due fasce: nella fascia superiore vi è una sottospecie di tabella in qui sulle righe ci sono i periodi temporali che si vogliono analizzare, mentre, sulle colonne ci sono le metriche. In questo modo è semplificato il confronto tra periodi. In questo caso i valori mostrati sono valori medi rispetto all'intero periodo indicato.\\
 Nella parte inferiore della schermata trovano spazio tre grafici; questi grafici, sull'asse delle X riportano i giorni dei periodi temporali che si stanno analizzando così da permettere un più semplice confronto tra i periodi temporali.
 
+\begin{bclogo}{Analisi di periodi}
+Prima di arrivare al design definitivo della schermata ``Analisi di periodi'' abbiamo considerato diverse possibilità.\\
+Inizialmente pensavamo di mantenere un'organizzazioni simile a quelle già usate con dei box numerici (\ref{fig:box-numerici-analisi-di-periodi-versione-1}); ci siamo resi conto, che così facendo avremmo ripetuto le date in ogni box. Questa prima soluzione ci è sembrata un po' troppo ridondante. Abbiamo quindi pensato di riorganizzare la schermata costruendo una specie di tabella (\ref{fig:analisi-di-periodi-seconda-versione}) ma, in questo caso ci siamo immediatamente resi conto che lo spazio verticale veniva usato in maniera poco intelligente.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\columnwidth]{wireframes/box-numerici-analisi-di-periodi-versione-1}
+    \caption{Prima versione del box numerico per confrontare i valori di una metrica in due periodi.}\label{fig:box-numerici-analisi-di-periodi-versione-1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{wireframes/analisi-di-periodi-seconda-versione}
+    \caption{Versione scartata della schermata ``Analisi di periodi''.}\label{fig:analisi-di-periodi-seconda-versione}
+\end{figure}
+
+Mantenendo per buona l'idea di ``tabella'' siamo giunti al design finale occupando la fascia in alto della schermata con una tabella e la fascia in basso con dei grafici.
+\end{bclogo}
+
 \subsubsection{Distrubuzione su dati anagrafici}\label{ss:distribuzione-su-dati-anagrafici}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\columnwidth]{wireframes/distribuzione-dati-anagrafici}
     \caption{Schermata ``Distribuzione sui dati anagrafici''.}\label{fig:distribuzione-dati-anagrafici}
 \end{figure}
-La schermata ``Distribuzione sui dai anagrafici'' è raggiungibile dal link in alto a destra. In questa schermat è possibile analizzare come i numeri della pandemia si distribuiscano sulla popolazione in base all'età, al genere e al tipo di impiego. Questo viene fatto tramite box con numeri, areogrammi e istogrammi.
+La schermata ``Distribuzione sui dai anagrafici'' è raggiungibile dal link in alto a destra. In questa schermata è possibile analizzare come i numeri della pandemia si distribuiscano sulla popolazione in base all'età, al genere e al tipo d'impiego. Questo viene fatto tramite box con numeri, areogrammi e istogrammi.
 
