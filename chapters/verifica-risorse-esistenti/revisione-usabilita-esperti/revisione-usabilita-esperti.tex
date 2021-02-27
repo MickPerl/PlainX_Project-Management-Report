@@ -32,7 +32,7 @@ Ogni linea guida individuata ha un codice identificativo nel formato x.y dove x 
         \item I font devono essere usati in maniera consistente all'interno della pagina;\label{lg:2.b}
         \item Evitare testo in corsivo e utilizzare il testo sottolineato solo per rappresentare i link ad ipertesti;\label{lg:2.c}
         \item Il blu saturato è da usare per i dettagli;\label{lg:2.d}
-        \item Nel contenuto di una pagina, la lunghezza delle linee non è nè troppo corta (inferiore a 50 caratteri per linea) nè troppo lunga (superiore a i 100 caratteri per linea) quando è visualizzata in una finestra di un browser aperto in un dispositivo con uno schermo di grandezza standard;\label{lg:2.e}
+        \item Nel contenuto di una pagina, la lunghezza delle linee non è né troppo corta (inferiore a 50 caratteri per linea) né troppo lunga (superiore a i 100 caratteri per linea) quando è visualizzata in una finestra di un browser aperto in un dispositivo con uno schermo di grandezza standard;\label{lg:2.e}
     \end{enumerate}
     \item Rappresentare i numeri utilizzando i separatori per le migliaia, le date in blocchi e il testo in strutture gerarchiche in modo che la struttura generale venga percepita prima di un'eventuale lettura del contenuto vero e proprio;\label{lg:3}
     \item Il testo in maiuscolo o maiuscoletto non è appropriato per letture lunghe, utilizzarlo solo all'interno di titoli o in contesti in cui è necessario catturare l'attenzione dell'utente;\label{lg:4}
@@ -58,7 +58,7 @@ Ogni linea guida individuata ha un codice identificativo nel formato x.y dove x 
         \item Non vanno utilizzati i colori come unico indicatore di performance (positiva/negativa), in quanto risulta difficile per utenti affetti da daltonismo;\label{lg:17.b}
     \end{enumerate}
     \item Bisogna evitare di aggiungere elementi di distrazione nelle dashboard, come animazioni o effetti grafici decorativi. Inoltre, usare troppi colori o troppo accesi, distrae e deve essere evitato. La dashboard deve essere facile da interpretare e auto-esplicante, per cui solo il contenuto importante (come titoli, etichette per le categorie e valori) va riportato nella dashboard;\label{lg:18}
-    \item In un a dashbard va visualizzato contenuto aggiornato e valido secondo una certa fonte autorevole rispetto al contesto;\label{lg:19}
+    \item In un a dashboard va visualizzato contenuto aggiornato e valido secondo una certa fonte autorevole rispetto al contesto;\label{lg:19}
     \begin{enumerate}[label=\alph*.]
         \item Va indicata la data e l'ora dell'ultimo aggiornamento; \label{lg:19.a}
         \item Il contenuto a disposizione deve essere sempre il più recente. \label{lg:19.b}
@@ -116,7 +116,7 @@ Ogni linea guida individuata ha un codice identificativo nel formato x.y dove x 
     \end{itemize}
     Sempre all'interno del selettore della data è possibile scegliere anche l'ora. La presenza di questo elemento è completamente fuorviante e inutile poiché i dati nella dashboard vengono inseriti solamente una volta al giorno, tra le 17 e le 18. Se  si prova a selezionare un orario diverso dalle 18 però (anche inserendo l'orario esatto di caricamento dei dati) non viene visualizzato alcunché;
     \item Nel selettore delle regioni non vi sono problemi particolari, il feedback è adeguato;
-    \item Nel menu raggiungibile mediante il \textit{pulsante hamburger}\footnote{Il \textit{pulsante hamburger}, così chiamato per la sua somiglianza involontaria con un hamburger, è in genere un pulsante posizionato in un angolo superiore di un'interfaccia utente grafica. } ci sono dei link a siti correlati (governo, DPC, Mininistero della Salute): è usato impropriamente poiché un menu dovrebbe fornire delle opzioni o funzionalità e non dei link. Sarebbe stato più corretto inserire questi link nella parte della dashboard chiamata ``Altri dati e informazioni" oppure in un'altra chiamata ``Contatti" o simile.
+    \item Nel menu raggiungibile mediante il \textit{pulsante hamburger}\footnote{Il \textit{pulsante hamburger}, così chiamato per la sua somiglianza involontaria con un hamburger, è in genere un pulsante posizionato in un angolo superiore di un'interfaccia utente grafica. } ci sono dei link a siti correlati (governo, DPC, Ministero della Salute): è usato impropriamente poiché un menu dovrebbe fornire delle opzioni o funzionalità e non dei link. Sarebbe stato più corretto inserire questi link nella parte della dashboard chiamata ``Altri dati e informazioni" oppure in un'altra chiamata ``Contatti" o simile.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -167,7 +167,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
     \item Il grafico non presenta problemi particolari: ha un filtro per il range di date (approssimativo perché non indica la data precisa in cui inizia-finisce) ma permette il ritorno alla selezione iniziale sia tramite pulsante che tramite slider;
     \item Manca una legenda per i colori delle curve, che sono consistenti però a quelle dei box sovrastanti;
     \item Essendo i colori consistenti a quelli dei box, si presenta nuovamente il problema della difficoltà di differenziazione dei colori, per cui è d'obbligo una legenda;
-    \item Lo slider ha un funzionamento ambiguo in quanto gli estremi possono invertirsi di ruolo (ovvero se sposto l'estremo dx prima dell'estremo sx essi si invertono e viceversa);
+    \item Lo slider ha un funzionamento ambiguo in quanto gli estremi possono invertirsi di ruolo (ovvero se sposto l'estremo dx prima dell'estremo sinistro essi si invertono e viceversa);
     \item La legenda in particolare serve perché facendo hover sulle curve viene fuori un nome della curva (con relativo valore nel punto di selezione) ma prendendo il nome dalla fonte di dati, quindi usando underscore (non \textit{human readable}\footnote{Un supporto \textit{human readable} è qualsiasi codifica di dati o informazioni che può essere letta naturalmente dall'uomo.});
     \item Altro dettaglio, nella label della fonte dei dati dei casi attualmente positivi essa è chiamata ``totale\_positivi" che può facilmente essere confusa con ``Totale casi" (somma di attuali positivi, deceduti e dimessi/guariti);
     \item Il box in questione ci si aspetta che diventi ``Andamento regionale" quando in alto a destra nell'header si filtra per regione sulla base del comportamento che avviene per gli altri box sovrastanti ma non accade;
@@ -184,7 +184,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \subsubsection{Mappa}
 \label{sss:mappa}
 \begin{itemize}
-    \item Le etichette con nome regione e il numero degli attuali positivi è particolarmente piccolo ed inoltre ha un bordo bianco su testo nero per farlo risaltare sulla mappa grigetta risultando poco leggibile;
+    \item Le etichette con nome regione e il numero degli attuali positivi è particolarmente piccolo ed inoltre ha un bordo bianco su testo nero per farlo risaltare sulla mappa in grigio chiaro, risultando poco leggibile;
     \item Comportamento diverso se si clicca il pallino giallo e se si clicca sulla regione. Il pallino giallo apre una finestrella in cui sono presentati tutti i dati a disposizione per la regione. Mentre se si clicca sulla regione vengono visualizzati pochi dati relativi ad alcuni codici identificativi poco utili all'utilizzatore della dashboard;
     \item Zoomando sulla mappa ci si attenderebbe che da un certo soglia in poi i pallini delle regioni diventino quelli delle province, ma ciò non accade perché è stato preferito separare queste due visualizzazioni;
     \item Nei controlli per lo zoom (+ e -) manca un reset a 0, cioè alla visualizzazione iniziale della mappa;
@@ -193,7 +193,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
     \item Riguardo la finestrella che si apre premendo il pallino giallo delle regioni, si può notare che vengono visualizzata una collezione di coppie chiave valore in cui le chiavi non sono human-readable (sono le etichette delle basi di dati in cui vengono memorizzati i dati che servono alla pubblicazione giornaliera tramite dashboard ed \textit{Excel});
     \item Esiste un campo note fra le coppie chiave-valore ma essendo la finestrella molto stretta queste vengono visualizzate in una maniera che non ne semplifica la lettura;
     \item Alla fine della presentazione della collezione di coppie chiave-valore vi è una sezione ``Suddivisione per stato" (a cosa si riferisce la parola stato lo si scopre solo scorrendo ancora un po'), poi molto spazio vuoto, poi un aerogramma molto molto piccolo, assolutamente illeggibile e quindi inutile;
-    \item Nella parte inferiore della finestrella ci sono due pulsanti, uno che sembra atto a spostare la finestrella dove si vuole all'interno della mappa e invece permette soltanto di centrare la regione all'interno della area di visualizzazione della mappa. L'altro invece, a forma di lente d'ingradimento, permette di zoomare inutilmente sulla città capoluogo di provincia se selezionato il pallino, sulla regione (più utile) se selezionata la regione;
+    \item Nella parte inferiore della finestrella ci sono due pulsanti, uno che sembra atto a spostare la finestrella dove si vuole all'interno della mappa e invece permette soltanto di centrare la regione all'interno della area di visualizzazione della mappa. L'altro invece, a forma di lente d'ingrandimento, permette di zoomare inutilmente sulla città capoluogo di provincia se selezionato il pallino, sulla regione (più utile) se selezionata la regione;
     \item Essendo la dashboard indirizzata ad un pubblico italiano (deducibile dall'assenza di un selettore per la lingua) bisogna mantenere la lingua italiana in tutte le parti, invece, i nomi di alcune regioni sono state tradotte in inglese;
     \item La visualizzazione dei numeri nella finestrella potrebbe avere un alignment a destra per aumentare la leggibilità;
     \item Tra i controlli della mappa, potrebbe essere inserito un pulsante, cliccato il quale, la mappa viene zoomata direttamente sulla regione da cui l'utente sta visualizzando la dashboard, presentando i dati a livello provinciale;
@@ -215,7 +215,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \begin{itemize}
     \item Il titolo è del colore e del livello di grassetto corretto (rispetto agli altri titoli) ma ha un font più piccolo rendendolo non conforme al resto della dashboard;
     \item Le regioni sono cliccabili, ovvero ogni riga della lista delle regioni è cliccabile , ma al clic non succede nulla;
-    \item I dati potrebbero venire messi sottoforma di tabella  per una maggior leggibilità e semplificare il confronto e per fornire funzionalità di filtraggio;
+    \item I dati potrebbero venire messi sotto forma di tabella  per una maggior leggibilità e semplificare il confronto e per fornire funzionalità di filtraggio;
     \item I colori sono consistenti con i box in alto alla pagina;
     \item Non ci sono differenze sostanziali di visualizzazione e layout fra la tab ``Regioni" e ``Province" ma purtroppo il dato attuali positivi non è raccolto a livello provinciale e quindi non è disponibile per la visualizzazione.
 \end{itemize}
@@ -302,11 +302,11 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
                     \label{fig:guidelines-violations-2}
                 \end{figure}
         \end{enumerate}
-    \item I valori numerici non sono organizzati in blocchi non permettendo un agevole confronto come mostrato in ~\ref{fig:guidelines-violations-3}. Inoltre nel modal evidenziato in viola in ~\ref{fig:guidelines-violations-4} che rappresenta i dati di una regione c'è solo un elencon senza struttura con etichette difficilmente leggibili in quanto scritte con gli underscore al posto degli spazi;
+    \item I valori numerici non sono organizzati in blocchi non permettendo un agevole confronto come mostrato in ~\ref{fig:guidelines-violations-3}. Inoltre nel modal evidenziato in viola in ~\ref{fig:guidelines-violations-4} che rappresenta i dati di una regione c'è solo un elenco senza struttura con etichette difficilmente leggibili in quanto scritte con gli underscore al posto degli spazi;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_3}
-            \caption{Violazione della linea guida 3: I numeri non sono raggrupati.}
+            \caption{Violazione della linea guida 3: I numeri non sono raggruppati.}
             \label{fig:guidelines-violations-3}
         \end{figure}
         \begin{figure}[H]
@@ -386,7 +386,7 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
             \item [\ref{lg:27.b}] Non ci sono shortcut utilizzabili.
         \end{enumerate}
     \item Non ci sono spiegazioni su come usare il sistema;
-    \item Il sistema non è prevedibile: se si clicca sul nome di una regione oppure se sulla mappa si zoomma su di una regione ci si aspetta di visualizzare le province con i rispettivi valori e invece ciò non accade come mostrato in ~\ref{fig:guidelines-violations-10};
+    \item Il sistema non è prevedibile: se si clicca sul nome di una regione oppure se sulla mappa si effettua uno zoom su di una regione ci si aspetta di visualizzare le province con i rispettivi valori e invece ciò non accade come mostrato in ~\ref{fig:guidelines-violations-10};
         \begin{figure}[H]
             \centering
             \begin{subfigure}[b]{0.5\columnwidth}
