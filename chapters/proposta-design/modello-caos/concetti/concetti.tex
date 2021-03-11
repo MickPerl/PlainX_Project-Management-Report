@@ -17,18 +17,23 @@ Rappresenta le informazioni sull'evoluzione della pandemia a livello nazionale r
     \item nuovi positivi;
     \item nuovi decessi;
     \item nuovi ingressi in terapia intensiva;
-    \item nuovi tamponi;
+    \item nuovi tamponi molecolari;
+    \item nuovi tamponi antigenici;
+    \item tasso di positività sui tamponi antigenici = $\frac{nuovi \; positivi \; da \; tampone \; antigenico}{nuovi \; tamponi \; antigenici}$;
+    \item tasso di positività sui tamponi molecolari = $\frac{nuovi \; positivi \; da \; tampone \; molecolare}{nuovi \; tamponi \; molecolari}$;
+    \item saldo terapia intensiva = $tot. \; terapie \; intensive \; a \; data \; di \; rif. \; - \; tot. \; terapie \; intensive \; a \; giorno \; prima$;
     \item nuovi dimessi/guariti:
     \begin{itemize}
         \item il guarito è colui il quale risolve i sintomi dell’infezione da Covid-19 e che risulta negativo in due test consecutivi, effettuati a distanza di 24 ore uno dall’altro, per la ricerca di SARS-CoV-2\footnote{La definizione è quella fornita dal Comitato tecnico scientifico nella comunicazione del 19 marzo 2020 e rinvenibile al seguente \href{http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4274}{link}.}.
         \item il dimesso è colui il quale è stato dimesso dall'ospedale: è conteggiato insieme ai guariti nella consapevolezza che le migliorate condizioni di salute alla base della dimissione siano prossime alla guarigione;
     \end{itemize}
-    \item tasso di positività = $\frac{nuovi \; positivi}{nuovi \; tamponi}$;
-    \item saldo terapia intensiva = $tot. \; terapie \; intensive \; a \; data \; di \; rif. \; - \; tot. \; terapie \; intensive \; a \; giorno \; prima$;
     \item note sui dati pubblicati;
 \end{itemize}
 \begin{bclogo}{Iterazioni}
 Inizialmente, questo concetto era stato denominato ``Andamento giornaliero nazionale" ma, potendo confondersi con alcune parti dell'interfaccia presentate nella Sezione 4.5, abbiamo ritenuto necessario rinominarlo.
+
+In qualche iterazione precedente, erano indicati in maniera generale i tamponi e il tasso di positività: tuttavia in una delle sessioni di testing è emerso l'accresciuta importanza di distinguere i tamponi in antigenici e molecolari e, conseguentemente, anche il tasso di positività, tra il tasso di positività sui tamponi antigenici e quello sui molecolari. Abbiamo accolto l'esigenza del giornalista in questione, riflettendo sull'interfaccia riprogettata tale distinzione. 
+
 \end{bclogo}
 
 \subsubsection{Resoconto del giorno a livello regionale}
