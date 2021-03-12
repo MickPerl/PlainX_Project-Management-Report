@@ -36,7 +36,7 @@ Il setting in cui verranno condotti i test ha visto l'utilizzo di software di vi
 \subsubsection{Dati raccolti}
 \label{sss:dati-raccolti}
 I dati che sono stati raccolti hanno natura quantitativa: in dettaglio, abbiamo chiesto ad ogni giornalista di condurre certi task sull'interfaccia della dashboard del DPC e abbiamo preso nota del numero di problemi emersi, nonché una misura del loro impatto sull'esperienza dell'utente. L'output del test si è concretizzato, pertanto, in un insieme di valori numerici relativi ai giornalisti per ogni task, da cui abbiamo potuto calcolarci la frequenza di ogni problema.
-Dato l'esiguo numero di giornalisti che si sono offerti per il test (7), non abbiamo potuto estrarre informazioni statisticamente significative, tuttavia abbiamo potuto raccogliere importanti suggerimenti di miglioramento circa l'usabilità dell'interfaccia.
+Dato l'esiguo numero di giornalisti che si sono offerti per il test (sette), non abbiamo potuto estrarre informazioni statisticamente significative, tuttavia abbiamo potuto raccogliere importanti suggerimenti di miglioramento circa l'usabilità dell'interfaccia.
 
 \subsection{Selezione e preparazione degli assistenti}
 \label{ss:selezione-preparazione-assistenti}
@@ -51,10 +51,10 @@ Di seguito è riportato l'happy path definito per ogni task che è stato poi sot
     \begin{enumerate}[label=\alph*.]
         \item aprire la dashboard del DPC;
         \item selezione della data del 17 novembre '20 dal widget calendario;
-        \item lettura del valore numerico sottostante l'etichetta "Incremento" nel box "Totale casi";\label{ta:c}
-        \item click sul cerchio di ogni regione italiana, lettura del valore numerico relativo all'etichetta "Tamponi" presente nella componente che appare a schermo, somma di tutti i valori così raccolti e memorizzazione del risultato;
+        \item lettura del valore numerico sottostante l'etichetta ``Incremento" nel box ``Totale casi";\label{ta:c}
+        \item click sul cerchio di ogni regione italiana, lettura del valore numerico relativo all'etichetta ``Tamponi" presente nella componente che appare a schermo, somma di tutti i valori così raccolti e memorizzazione del risultato;
         \item selezione della data del 16 novembre '20 dal widget calendario;
-        \item click sul cerchio di ogni regione italiana, lettura del valore numerico relativo all'etichetta "Tamponi" presente nella componente che appare a schermo, somma di tutti i valori così raccolti e memorizzazione del risultato;
+        \item click sul cerchio di ogni regione italiana, lettura del valore numerico relativo all'etichetta ``Tamponi" presente nella componente che appare a schermo, somma di tutti i valori così raccolti e memorizzazione del risultato;
         \item calcolo della differenza tra i due valori memorizzati;\label{ta:g}
         \item calcolo del rapporto tra il numero dei nuovi positivi letto allo step \hyperref[ta:c]{1.c} e la differenza calcolata allo step \hyperref[ta:g]{1.g};
     \end{enumerate}
@@ -66,8 +66,8 @@ Di seguito è riportato l'happy path definito per ogni task che è stato poi sot
     \begin{enumerate}[label=\alph*.]
         \item aprire la dashboard del DPC;
         \item selezione della data del 1 aprile '20 dal widget calendario;
-        \item lettura del valore numerico nel box "Deceduti"; \label{taa:c}
-        \item lettura del valore numerico nel box "Totale casi"; \label{taa:d}
+        \item lettura del valore numerico nel box ``Deceduti"; \label{taa:c}
+        \item lettura del valore numerico nel box ``Totale casi"; \label{taa:d}
         \item calcolo del rapporto tra di due valori letti e memorizzazione; \label{taa:e}
         \item selezione della data del giorno seguente dal widget calendario; \label{taa:f}
         \item ripetere gli step \hyperref[taa:c]{3.c}, \hyperref[taa:d]{3.d}, \hyperref[taa:e]{3.e} e \hyperref[taa:f]{3.f} fino a quando non si è raggiunto il 30 aprile '20;
@@ -89,21 +89,21 @@ Di seguito è riportato l'happy path definito per ogni task che è stato poi sot
     \begin{enumerate}[label=\alph*.]
         \item aprire la dashboard del DPC;
         \item selezione della data del 1 aprile '20 dal widget calendario; \label{at:b}
-        \item lettura del valore numerico sottostante l'etichetta "Incremento" nel box "Totale casi" e sua memorizzazione; \label{at:c}
+        \item lettura del valore numerico sottostante l'etichetta ``Incremento" nel box ``Totale casi" e sua memorizzazione; \label{at:c}
         \item ripetere gli step \hyperref[at:b]{6.b}, \hyperref[at:c]{6.c} fino a quando non si è raggiunto il 30 aprile '20; \label{at:d}
         \item calcolo della media dei valori memorizzati; \label{at:e}
         \item ripetere gli step \hyperref[at:b]{6.b}, \hyperref[at:c]{6.c}, \hyperref[at:d]{6.d} ed \hyperref[at:e]{6.e} per il mese di maggio; 
-        \item confronto delle due medie calcolate;
+        \item confronto delle due medie calcolate.
     \end{enumerate}
 \end{enumerate}
 
 \subsection{Scelta dei partecipanti}
 \label{ss:seclta-partecipanti}
-Per la scelta dei partecipanti, abbiamo cercato contatti di soggetti afferenti alla segmentazione dell'utenza elaborata nella sezione "Ricerca etnografica". Un criterio che abbiamo seguito è la diversificazione della redazione di riferimento (testata locale, nazionale, d'agenzia ecc.), al fine di avere risultati privi di bias.
+Per la scelta dei partecipanti, abbiamo cercato contatti di soggetti afferenti alla segmentazione dell'utenza elaborata nella sezione ``Ricerca etnografica". Un criterio che abbiamo seguito è la diversificazione della redazione di riferimento (testata locale, nazionale, d'agenzia ecc.), al fine di avere risultati privi di bias.
 
 \subsection{Esecuzione del test}
 \label{ss:vre-esecuzione-test}
-Il test è stato eseguito sulla dashboard del DPC (\href{https://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1}): trattasi di un'applicazione web totalmente funzionante.
+Il test è stato eseguito sulla \href{https://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1}{dashboard del DPC}: trattasi di un'applicazione web totalmente funzionante.
 \subsubsection{Approccio adottato}
 \label{sss:approccio-adottato}
 L'approccio seguito è stato quello del \textit{"Thinking aloud"} per cui abbiamo chiesto a ciascun giornalista di eseguire task pre-determinati sull'interfaccia e di riferirci, appunto a voce alta, le sue impressioni e intenzioni step by step.
@@ -114,16 +114,16 @@ In questa maniera, abbiamo potuto registrare il numero di errori compiuto da cia
 \renewcommand{\arraystretch}{2}
 \begin{longtable}{|c|p{7cm}|p{5cm}|c|}
     \hline
-    \textbf{Nr} & \textbf{Problema} & \textbf{Frequenza (\%)} & \textbf{Impatto} \\
+    \textbf{\#} & \textbf{Problema} & \textbf{Frequenza (\%)} & \textbf{Impatto} \\
     \hline
     \endhead
-    1 & Trovare il dato "tamponi effettuati" (l'utente è uscito dalla dashboard per prendersi il pdf del DPC): è possibile solo con molti step intermedi che richiedono il calcolo della differenza dei tamponi totali del giorno di interesse con quelli del giorno precedente, per ogni regione, e poi la somma fra queste differenze. & 80\% (Potrebbe capitare spesso visto che il dato proprio non esiste aggregato e deve essere computato manualmente) & Alto \\ \hline
-    2 & L'utente dalla dashboard clicca su "Schede riepilogo PDF" come ultima spiaggia per trovare il dato "tamponi effettuati", ma non trova subito il pdf che cerca (quello giornaliero pubblicato dalle agenzie di stampa alle ore 17-18) & 10\% (Potenzialmente bassa, dipende se il giornalista già sa che là dentro troverà - forse - quello che cerca) & Basso \\ \hline
+    1 & Trovare il dato ``tamponi effettuati" (l'utente è uscito dalla dashboard per prendersi il pdf del DPC): è possibile solo con molti step intermedi che richiedono il calcolo della differenza dei tamponi totali del giorno di interesse con quelli del giorno precedente, per ogni regione, e poi la somma fra queste differenze. & 80\% (Potrebbe capitare spesso visto che il dato proprio non esiste aggregato e deve essere computato manualmente) & Alto \\ \hline
+    2 & L'utente dalla dashboard clicca su ``Schede riepilogo PDF" come ultima spiaggia per trovare il dato ``tamponi effettuati", ma non trova subito il pdf che cerca (quello giornaliero pubblicato dalle agenzie di stampa alle ore 17-18) & 10\% (Potenzialmente bassa, dipende se il giornalista già sa che là dentro troverà - forse - quello che cerca) & Basso \\ \hline
     3 & L'utente riesce a trovare le ospedalizzazioni attuali  + terapie intensive a granularità regionale, ma non nazionale (quindi andrebbero aggregate). Per quanto riguarda la disponibilità di posti nelle strutture ospedaliere non sono presenti dati nemmeno a livello regionale. & 70\% (Potrebbe capitare spesso visto che il dato proprio non esiste aggregato e deve essere computato manualmente) & Alto \\ \hline
-    4 & L'utente vuole calcolare il tasso di letalità di un periodo predeterminato (deceduti/totale casi) ma ha avuto difficoltà a cercare i dati relativi a questo periodo (ha dovuto manualmente effettuare le sottrazioni raccogliendo prima i dati per la giornata di inizio e fine del periodo) dato che la dashboard non permette di selezionare range di date. & 20\% (bassa) & Medio \\ \hline
-    5 & I dati per età non sono disponibili direttamente nella dashboard. L'utente può trovarli seguendo alcuni link a un file Excel nella pagina in cui si trova la dashboard dell'ISS ("concorrenza"). & 20\% (bassa) & Alto \\ \hline
-    6 & L'utente può recuperare il dato dei nuovi positivi nazionali e regionali, ma manca un etichetta chiara (questo dato è chiamato "Incremento" quando ci si riferisce al totale dei casi riscontrati dall'inizio della pandemia) & 100\% & Basso \\ \hline
-    7 & L'utente vuole calcolare l'incremento di nuovi positivi di un periodo predeterminato, ma ha avuto difficoltà a raccogliere i dati relativi a questo periodo (ha dovuto manualmente effettuare le sottrazioni raccogliendo prima i dati per la giornata di inizio e fine del periodo) dato che la dashboard non permette di selezionare range di date. & 20\% & Basso \\ \hline
+    4 & L'utente vuole calcolare il tasso di letalità di un periodo predeterminato (deceduti/totale casi) ma ha avuto difficoltà a cercare i dati relativi a questo periodo (ha dovuto manualmente effettuare le sottrazioni raccogliendo prima i dati per la giornata di inizio e fine del periodo) dato che la dashboard non permette di selezionare range di date. & 30\% (bassa) & Medio \\ \hline
+    5 & I dati per età non sono disponibili direttamente nella dashboard. L'utente può trovarli seguendo alcuni link a un file Excel nella pagina in cui si trova la dashboard dell'ISS ("concorrenza"). & 30\% (bassa) & Alto \\ \hline
+    6 & L'utente può recuperare il dato dei nuovi positivi nazionali e regionali, ma manca un etichetta chiara (questo dato è chiamato ``Incremento" quando ci si riferisce al totale dei casi riscontrati dall'inizio della pandemia) & 100\% & Basso \\ \hline
+    7 & L'utente vuole calcolare l'incremento di nuovi positivi di un periodo predeterminato, ma ha avuto difficoltà a raccogliere i dati relativi a questo periodo (ha dovuto manualmente effettuare le sottrazioni raccogliendo prima i dati per la giornata di inizio e fine del periodo) dato che la dashboard non permette di selezionare range di date. & 30\% & Basso \\ \hline
 \end{longtable}
 }
 
@@ -133,7 +133,7 @@ Dal grafico  si evince che i problemi maggiori e quindi più urgenti da risolver
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\columnwidth]{verifica-risorse-esistenti/urgency-curve-michele}
+    \includegraphics[width=0.5\columnwidth]{verifica-risorse-esistenti/urgency_curve}
     \caption{Curva delle urgenze.}
     \label{fig:urgency-curves}
 \end{figure}
