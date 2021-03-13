@@ -119,7 +119,7 @@ In questa maniera, abbiamo potuto registrare il numero di errori compiuto da cia
     \endhead
     1 & Trovare il dato ``tamponi effettuati" (l'utente è uscito dalla dashboard per prendersi il pdf del DPC): è possibile solo con molti step intermedi che richiedono il calcolo della differenza dei tamponi totali del giorno di interesse con quelli del giorno precedente, per ogni regione, e poi la somma fra queste differenze. & 80\% (Potrebbe capitare spesso visto che il dato proprio non esiste aggregato e deve essere computato manualmente) & Alto \\ \hline
     2 & L'utente dalla dashboard clicca su ``Schede riepilogo PDF" come ultima spiaggia per trovare il dato ``tamponi effettuati", ma non trova subito il pdf che cerca (quello giornaliero pubblicato dalle agenzie di stampa alle ore 17-18) & 10\% (Potenzialmente bassa, dipende se il giornalista già sa che là dentro troverà - forse - quello che cerca) & Basso \\ \hline
-    3 & L'utente riesce a trovare le ospedalizzazioni attuali  + terapie intensive a granularità regionale, ma non nazionale (quindi andrebbero aggregate). Per quanto riguarda la disponibilità di posti nelle strutture ospedaliere non sono presenti dati nemmeno a livello regionale. & 70\% (Potrebbe capitare spesso visto che il dato proprio non esiste aggregato e deve essere computato manualmente) & Alto \\ \hline
+    3 & L'utente riesce a trovare le ospedalizzazioni attuali e le terapie intensive a granularità regionale, ma non a livello nazionale (quindi andrebbero aggregate). Per quanto riguarda la disponibilità di posti nelle strutture ospedaliere non sono presenti dati nemmeno a livello regionale. & 70\% (Potrebbe capitare spesso visto che il dato proprio non esiste aggregato e deve essere computato manualmente) & Alto \\ \hline
     4 & L'utente vuole calcolare il tasso di letalità di un periodo predeterminato (deceduti/totale casi) ma ha avuto difficoltà a cercare i dati relativi a questo periodo (ha dovuto manualmente effettuare le sottrazioni raccogliendo prima i dati per la giornata di inizio e fine del periodo) dato che la dashboard non permette di selezionare range di date. & 30\% (bassa) & Medio \\ \hline
     5 & I dati per età non sono disponibili direttamente nella dashboard. L'utente può trovarli seguendo alcuni link a un file Excel nella pagina in cui si trova la dashboard dell'ISS ("concorrenza"). & 30\% (bassa) & Alto \\ \hline
     6 & L'utente può recuperare il dato dei nuovi positivi nazionali e regionali, ma manca un etichetta chiara (questo dato è chiamato ``Incremento" quando ci si riferisce al totale dei casi riscontrati dall'inizio della pandemia) & 100\% & Basso \\ \hline
@@ -128,7 +128,7 @@ In questa maniera, abbiamo potuto registrare il numero di errori compiuto da cia
 }
 
 \subsection{Valutazione finale e report}
-Abbiamo valutato i dati raccolti calcolando la frequenza degli errori dei diversi giornalisti a fronte di ciascun task e tracciando una curva di urgenza (\ref{fig:urgency-curves}) in termini di frequenza e impatto dei problemi emersi.
+Abbiamo valutato i dati raccolti calcolando la frequenza degli errori dei diversi giornalisti a fronte di ciascun task e tracciando una curva di urgenza (Figura \ref{fig:urgency-curves}) in termini di frequenza e impatto dei problemi emersi.
 Dal grafico  si evince che i problemi maggiori e quindi più urgenti da risolvere sono 1, 3, 5 e 6. Il problema nr. 5 ha un impatto molto alto anche se è poco frequente e  6 in quanto anche se è poco impattante è molto frequente.
 
 \begin{figure}[H]

@@ -79,12 +79,13 @@ L'\textit{happy path} riscontrato per ogni task è riportato di seguito:
 \subsection{Scelta dei partecipanti}
 \label{ss:scelta-partecipanti}
 Per la scelta dei partecipanti, abbiamo cercato contatti di soggetti afferenti alla segmentazione dell'utenza definita nella sezione ``Ricerca etnografica". L'obiettivo iniziale era di avere un criterio di scelta che garantisse la diversificazione della redazione di riferimento (testata locale, nazionale, d'agenzia ecc.), al fine di avere risultati privi di bias.
-Purtroppo però questo non è stato possibile, in quanto pochi giornalisti hanno dato la loro disponibilità ad essere ricontattati mediante il questionario proposto in \hyperref[ss:questionario-online]{Sezione 1.2.2}.
+Purtroppo però questo non è stato possibile, in quanto pochi giornalisti hanno dato la loro disponibilità ad essere ricontattati mediante il questionario proposto in \hyperref[ss:questionario-online]{Sezione 1.2.2} e solo tre hanno nuovamente confermato di partecipare anche a questo testing.
 
 \subsection{Esecuzione dei test}
 \label{ss:esecuzione-test}
 Il test è stato eseguito sui wireframe della riprogettazione della dashboard del DPC: trattasi di un mock-up che offre diverse possibilità di interazione all'utente, per permettergli di comprendere il funzionamento di ogni componente grafica.\\
 L'approccio seguito è stato quello del ``Thinking aloud" per cui abbiamo chiesto a ciascun giornalista di eseguire i task predeterminati sull'interfaccia e di riferirci, a voce alta appunto, le sue impressioni e intenzioni step by step.\\
+Come in \hyperref[sss:approccio-adottato]{Sezione 2.3.5} viene di seguito riportata una tabella con indicati i problemi evidenziati dagli utenti che hanno partecipato al test, con la frequenza con cui si sono presentati e l'impatto nella conclusione del task.
 
 {
 \renewcommand{\arraystretch}{2}
@@ -93,16 +94,31 @@ L'approccio seguito è stato quello del ``Thinking aloud" per cui abbiamo chiest
     \textbf{\#} & \textbf{Problema} & \textbf{Frequenza (\%)} & \textbf{Impatto} \\
     \hline
     \endhead
-    1 & L'utente della dashboard non riesce ad individuare il valore relativo ai ricoverati con sintomi & 33\% & Alto \\ \hline
-    2 & L'utente fa fatica a notare (per mancanza del colpo d'occhio) il secondo valore presente in ogni box nella schermata ``Panoramica" & 33\% & Medio \\ \hline
-    3 & L'utente vorrebbe avere modo di distinguere fra tamponi molecolari e antigenici, in quanto necessari per comprendere correttamente l'andamento & 100\% & Alto \\ \hline
-    4 & L'utente trova alcune metriche nella tabella presente in ``Panoramica" ripetitive e poco utili a suo parere & 66\% & Basso \\ \hline
-    5 & L'utente trova il termine ``metriche" poco chiaro (non lo userebbe e quindi ``Seleziona metriche" non aiuta) & 66\% & Medio \\ \hline
-    6 & L'utente non comprende il funzionamento dei pulsanti di ``Import" e ``Export" della personalizzazione dell'interfaccia & 100\% & Basso \\ \hline
+    1 & L'utente della dashboard non riesce ad individuare il valore relativo ai ricoverati con sintomi & 33\% & Alto \\
+    \hline
+    2 & L'utente fa fatica a notare (per mancanza del colpo d'occhio) il secondo valore presente in ogni box nella schermata ``Panoramica" & 33\% & Medio \\
+    \hline
+    3 & L'utente vorrebbe avere modo di distinguere fra tamponi molecolari e antigenici, in quanto necessari per comprendere correttamente l'andamento della pandemia & 100\% & Alto \\
+    \hline
+    4 & L'utente trova alcune metriche nella tabella presente in ``Panoramica" ripetitive e a suo parere poco utili & 66\% & Basso \\
+    \hline
+    5 & L'utente trova il termine ``metriche" poco chiaro (non lo userebbe e quindi ``Seleziona metriche" non aiuta) & 66\% & Medio \\
+    \hline
+    6 & L'utente non comprende il funzionamento dei pulsanti di ``Import" e ``Export" della personalizzazione dell'interfaccia presenti nella barra di navigazione & 100\% & Basso \\
+    \hline
 \end{longtable}
 }
 
 \subsection{Valutazione finale e report}
 \label{ss:valutazione-finale-report}
+Abbiamo valutato i dati raccolti calcolando la frequenza degli errori dei diversi giornalisti a fronte di ciascun task e tracciando una curva di urgenza (Figura \ref{fig:testing-urgency-curve}) in termini di frequenza e impatto dei problemi emersi.
+La curva di urgenza corrisponde è posta in modo tale da evidenziare la necessità di risolvere tutti quanti i problemi che sono stati riscontrati, partendo ovviamente dai problemi con peso maggiore, come 
 
--- DA SCRIVERE --
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\columnwidth]{valutazione-design/urgency-curve}
+    \caption{Curva delle urgenze.}
+    \label{fig:testing-urgency-curve}
+\end{figure}
+\noindent
+Come i problemi risolti trovano riscontro nel design è illustrato nella \hyperref[s:wireframe]{Sezione 4.6}, assieme alla presentazione delle parti non oggetto di correzione e di quelle che sono invece state corrette dopo l'inspection.
