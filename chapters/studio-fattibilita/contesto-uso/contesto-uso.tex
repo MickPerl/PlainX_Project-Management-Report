@@ -14,41 +14,41 @@ L'individuazione delle attività di seguito elencate deriva dalla lettura di num
 \noindent
 Le attività individuate sono:
 \begin{enumerate}
-    \item Comprendere l'andamento della curva epidemiologica sulla base di alcune metriche (per esempio, i nuovi casi positivi, i tamponi effettuati, il tasso di positività, i decessi e i guariti odierni) a livello nazionale e/o regionale;\label{itm:1}
-    \item Monitorare l'occupazione delle strutture sanitarie (le ospedalizzazioni e i ricoveri in terapia intensiva) a livello nazionale e/o regionale;\label{itm:2}
-    \item Monitorare come i numeri della pandemia si distribuiscono sulla popolazione in un determinato periodo (età, genere, categoria di impiego: operatore sanitario);\label{itm:3}
-    \item Monitorare come i numeri della pandemia si distribuiscono sulla popolazione in un determinato periodo (età, malattie pregresse, impiego, ecc.);\label{itm:4}
-    \item Confronto dell'andamento della pandemia tra due o più regioni;\label{itm:5}
-    \item Confronto dell'andamento della pandemia tra due periodi temporali differenti.\label{itm:6}
+    \item comprendere l'andamento della curva epidemiologica sulla base di alcune metriche (per esempio, i nuovi casi positivi, i tamponi effettuati, il tasso di positività, i decessi e i guariti odierni) a livello nazionale e/o regionale;\label{itm:1}
+    \item monitorare l'occupazione delle strutture sanitarie (le ospedalizzazioni e i ricoveri in terapia intensiva) a livello nazionale e/o regionale;\label{itm:2}
+    \item monitorare come i numeri della pandemia si distribuiscono sulla popolazione in un determinato periodo (età, genere, categoria di impiego: operatore sanitario);\label{itm:3}
+    \item monitorare come i numeri della pandemia si distribuiscono sulla popolazione in un determinato periodo (età, malattie pregresse, impiego, ecc.);\label{itm:4}
+    \item confronto dell'andamento della pandemia tra due o più regioni;\label{itm:5}
+    \item confronto dell'andamento della pandemia tra due periodi temporali differenti.\label{itm:6}
 \end{enumerate}
 
 \subsection{Vincoli tecnici e d'ambiente}
 \label{ss:vincoli-tecnici-ambiente}
 A partire dalle risposte raccolte mediante il questionario sottoposto ai giornalisti e dai feedback preziosi della giornalista di \emph{SkyTg24} di cui sopra, abbiamo individuato i seguenti vincoli di natura tecnica o imposti dall'ambiente in cui il nostro utente di riferimento opera:
 \begin{itemize}
-    \item Il layout della dashboard deve essere adatto a schermi in modalità orizzontale dai 13" in su:
+    \item il layout della dashboard deve essere adatto a schermi in modalità orizzontale dai 13" in su:
     \begin{itemize}
-        \item Il giornalista lavora in redazione o in smart working: nel primo caso, gli è assegnata una postazione di lavoro in cui dispone di un computer fisso con uno schermo sufficientemente grande e da cui ha visuale sui diversi schermi a parete per l'intero ufficio, mentre nel caso operi da casa, ha dinanzi a sé un notebook; 
-        \item Un \textit{fallback} per dispositivi mobili (ovvero smartphone e piccoli tablet) può essere disponibile, ma non è la priorità;
+        \item il giornalista lavora in redazione o in smart working: nel primo caso, gli è assegnata una postazione di lavoro in cui dispone di un computer fisso con uno schermo sufficientemente grande e da cui ha visuale sui diversi schermi a parete per l'intero ufficio, mentre nel caso operi da casa, ha dinanzi a sé un notebook; 
+        \item un \textit{fallback} per dispositivi mobili (ovvero smartphone e piccoli tablet) può essere disponibile, ma non è la priorità;
     \end{itemize}
-    \item La presenza di nuovi dati deve essere notificata:
+    \item la presenza di nuovi dati deve essere notificata:
     \begin{itemize}
-        \item Il giornalista sa che i nuovi dati sul Covid-19 sono caricati nella dashboard attorno alle ore 17:30 di ogni giorno. Vi si connette verso le 16:30 e continua le sue attività; non vuole controllare di tanto in tanto lo stato della dashboard, bensì si serve di una notifica che attira la sua attenzione solo quando i dati sono stati aggiornati: in questo modo, non viene distolto mentre è nel \textit{flow} ed è sicuro di essere avvisato immediatamente del nuovo contenuto disponibile;
+        \item il giornalista sa che i nuovi dati sul Covid-19 sono caricati nella dashboard attorno alle ore 17:30 di ogni giorno. Vi si connette verso le 16:30 e continua le sue attività; non vuole controllare di tanto in tanto lo stato della dashboard, bensì si serve di una notifica che attira la sua attenzione solo quando i dati sono stati aggiornati: in questo modo, non viene distolto mentre è nel \textit{flow} ed è sicuro di essere avvisato immediatamente del nuovo contenuto disponibile;
     \end{itemize}
-	\item Le informazioni devono essere comunicate in maniera diretta e chiara:
+	\item le informazioni devono essere comunicate in maniera diretta e chiara:
 	\begin{itemize}
-        \item Ricevuta la notifica vuole, con rapidi sguardi, ottenere le informazioni di interesse, in un formato leggibile, chiaro e comprensibile, così da avere immediatamente il materiale necessario per procedere alla stesura del suo articolo in materia;
+        \item ricevuta la notifica vuole, con rapidi sguardi, ottenere le informazioni di interesse, in un formato leggibile, chiaro e comprensibile, così da avere immediatamente il materiale necessario per procedere alla stesura del suo articolo in materia;
     \end{itemize}
-	\item Il contenuto informativo visualizzato deve poter essere filtrato su più criteri:
+	\item il contenuto informativo visualizzato deve poter essere filtrato su più criteri:
 	\begin{itemize}
-        \item Nell'ottica di una comprensione più profonda e ampia dell'argomento, il giornalista vuole interagire con i vari elementi della dashboard così da personalizzarne il contenuto informativo e ottenere informazioni aderenti al suo interesse (filtro su regioni, finestre temporali specifiche, ecc.);
+        \item nell'ottica di una comprensione più profonda e ampia dell'argomento, il giornalista vuole interagire con i vari elementi della dashboard così da personalizzarne il contenuto informativo e ottenere informazioni aderenti al suo interesse (filtro su regioni, finestre temporali specifiche, ecc.);
     \end{itemize}
-	\item Il sistema deve essere usabile e, allo stesso tempo, fornire funzionalità avanzate:
+	\item il sistema deve essere usabile e, allo stesso tempo, fornire funzionalità avanzate:
 	\begin{itemize}
-        \item Sulla base di quanto emerso dal questionario, i giornalisti hanno tendenzialmente un'alta familiarità con la tecnologia, per cui si attendono un sistema che permetta loro di svolgere task complessi, utilizzi terminologia specifica e non li tratti da novizi (rimane ben accetto un bottone di \textit{help} che espliciti su richiesta la semantica di un elemento, ma evitare suggerimenti permanenti o tutorial iniziali);
+        \item sulla base di quanto emerso dal questionario, i giornalisti hanno tendenzialmente un'alta familiarità con la tecnologia, per cui si attendono un sistema che permetta loro di svolgere task complessi, utilizzi terminologia specifica e non li tratti da novizi (rimane ben accetto un bottone di \textit{help} che espliciti su richiesta la semantica di un elemento, ma evitare suggerimenti permanenti o tutorial iniziali);
     \end{itemize}
-	\item Devono essere presentati dati relativi e/o aggregati:
+	\item devono essere presentati dati relativi e/o aggregati:
 	\begin{itemize}
-        \item Uno dei principali motivi che, a quanto appreso dal questionario, porta i giornalisti a non consultare la dashboard del DPC è la presenza, pressoché esclusiva, di dati assoluti, ovvero non relativizzati ai contesti in cui emergono (per esempio, numero positivi su 100.000 abitanti, tasso di positività, ecc.);
+        \item uno dei principali motivi che, a quanto appreso dal questionario, porta i giornalisti a non consultare la dashboard del DPC è la presenza, pressoché esclusiva, di dati assoluti, ovvero non relativizzati ai contesti in cui emergono (per esempio, numero positivi su 100.000 abitanti, tasso di positività, ecc.);
     \end{itemize}
 \end{itemize}

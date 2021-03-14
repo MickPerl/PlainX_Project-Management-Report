@@ -23,7 +23,7 @@ Le linee guida sono state scelte partendo dalle seguenti fonti:
 
 \subsubsection{Elenco}
 \label{sss:elenco}
-Ogni linea guida individuata ha un codice identificativo nel formato x.y dove x è un numero e y è una lettera.
+Ogni linea guida individuata ha un codice identificativo nel formato $x.y$ dove $x$ è un numero e $y$ è una lettera.
 \begin{enumerate}
     \item Evitare font decorativi, non familiari o piccoli e background rumorosi/confusionari; \label{lg:1}
     \item Limitazioni umane:\label{lg:2} 
@@ -111,12 +111,12 @@ Ogni linea guida individuata ha un codice identificativo nel formato x.y dove x 
 \begin{itemize}
     \item Nel selettore della data è possibile sia selezionare la data tramite tendina a calendario oppure digitandola. La digitazione permette a un utente più impaziente di essere più rapido ma al contempo implica che la data deve essere controllata in correttezza. Il feedback in questo elemento non è ben funzionante:
     \begin{itemize}
-        \item Il cursore all'interno dell'input della data non si muove con le frecce della tastiera;
-        \item Le frecce della tastiera, con il widget calendario aperto, muovono la data sul calendario (ipoteticamente) ma non la visualizzano e non permettono la sua selezione. Il fatto che venga mossa la data si nota poiché dopo un po' di pressioni cambia il mese;
+        \item il cursore all'interno dell'input della data non si muove con le frecce della tastiera;
+        \item le frecce della tastiera, con il widget calendario aperto, muovono la data sul calendario (ipoteticamente) ma non la visualizzano e non permettono la sua selezione. Il fatto che venga mossa la data si nota poiché dopo un po' di pressioni cambia il mese;
     \end{itemize}
     Sempre all'interno del selettore della data è possibile scegliere anche l'ora. La presenza di questo elemento è completamente fuorviante e inutile poiché i dati nella dashboard vengono inseriti solamente una volta al giorno, tra le 17 e le 18. Se  si prova a selezionare un orario diverso dalle 18 però (anche inserendo l'orario esatto di caricamento dei dati) non viene visualizzato alcunché;
-    \item Nel selettore delle regioni non vi sono problemi particolari, il feedback è adeguato;
-    \item Nel menu raggiungibile mediante il \textit{pulsante hamburger}\footnote{Il \textit{pulsante hamburger}, così chiamato per la sua somiglianza involontaria con un hamburger, è in genere un pulsante posizionato in un angolo superiore di un'interfaccia utente grafica. } ci sono dei link a siti correlati (governo, DPC, Ministero della Salute): è usato impropriamente poiché un menu dovrebbe fornire delle opzioni o funzionalità e non dei link. Sarebbe stato più corretto inserire questi link nella parte della dashboard chiamata ``Altri dati e informazioni" oppure in un'altra chiamata ``Contatti" o simile.
+    \item nel selettore delle regioni non vi sono problemi particolari, il feedback è adeguato;
+    \item nel menu raggiungibile mediante il \textit{pulsante hamburger}\footnote{Il \textit{pulsante hamburger}, così chiamato per la sua somiglianza involontaria con un hamburger, è in genere un pulsante posizionato in un angolo superiore di un'interfaccia utente grafica. } ci sono dei link a siti correlati (governo, DPC, Ministero della Salute): è usato impropriamente poiché un menu dovrebbe fornire delle opzioni o funzionalità e non dei link. Sarebbe stato più corretto inserire questi link nella parte della dashboard chiamata ``Altri dati e informazioni" oppure in un'altra chiamata ``Contatti" o simile.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -130,14 +130,14 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \subsubsection{Attuali positivi, Dimessi/Guariti, Deceduti, Totale casi}
 \label{sss:attuali_positivi-dimessi_guariti-deceduti-totale_casi}
 \begin{itemize}
-    \item \`E possibile ingrandire questi quattro box a schermo intero ma è una funzione effettivamente utile solo quando si ha il grafico (tab Andamento), perché nell'altro caso mostra solo numeri di uguale dimensione;
-    \item I numeri sono correttamente separati alle migliaia;
-    \item L'incremento dei casi è rispetto al giorno precedente ma non è specificato;
-    \item Il colore rosso sarebbe stato più opportuno per i Deceduti ma è una scelta cromatica ed è mantenuta coerentemente in tutta la dashboard quindi va bene;
-    \item Mancano delle icone che potevano essere messe per maggior chiarezza e per facilitare la comprensioni a chi soffre di daltonismo;
-    \item I box presentano valori assoluti, sarebbe stato utile presentare dati percentuali, in particolare nel caso della visualizzazione dell'incremento;
-    \item Selezionando in uno qualsiasi dei box il tab ``Andamento" viene visualizzato il grafico dell'andamento dei ``Attuali positivi", ``Dimessi", … dall'inizio della raccolta dati. Questa impossibilità di filtrare il grafico per date con uno slider come nelle parti ``Andamento nazionale" e ``Nuovi positivi" crea un'inconsistenza;
-    \item In ciascuno di questi box non è indicato a che cosa ci si riferisce. Anche se ormai sono diventati termini di uso comune sarebbe meglio inserire una legenda.
+    \item È possibile ingrandire questi quattro box a schermo intero ma è una funzione effettivamente utile solo quando si ha il grafico (tab Andamento), perché nell'altro caso mostra solo numeri di uguale dimensione;
+    \item i numeri sono correttamente separati alle migliaia;
+    \item l'incremento dei casi è rispetto al giorno precedente ma non è specificato;
+    \item il colore rosso sarebbe stato più opportuno per i Deceduti ma è una scelta cromatica ed è mantenuta coerentemente in tutta la dashboard quindi va bene;
+    \item mancano delle icone che potevano essere messe per maggior chiarezza e per facilitare la comprensioni a chi soffre di daltonismo;
+    \item i box presentano valori assoluti, sarebbe stato utile presentare dati percentuali, in particolare nel caso della visualizzazione dell'incremento;
+    \item selezionando in uno qualsiasi dei box il tab ``Andamento" viene visualizzato il grafico dell'andamento dei ``Attuali positivi", ``Dimessi", … dall'inizio della raccolta dati. Questa impossibilità di filtrare il grafico per date con uno slider come nelle parti ``Andamento nazionale" e ``Nuovi positivi" crea un'inconsistenza;
+    \item in ciascuno di questi box non è indicato a che cosa ci si riferisce. Anche se ormai sono diventati termini di uso comune sarebbe meglio inserire una legenda.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -150,8 +150,8 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \label{sss:altri-dati-informazioni}
 \begin{itemize}
     \item Non c'è consistenza per i link: l'elenco qui presente è fatto solo di link ma hanno una formattazione diversa, in particolare non sono blu e nemmeno sottolineati, come un utente web si aspetta;
-    \item Lo spazio è utilizzato in maniera inefficiente: solo metà. Poteva essere usata l'altra metà per mettere i link presenti nel menu hamburger dell'header;
-    \item Il titolo è in rosso e della stessa dimensione degli elementi del testo: il rosso è però già stato usato - coerentemente in tutta la dashboard - per indicare il numero totale dei casi avuti di Covid-19. Questo titolo, assieme a quello nella parte ``Note" sono un'eccezione alla scelta stilistica del titolo di colore bianco, leggermente grassetto e con font leggermente più grande a quello del corpo del testo.
+    \item lo spazio è utilizzato in maniera inefficiente: solo metà. Poteva essere usata l'altra metà per mettere i link presenti nel menu hamburger dell'header;
+    \item il titolo è in rosso e della stessa dimensione degli elementi del testo: il rosso è però già stato usato - coerentemente in tutta la dashboard - per indicare il numero totale dei casi avuti di Covid-19. Questo titolo, assieme a quello nella parte ``Note" sono un'eccezione alla scelta stilistica del titolo di colore bianco, leggermente grassetto e con font leggermente più grande a quello del corpo del testo.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -165,14 +165,14 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \label{sss:andamento-nazionale}
 \begin{itemize}
     \item Il grafico non presenta problemi particolari: ha un filtro per il range di date (approssimativo perché non indica la data precisa in cui inizia-finisce) ma permette il ritorno alla selezione iniziale sia tramite pulsante che tramite slider;
-    \item Manca una legenda per i colori delle curve, che sono consistenti però a quelle dei box sovrastanti;
-    \item Essendo i colori consistenti a quelli dei box, si presenta nuovamente il problema della difficoltà di differenziazione dei colori, per cui è d'obbligo una legenda;
-    \item Lo slider ha un funzionamento ambiguo in quanto gli estremi possono invertirsi di ruolo (ovvero se sposto l'estremo dx prima dell'estremo sinistro essi si invertono e viceversa);
-    \item La legenda in particolare serve perché facendo hover sulle curve viene fuori un nome della curva (con relativo valore nel punto di selezione) ma prendendo il nome dalla fonte di dati, quindi usando underscore (non \textit{human readable}\footnote{Un supporto \textit{human readable} è qualsiasi codifica di dati o informazioni che può essere letta naturalmente dall'uomo.});
-    \item Altro dettaglio, nella label della fonte dei dati dei casi attualmente positivi essa è chiamata ``totale\_positivi" che può facilmente essere confusa con ``Totale casi" (somma di attuali positivi, deceduti e dimessi/guariti);
-    \item Il box in questione ci si aspetta che diventi ``Andamento regionale" quando in alto a destra nell'header si filtra per regione sulla base del comportamento che avviene per gli altri box sovrastanti ma non accade;
-    \item Lo slider per il cambio data è distante dal dato che va a modificare (sta sopra il grafico e non sotto);
-    \item Muovendo gli slider non vengono notificate le nuove date su cui si sta filtrando.
+    \item manca una legenda per i colori delle curve, che sono consistenti però a quelle dei box sovrastanti;
+    \item essendo i colori consistenti a quelli dei box, si presenta nuovamente il problema della difficoltà di differenziazione dei colori, per cui è d'obbligo una legenda;
+    \item lo slider ha un funzionamento ambiguo in quanto gli estremi possono invertirsi di ruolo (ovvero se sposto l'estremo dx prima dell'estremo sinistro essi si invertono e viceversa);
+    \item la legenda in particolare serve perché facendo hover sulle curve viene fuori un nome della curva (con relativo valore nel punto di selezione) ma prendendo il nome dalla fonte di dati, quindi usando underscore (non \textit{human readable}\footnote{Un supporto \textit{human readable} è qualsiasi codifica di dati o informazioni che può essere letta naturalmente dall'uomo.});
+    \item altro dettaglio, nella label della fonte dei dati dei casi attualmente positivi essa è chiamata ``totale\_positivi" che può facilmente essere confusa con ``Totale casi" (somma di attuali positivi, deceduti e dimessi/guariti);
+    \item il box in questione ci si aspetta che diventi ``Andamento regionale" quando in alto a destra nell'header si filtra per regione sulla base del comportamento che avviene per gli altri box sovrastanti ma non accade;
+    \item lo slider per il cambio data è distante dal dato che va a modificare (sta sopra il grafico e non sotto);
+    \item muovendo gli slider non vengono notificate le nuove date su cui si sta filtrando.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -185,19 +185,19 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \label{sss:mappa}
 \begin{itemize}
     \item Le etichette con nome regione e il numero degli attuali positivi è particolarmente piccolo ed inoltre ha un bordo bianco su testo nero per farlo risaltare sulla mappa in grigio chiaro, risultando poco leggibile;
-    \item Comportamento diverso se si clicca il pallino giallo e se si clicca sulla regione. Il pallino giallo apre una finestrella in cui sono presentati tutti i dati a disposizione per la regione. Mentre se si clicca sulla regione vengono visualizzati pochi dati relativi ad alcuni codici identificativi poco utili all'utilizzatore della dashboard;
-    \item Zoomando sulla mappa ci si attenderebbe che da un certo soglia in poi i pallini delle regioni diventino quelli delle province, ma ciò non accade perché è stato preferito separare queste due visualizzazioni;
-    \item Nei controlli per lo zoom (+ e -) manca un reset a 0, cioè alla visualizzazione iniziale della mappa;
-    \item In alto a destra alla mappa c'è un pulsante che sembra offrire opzioni per configurare la mappa e invece mostra solamente una legenda per far capire quanto la dimensione di un pallino giallo sulla mappa sia rapportato al numero di casi attuali positivi (ma è molto complicato notare differenze, in particolare fra pallini di regioni vicine per numero di casi). Inoltre, il numero di casi preciso è scritto accanto al nome perciò il pallino realizzato in questo modo ha poco senso. Sarebbe stato più utile differenziarle per colore, tipo heat map;
-    \item Lo zoom non viene ricordato dalla mappa delle regioni e dalla mappa delle provincie e viceversa;
-    \item Riguardo la finestrella che si apre premendo il pallino giallo delle regioni, si può notare che vengono visualizzata una collezione di coppie chiave valore in cui le chiavi non sono human-readable (sono le etichette delle basi di dati in cui vengono memorizzati i dati che servono alla pubblicazione giornaliera tramite dashboard ed \textit{Excel});
-    \item Esiste un campo note fra le coppie chiave-valore ma essendo la finestrella molto stretta queste vengono visualizzate in una maniera che non ne semplifica la lettura;
-    \item Alla fine della presentazione della collezione di coppie chiave-valore vi è una sezione ``Suddivisione per stato" (a cosa si riferisce la parola stato lo si scopre solo scorrendo ancora un po'), poi molto spazio vuoto, poi un aerogramma molto molto piccolo, assolutamente illeggibile e quindi inutile;
-    \item Nella parte inferiore della finestrella ci sono due pulsanti, uno che sembra atto a spostare la finestrella dove si vuole all'interno della mappa e invece permette soltanto di centrare la regione all'interno della area di visualizzazione della mappa. L'altro invece, a forma di lente d'ingrandimento, permette di zoomare inutilmente sulla città capoluogo di provincia se selezionato il pallino, sulla regione (più utile) se selezionata la regione;
-    \item Essendo la dashboard indirizzata ad un pubblico italiano (deducibile dall'assenza di un selettore per la lingua) bisogna mantenere la lingua italiana in tutte le parti, invece, i nomi di alcune regioni sono state tradotte in inglese;
-    \item La visualizzazione dei numeri nella finestrella potrebbe avere un alignment a destra per aumentare la leggibilità;
-    \item Tra i controlli della mappa, potrebbe essere inserito un pulsante, cliccato il quale, la mappa viene zoomata direttamente sulla regione da cui l'utente sta visualizzando la dashboard, presentando i dati a livello provinciale;
-    \item Sarebbe utile un selettore radio per permettere di cambiare metrica rispetto cui visualizzare i dati nella mappa: deceduti, deceduti ogni 102.000 abitanti, totale casi, dimessi/guariti.
+    \item comportamento diverso se si clicca il pallino giallo e se si clicca sulla regione. Il pallino giallo apre una finestrella in cui sono presentati tutti i dati a disposizione per la regione. Mentre se si clicca sulla regione vengono visualizzati pochi dati relativi ad alcuni codici identificativi poco utili all'utilizzatore della dashboard;
+    \item zoomando sulla mappa ci si attenderebbe che da un certo soglia in poi i pallini delle regioni diventino quelli delle province, ma ciò non accade perché è stato preferito separare queste due visualizzazioni;
+    \item nei controlli per lo zoom (+ e -) manca un reset a 0, cioè alla visualizzazione iniziale della mappa;
+    \item in alto a destra alla mappa c'è un pulsante che sembra offrire opzioni per configurare la mappa e invece mostra solamente una legenda per far capire quanto la dimensione di un pallino giallo sulla mappa sia rapportato al numero di casi attuali positivi (ma è molto complicato notare differenze, in particolare fra pallini di regioni vicine per numero di casi). Inoltre, il numero di casi preciso è scritto accanto al nome perciò il pallino realizzato in questo modo ha poco senso. Sarebbe stato più utile differenziarle per colore, tipo heat map;
+    \item lo zoom non viene ricordato dalla mappa delle regioni e dalla mappa delle provincie e viceversa;
+    \item riguardo la finestrella che si apre premendo il pallino giallo delle regioni, si può notare che vengono visualizzata una collezione di coppie chiave valore in cui le chiavi non sono human-readable (sono le etichette delle basi di dati in cui vengono memorizzati i dati che servono alla pubblicazione giornaliera tramite dashboard ed \textit{Excel});
+    \item esiste un campo note fra le coppie chiave-valore ma essendo la finestrella molto stretta queste vengono visualizzate in una maniera che non ne semplifica la lettura;
+    \item alla fine della presentazione della collezione di coppie chiave-valore vi è una sezione ``Suddivisione per stato" (a cosa si riferisce la parola stato lo si scopre solo scorrendo ancora un po'), poi molto spazio vuoto, poi un aerogramma molto molto piccolo, assolutamente illeggibile e quindi inutile;
+    \item nella parte inferiore della finestrella ci sono due pulsanti, uno che sembra atto a spostare la finestrella dove si vuole all'interno della mappa e invece permette soltanto di centrare la regione all'interno della area di visualizzazione della mappa. L'altro invece, a forma di lente d'ingrandimento, permette di zoomare inutilmente sulla città capoluogo di provincia se selezionato il pallino, sulla regione (più utile) se selezionata la regione;
+    \item essendo la dashboard indirizzata ad un pubblico italiano (deducibile dall'assenza di un selettore per la lingua) bisogna mantenere la lingua italiana in tutte le parti, invece, i nomi di alcune regioni sono state tradotte in inglese;
+    \item la visualizzazione dei numeri nella finestrella potrebbe avere un alignment a destra per aumentare la leggibilità;
+    \item tra i controlli della mappa, potrebbe essere inserito un pulsante, cliccato il quale, la mappa viene zoomata direttamente sulla regione da cui l'utente sta visualizzando la dashboard, presentando i dati a livello provinciale;
+    \item sarebbe utile un selettore radio per permettere di cambiare metrica rispetto cui visualizzare i dati nella mappa: deceduti, deceduti ogni 102.000 abitanti, totale casi, dimessi/guariti.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -214,10 +214,10 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \label{sss:regioni_province-totale_casi-attuali-incremento}
 \begin{itemize}
     \item Il titolo è del colore e del livello di grassetto corretto (rispetto agli altri titoli) ma ha un font più piccolo rendendolo non conforme al resto della dashboard;
-    \item Le regioni sono cliccabili, ovvero ogni riga della lista delle regioni è cliccabile , ma al clic non succede nulla;
-    \item I dati potrebbero venire messi sotto forma di tabella  per una maggior leggibilità e semplificare il confronto e per fornire funzionalità di filtraggio;
-    \item I colori sono consistenti con i box in alto alla pagina;
-    \item Non ci sono differenze sostanziali di visualizzazione e layout fra la tab ``Regioni" e ``Province" ma purtroppo il dato attuali positivi non è raccolto a livello provinciale e quindi non è disponibile per la visualizzazione.
+    \item le regioni sono cliccabili, ovvero ogni riga della lista delle regioni è cliccabile , ma al clic non succede nulla;
+    \item i dati potrebbero venire messi sotto forma di tabella  per una maggior leggibilità e semplificare il confronto e per fornire funzionalità di filtraggio;
+    \item i colori sono consistenti con i box in alto alla pagina;
+    \item non ci sono differenze sostanziali di visualizzazione e layout fra la tab ``Regioni" e ``Province" ma purtroppo il dato attuali positivi non è raccolto a livello provinciale e quindi non è disponibile per la visualizzazione.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -229,16 +229,16 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \subsubsection{Nuovi positivi}
 \label{sss:nuovi-positivi}
 \begin{itemize}
-        \item Vale quanto detto per ``Andamento nazionale";
-        \item Etichette poco leggibili: sarebbe stato meglio formattare il testo in maniera diversa per data e valore, raggruppandoli in una maniera più significativa per confronti.
+    \item Vale quanto detto per ``Andamento nazionale";
+    \item etichette poco leggibili: sarebbe stato meglio formattare il testo in maniera diversa per data e valore, raggruppandoli in una maniera più significativa per confronti.
 \end{itemize}
 
 \subsubsection{Footer}
 \label{sss:footer}
 \begin{itemize}
     \item Il logo del DPC potrebbe essere più grande dato che lo spazio c'è e il logo è leggermente sgranato perché è piccolo;
-    \item Il font di alcune scritte risulta un po' piccolo;
-    \item C'è del testo in corsivo non si capisce perché ma è comunque leggibile.
+    \item il font di alcune scritte risulta un po' piccolo;
+    \item c'è del testo in corsivo non si capisce perché ma è comunque leggibile.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -250,10 +250,10 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \label{sss:note}
 \begin{itemize}
     \item Il font di alcune scritte risulta un po' piccolo;
-    \item Il titolo ``Note" non è consistente come nel caso di ``Altri dati e informazioni";
-    \item Le singole righe, se cliccate, rimangono selezionate, inutilmente, non prevedendo alcun altro effetto;
-    \item Preferibili categorizzazione note con breve etichetta nel formato DATA - Elenco regioni interessate, così da avere più righe nella parte visualizzata dell'elenco;
-    \item Colori semitrasparenti alternati per migliorare leggibilità delle righe.
+    \item il titolo ``Note" non è consistente come nel caso di ``Altri dati e informazioni";
+    \item le singole righe, se cliccate, rimangono selezionate, inutilmente, non prevedendo alcun altro effetto;
+    \item preferibili categorizzazione note con breve etichetta nel formato DATA - Elenco regioni interessate, così da avere più righe nella parte visualizzata dell'elenco;
+    \item colori semitrasparenti alternati per migliorare leggibilità delle righe.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -265,10 +265,10 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \label{sss:sidebar-informativa-dashboard}
 \begin{itemize}
     \item Il logo è di grandezza sufficiente;
-    \item Aprendola copre una sezione di dashboard; una soluzione migliore sarebbe stata farla comparire come una finestra modale\footnote{Nella progettazione delle interfacce utente, una finestra modale è una finestra ``figlia" che richiede all'utente di interagire con essa prima di ritornare ad operare con la finestra ``madre", impedendo la prosecuzione del flusso di lavoro sulla finestra principale dell'applicazione in esecuzione.};
-    \item Vi è la possibilità di fissarla facendo scorrere i contenuti della dashboard a destra:
-    \item La lunghezza media delle righe è inferiore ai 50 caratteri;
-    \item L'interlinea potrebbe essere leggermente aumentata.
+    \item aprendola copre una sezione di dashboard; una soluzione migliore sarebbe stata farla comparire come una finestra modale\footnote{Nella progettazione delle interfacce utente, una finestra modale è una finestra ``figlia" che richiede all'utente di interagire con essa prima di ritornare ad operare con la finestra ``madre", impedendo la prosecuzione del flusso di lavoro sulla finestra principale dell'applicazione in esecuzione.};
+    \item vi è la possibilità di fissarla facendo scorrere i contenuti della dashboard a destra:
+    \item la lunghezza media delle righe è inferiore ai 50 caratteri;
+    \item l'interlinea potrebbe essere leggermente aumentata.
 \end{itemize}
 In questa sezione di dashboard non sono rispettate le seguenti linee guida:
 \begin{itemize}
@@ -281,20 +281,20 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
 \label{sss:analisi-rispetto-linee-guida}
 \`E stato analizzato il rispetto di ogni linea guida identificata:
 \begin{enumerate}
-    \item Il font è comune ovunque, adeguato (sans-serif) ma, in alcuni punti, fin troppo grande a discapito di altri in cui è troppo piccolo (riquadri rosa). Nella mappa, in presenza di schermi molto piccoli i testi risultano poco leggibili come si nota dai riquadri viola in ~\ref{fig:guidelines-violations-1};
+    \item il font è comune ovunque, adeguato (sans-serif) ma, in alcuni punti, fin troppo grande a discapito di altri in cui è troppo piccolo (riquadri rosa). Nella mappa, in presenza di schermi molto piccoli i testi risultano poco leggibili come si nota dai riquadri viola in ~\ref{fig:guidelines-violations-1};
         \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_1}
         \caption{Violazione della linea guida 1: testo troppo piccolo e quindi poco leggibile.}
         \label{fig:guidelines-violations-1}
     \end{figure}
-    \item Limitazioni umane:
+    \item limitazioni umane:
         \begin{enumerate}[label=\alph*.]
-                \item Rispettata;
-                \item Rispettata;
-                \item [\ref{lg:2.c}] Violato nella sezione licenze;
-                \item [d.] Rispettata;
-                \item [\ref{lg:2.e}] Violato nella sidebar in cui è illustrata la dashboard e come mostrato nel rettangolo viola in ~\ref{fig:guidelines-violations-2}.
+                \item rispettata;
+                \item rispettata;
+                \item [\ref{lg:2.c}] violato nella sezione licenze;
+                \item [d.] rispettata;
+                \item [\ref{lg:2.e}] violato nella sidebar in cui è illustrata la dashboard e come mostrato nel rettangolo viola in ~\ref{fig:guidelines-violations-2}.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_2}
@@ -302,7 +302,7 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
                     \label{fig:guidelines-violations-2}
                 \end{figure}
         \end{enumerate}
-    \item I valori numerici non sono organizzati in blocchi non permettendo un agevole confronto come mostrato in ~\ref{fig:guidelines-violations-3}. Inoltre nel modal evidenziato in viola in ~\ref{fig:guidelines-violations-4} che rappresenta i dati di una regione c'è solo un elenco senza struttura con etichette difficilmente leggibili in quanto scritte con gli underscore al posto degli spazi;
+    \item i valori numerici non sono organizzati in blocchi non permettendo un agevole confronto come mostrato in ~\ref{fig:guidelines-violations-3}. Inoltre nel modal evidenziato in viola in ~\ref{fig:guidelines-violations-4} che rappresenta i dati di una regione c'è solo un elenco senza struttura con etichette difficilmente leggibili in quanto scritte con gli underscore al posto degli spazi;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_3}
@@ -315,11 +315,11 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
             \caption{Violazione della linea guida 3: I valori e i numeri sono difficilmente comprensibili.}
             \label{fig:guidelines-violations-4}
         \end{figure}
-    \item Rispettata; 
-    \item La memoria funziona meglio riconoscendo gli oggetti:
+    \item rispettata; 
+    \item la memoria funziona meglio riconoscendo gli oggetti:
         \begin{enumerate}[label=\alph*.]
-            \item Rispettata;
-            \item [\ref{lg:5.b}] Il percorso di lettura non è ottimale: i primi quattro riquadri vanno bene ma, il resto, da come si nota in ~\ref{fig:guidelines-violations-5} non è molto chiaro.
+            \item rispettata;
+            \item [\ref{lg:5.b}] il percorso di lettura non è ottimale: i primi quattro riquadri vanno bene ma, il resto, da come si nota in ~\ref{fig:guidelines-violations-5} non è molto chiaro.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_5}
@@ -327,45 +327,45 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
                     \label{fig:guidelines-violations-5}
                 \end{figure}
         \end{enumerate}
-    \item Rispettata;
-    \item Rispettata;
-    \item La funzionalità evidenziata in ~\ref{fig:guidelines-violations-6} permette di cambiare la visualizzazione della pagina, ma risulta poco visibile e non è ben segnalato;
-    \item Rispettata;
+    \item rispettata;
+    \item rispettata;
+    \item la funzionalità evidenziata in ~\ref{fig:guidelines-violations-6} permette di cambiare la visualizzazione della pagina, ma risulta poco visibile e non è ben segnalato;
+    \item rispettata;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_6}
             \caption{Violazione della linea guida 5.b: il percorso di lettura non è ottimale.}
             \label{fig:guidelines-violations-6}
         \end{figure}
-    \item Varie analisi (task) sono particolarmente scomode per essere realizzate (situazione terapie intensive);
-    \item Non vi sono indicazioni su come la dashboard possa essere utilizzata;
-    \item Rispettata;
-    \item Rispettata;
-    \item Sono presenti solamente valori assoluti (cumulativi e variazioni);
-    \item Rispettata;
-    \item Rispettata;
-    \item Una persona affetta da daltonismo nota che i primi due blocchi (attuali positivi e dimessi/guariti) sono poco riconoscibili in quanto i colori si assomigliano;
-    \item Rispettata;
-    \item Validità del contenuto:
+    \item varie analisi (task) sono particolarmente scomode per essere realizzate (situazione terapie intensive);
+    \item non vi sono indicazioni su come la dashboard possa essere utilizzata;
+    \item rispettata;
+    \item rispettata;
+    \item sono presenti solamente valori assoluti (cumulativi e variazioni);
+    \item rispettata;
+    \item rispettata;
+    \item una persona affetta da daltonismo nota che i primi due blocchi (attuali positivi e dimessi/guariti) sono poco riconoscibili in quanto i colori si assomigliano;
+    \item rispettata;
+    \item validità del contenuto:
         \begin{enumerate}[label=\alph*.]
-            \item [\ref{lg:19.a}] Non è presente la data dell'ultimo aggiornamento;
-            \item [b.] Rispettata;
+            \item [\ref{lg:19.a}] non è presente la data dell'ultimo aggiornamento;
+            \item [b.] rispettata;
         \end{enumerate}
-    \item Rispettate;
-    \item Rispettata;
-    \item Non sono presenti contatti o form di contatto;
-    \item Rispettata;
-    \item Rispettata;
-    \item Zoom-in e Zoom-out non sono funzionalità sufficienti in una mappa: ad esempio, se per errore o per intenzione ci si sposta troppo dal centro della mappa è bene avere un pulsante di reset;
+    \item rispettate;
+    \item rispettata;
+    \item non sono presenti contatti o form di contatto;
+    \item rispettata;
+    \item rispettata;
+    \item zoom-in e zoom-out non sono funzionalità sufficienti in una mappa: ad esempio, se per errore o per intenzione ci si sposta troppo dal centro della mappa è bene avere un pulsante di reset;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_7}
             \caption{Violazione della linea guida 25: funzionalità non sufficienti sulla mappa.}
             \label{fig:guidelines-violations-7}
         \end{figure}
-    \item Assenza di meccanismi di prevenzione degli errori:
+    \item assenza di meccanismi di prevenzione degli errori:
         \begin{enumerate}[label=\alph*.]
-            \item [\ref{lg:26.a}] In ~\ref{fig:guidelines-violations-8} si nota come si possono selezionare date future mentre in ~\ref{fig:guidelines-violations-9} come sia possibile scrivere un qualsiasi testo al posto della data;
+            \item [\ref{lg:26.a}] in ~\ref{fig:guidelines-violations-8} si nota come si possono selezionare date future mentre in ~\ref{fig:guidelines-violations-9} come sia possibile scrivere un qualsiasi testo al posto della data;
 
             \begin{figure}[H]
                 \centering
@@ -380,13 +380,13 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
                 \label{fig:guidelines-violations-9}
             \end{figure}
         \end{enumerate}
-    \item Flessibilità ed efficienza all'uso:
+    \item flessibilità ed efficienza all'uso:
         \begin{enumerate}[label=\alph*.]
-            \item [\ref{lg:27.a}] Un utente ``PRO" non ha modo di salvare le sue preferenze/modalità di visualizzazione;
-            \item [\ref{lg:27.b}] Non ci sono shortcut utilizzabili.
+            \item [\ref{lg:27.a}] un utente ``PRO" non ha modo di salvare le sue preferenze/modalità di visualizzazione;
+            \item [\ref{lg:27.b}] non ci sono shortcut utilizzabili.
         \end{enumerate}
-    \item Non ci sono spiegazioni su come usare il sistema;
-    \item Il sistema non è prevedibile: se si clicca sul nome di una regione oppure se sulla mappa si effettua uno zoom su di una regione ci si aspetta di visualizzare le province con i rispettivi valori e invece ciò non accade come mostrato in ~\ref{fig:guidelines-violations-10};
+    \item non ci sono spiegazioni su come usare il sistema;
+    \item il sistema non è prevedibile: se si clicca sul nome di una regione oppure se sulla mappa si effettua uno zoom su di una regione ci si aspetta di visualizzare le province con i rispettivi valori e invece ciò non accade come mostrato in ~\ref{fig:guidelines-violations-10};
         \begin{figure}[H]
             \centering
             \begin{subfigure}[b]{0.5\columnwidth}
@@ -407,47 +407,47 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
             \caption{Violazione della linea guida 29: non predicibilità dei comportamenti.}
             \label{fig:guidelines-violations-10}
         \end{figure}
-    \item Rispettata;
-    \item I testi, evidenziati, in ~\ref{fig:guidelines-violations-11} hanno la dimensioni del font eccessivamente piccola seppur ci sia abbastanza spazio per ingrandirla;
+    \item rispettata;
+    \item i testi, evidenziati, in ~\ref{fig:guidelines-violations-11} hanno la dimensioni del font eccessivamente piccola seppur ci sia abbastanza spazio per ingrandirla;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_13}
             \caption{Violazione della linea guida 31: i testi sono molto piccoli e la densità non risulta omogenea.}
             \label{fig:guidelines-violations-11}
         \end{figure}
-    \item Le regioni nell'elenco di destra sono cliccabile ma non viene scatenata alcuna azione, confondendo l'utente;
-    \item Non è chiaro a cosa serva il pulsante con icona un orologio evidenziato in ~\ref{fig:guidelines-violations-12} dato che l'orario è indifferente, anzi, se si seleziona un ``orario sbagliato" non viene visualizzato alcun tipo di dato;
+    \item le regioni nell'elenco di destra sono cliccabile ma non viene scatenata alcuna azione, confondendo l'utente;
+    \item non è chiaro a cosa serva il pulsante con icona un orologio evidenziato in ~\ref{fig:guidelines-violations-12} dato che l'orario è indifferente, anzi, se si seleziona un ``orario sbagliato" non viene visualizzato alcun tipo di dato;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_14}
             \caption{Violazione della linea guida 32: elementi cliccabili che però non compiono alcuna azione.}
             \label{fig:guidelines-violations-12}
         \end{figure}
-    \item Rispettata;
-    \item I link evidenziati in ~\ref{fig:guidelines-violations-13} non hanno lo stesso stile degli altri link;
+    \item rispettata;
+    \item i link evidenziati in ~\ref{fig:guidelines-violations-13} non hanno lo stesso stile degli altri link;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_15}
             \caption{Violazione linea guida 35: i link non hanno tutti lo stesso aspetto.}
             \label{fig:guidelines-violations-13}
         \end{figure}
-    \item Non sono presenti legende per i grafici a meno che non ci si passi sopra con il mouse;
-    \item Rispettata;
-    \item Non è disponibile una versione per la stampa. In ~\ref{fig:guidelines-violations-14} abbiamo provato a stampare la pagina della dashboard;
+    \item non sono presenti legende per i grafici a meno che non ci si passi sopra con il mouse;
+    \item rispettata;
+    \item non è disponibile una versione per la stampa. In ~\ref{fig:guidelines-violations-14} abbiamo provato a stampare la pagina della dashboard;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_16}
             \caption{Violazione della linea guida 38: non è disponibile una versione per la stampa.}
             \label{fig:guidelines-violations-14}
         \end{figure}
-    \item Rispettata;
-    \item Rispettata;
-    \item La disposizione in griglie, come si può notare in  ~\ref{fig:guidelines-violations-15}, non sono rispettate;
+    \item rispettata;
+    \item rispettata;
+    \item la disposizione in griglie, come si può notare in  ~\ref{fig:guidelines-violations-15}, non sono rispettate;
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\columnwidth]{../../../assets/images/verifica-risorse-esistenti/guidelines_violations_17}
             \caption{Violazione della linea guida 41: la disposizione in griglie non è rispettata.}
             \label{fig:guidelines-violations-15}
         \end{figure}
-    \item Rispettata.
+    \item rispettata.
 \end{enumerate}
