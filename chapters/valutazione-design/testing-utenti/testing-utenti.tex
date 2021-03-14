@@ -3,15 +3,15 @@
 
 \subsection{Progettazione del test}
 \label{ss:vd-progettazione-test}
-Per testare la nostra riprogettazione, abbiamo ritenuto opportuno perseguire con l'approccio Guerrilla (o Discount) usability testing già utilizzato in \hyperref[s:verifica-risorse-esistenti-testing-utenti]{Sezione 2.3}.\\
-In questo caso abbiamo però utilizzato una strategia di test di tipo formativa, in quanto il nostro obiettivo era quello di trovare quanti più problemi di usabilità possibili grazie agli utenti che partecipavano ai test.\\
-L'ambito del test è stato orizzontale, dal momento che il prodotto a nostra disposizione è solamente un wireframe con interazioni sufficienti al solo scopo esemplificativo. In altre parole, le interazioni presenti sono volte a spiegare il funzionamento delle varie componenti grafiche, mentre non sempre permettono di portare a termine i task in un modo realistico.\\
+Per testare la nostra riprogettazione, abbiamo ritenuto opportuno perseguire l'approccio Guerrilla (o Discount) usability testing già utilizzato in \hyperref[s:verifica-risorse-esistenti-testing-utenti]{Sezione 2.3}.\\
+In questo caso abbiamo però utilizzato una strategia di test di tipo formativa, in quanto il nostro obiettivo era quello di trovare quanti più problemi di usabilità possibili grazie agli utenti coinvolti nei test.\\
+L'ambito del test è stato orizzontale, dal momento che il prodotto a nostra disposizione è un wireframe con interazioni sufficienti al solo scopo esemplificativo. In altre parole, le interazioni presenti sono volte a spiegare il funzionamento delle varie componenti grafiche, mentre non sempre permettono di portare a termine i task in un modo realistico.\\
 Il setting in cui sono stati condotti i test ha visto l'utilizzo di software di videoconferenza. Gli assistenti del test siamo stati noi stessi, in qualità di membri del team di design. La selezione dei partecipanti è avvenuta mediante l'invio di una mail agli indirizzi dei giornalisti precedentemente contattati in occasione della ricerca etnografica e del testing sulle risorse esistenti.\\
-I dati che sono stati raccolti hanno natura qualitativa: in dettaglio, abbiamo chiesto ad ogni giornalista di simulare l'esecuzione di certi task mediante il wireframe e di esprimerci le sue impressioni a riguardo. L'output del test si è concretizzato, pertanto, in un insieme di dichiarazioni circa gli aspetti migliori dell'interfaccia progettata, nonché le criticità da risolvere.\\
+I dati raccolti hanno natura qualitativa: in dettaglio, abbiamo chiesto ad ogni giornalista di simulare l'esecuzione di certi task mediante il wireframe e di esprimerci le sue impressioni a riguardo. L'output del test si è concretizzato, pertanto, in un insieme di dichiarazioni circa gli aspetti migliori dell'interfaccia progettata, nonché le criticità da risolvere.\\
 Dato l'esiguo numero di giornalisti che si sono offerti per il test (tre) e la natura qualitativa dei dati raccolti, abbiamo deciso di analizzarli applicando il buon senso.\\
 Per i task sottoposti a ciascun utente, abbiamo attinto da quelli già selezionati nella prima fase di testing sulle risorse esistenti:
 \begin{enumerate}
-    \item calcolare il tasso di positività (calcolato come il rapporto tra nuovi positivi e i tamponi effettuati) relativo al 17 novembre 2020\footnote{La data del 17 novembre 2020 è completamente casuale. Inoltre, avendo a disposizione un wireframe, si è solamente chiesto al giornalista come avrebbe fatto a compiere la selezione della data, senza effettivamente portarla a termine in quanto non possibile.};    
+    \item calcolare il tasso di positività (calcolato come il rapporto tra nuovi positivi e i tamponi effettuati) relativo al 17 novembre 2020\footnote{La data del 17 novembre 2020 è completamente casuale. Inoltre, avendo a disposizione un wireframe, si è chiesto al giornalista di simulare la selezione della data, senza effettivamente portarla a termine.};    
     \item valutare l'occupazione delle strutture sanitare al 17 novembre 2020;
     \item calcolare il tasso di letalità (calcolato come il rapporto tra il numero dei deceduti e il numero dei casi) medio nel mese di aprile;
     \item analizzare la distribuzione del totale dei casi e dei decessi per diverse fasce di età;
@@ -52,7 +52,7 @@ L'\textit{happy path} riscontrato per ogni task è riportato di seguito:
         \item selezione del bottone ``Seleziona metriche" e trascinamento dell'etichetta ``Tasso di letalità" all'interno della schermata (andando a sostituire uno dei box già presenti);
         \item lettura del valore numerico presente nel box;
     \end{enumerate}
-    \item analizzare la distribuzione del totale dei casi e dei decessi per diverse fasce di età
+    \item analizzare la distribuzione del totale dei casi e dei decessi per diverse fasce di età:
     \begin{enumerate}
         \item apertura della dashboard;
         \item click sul link alla sezione ``Distribuzione su dati anagrafici" presente sulla barra di navigazione;
@@ -60,14 +60,14 @@ L'\textit{happy path} riscontrato per ogni task è riportato di seguito:
         \item selezione del bottone ``Seleziona metriche" e trascinamento etichetta ``Distribuzioni dei decessi per fasce d'età" all'interno della schermata;
         \item lettura del grafico ``Distribuzione dei decessi per fasce d'età";
     \end{enumerate}
-    \item confrontare l'andamento dei nuovi positivi giornalieri tra Emilia Romagna e Lombardia
+    \item confrontare l'andamento dei nuovi positivi giornalieri tra Emilia Romagna e Lombardia:
     \begin{enumerate}
         \item apertura della dashboard;
         \item click su link alla sezione ``Confronto tra regioni" presente sulla barra di navigazione;
         \item selezione sulla mappa delle regioni Emilia Romagna e Lombardia;
         \item lettura del grafico ``Nuovi positivi";
     \end{enumerate}
-    \item confrontare la media dei nuovi positivi giornalieri tra il mese di aprile e il mese di maggio
+    \item confrontare la media dei nuovi positivi giornalieri tra il mese di aprile e il mese di maggio:
     \begin{enumerate}
         \item apertura della dashboard;
         \item click sul link alla sezione ``Analisi di periodi" presente sulla barra di navigazione;
@@ -79,13 +79,13 @@ L'\textit{happy path} riscontrato per ogni task è riportato di seguito:
 \subsection{Scelta dei partecipanti}
 \label{ss:scelta-partecipanti}
 Per la scelta dei partecipanti, abbiamo cercato contatti di soggetti afferenti alla segmentazione dell'utenza definita nella sezione ``Ricerca etnografica". L'obiettivo iniziale era di avere un criterio di scelta che garantisse la diversificazione della redazione di riferimento (testata locale, nazionale, d'agenzia ecc.), al fine di avere risultati privi di bias.
-Purtroppo però questo non è stato possibile, in quanto pochi giornalisti hanno dato la loro disponibilità ad essere ricontattati mediante il questionario proposto in \hyperref[ss:questionario-online]{Sezione 1.2.2} e solo tre hanno nuovamente confermato di partecipare anche a questo testing.
+Purtroppo ciò non è stato possibile, in quanto pochi giornalisti hanno dato la loro disponibilità ad essere ricontattati, nella domanda appositamente inserita nel questionario proposto in \hyperref[ss:questionario-online]{Sezione 1.2.2} e solo tre hanno poi effettivamente confermato la loro disponibilità a partecipare anche a questo testing.
 
 \subsection{Esecuzione dei test}
 \label{ss:esecuzione-test}
-Il test è stato eseguito sui wireframe della riprogettazione della dashboard del DPC: trattasi di un mock-up che offre diverse possibilità di interazione all'utente, per permettergli di comprendere il funzionamento di ogni componente grafica.\\
+Il test è stato eseguito sui wireframe dell'interfaccia riprogettata della dashboard del DPC: trattasi di un mock-up che offre diverse possibilità di interazione all'utente, per permettergli di comprendere il funzionamento di ogni componente grafica.\\
 L'approccio seguito è stato quello del ``Thinking aloud" per cui abbiamo chiesto a ciascun giornalista di eseguire i task predeterminati sull'interfaccia e di riferirci, a voce alta appunto, le sue impressioni e intenzioni step by step.\\
-Come in \hyperref[sss:approccio-adottato]{Sezione 2.3.5} viene di seguito riportata una tabella con indicati i problemi evidenziati dagli utenti che hanno partecipato al test, con la frequenza con cui si sono presentati e l'impatto nella conclusione del task.
+Come in \hyperref[sss:approccio-adottato]{Sezione 2.3.5} viene di seguito riportata una tabella in cui sono indicati i problemi evidenziati dagli utenti coinvolti nel test, la frequenza con cui si sono presentati e l'impatto ai fini della conclusione del task.
 
 {
 \renewcommand{\arraystretch}{2}
@@ -100,19 +100,19 @@ Come in \hyperref[sss:approccio-adottato]{Sezione 2.3.5} viene di seguito riport
     \hline
     3 & L'utente vorrebbe avere modo di distinguere fra tamponi molecolari e antigenici, in quanto necessari per comprendere correttamente l'andamento della pandemia & 100\% & Alto \\
     \hline
-    4 & L'utente trova alcune metriche nella tabella presente in ``Panoramica" ripetitive e a suo parere poco utili & 66\% & Basso \\
+    4 & L'utente reputa alcune metriche nella tabella presente in ``Panoramica" ripetitive e poco utili & 66\% & Basso \\
     \hline
-    5 & L'utente trova il termine ``metriche" poco chiaro (non lo userebbe e quindi ``Seleziona metriche" non aiuta) & 66\% & Medio \\
+    5 & L'utente trova il termine ``metriche" poco chiaro (non lo comprende e quindi non usa ``Seleziona metriche") & 66\% & Medio \\
     \hline
-    6 & L'utente non comprende il funzionamento dei pulsanti di ``Import" e ``Export" della personalizzazione dell'interfaccia presenti nella barra di navigazione & 100\% & Basso \\
+    6 & L'utente non comprende il funzionamento dei pulsanti di ``Import" ed ``Export" della personalizzazione dell'interfaccia presenti nella barra di navigazione & 100\% & Basso \\
     \hline
 \end{longtable}
 }
 
 \subsection{Valutazione finale e report}
 \label{ss:valutazione-finale-report}
-Abbiamo valutato i dati raccolti calcolando la frequenza degli errori dei diversi giornalisti a fronte di ciascun task e tracciando una curva di urgenza (Figura \ref{fig:testing-urgency-curve}) in termini di frequenza e impatto dei problemi emersi.
-La curva di urgenza corrisponde è posta in modo tale da evidenziare la necessità di risolvere tutti quanti i problemi che sono stati riscontrati, partendo ovviamente dai problemi con peso maggiore, come 
+Abbiamo valutato i dati raccolti calcolando la frequenza degli errori dei diversi giornalisti a fronte di ciascun task e riportandoli su un piano cartesiano la cui ascissa indica l'impatto e l'ordinata la frequenza. (Figura \ref{fig:testing-urgency-curve}).
+Abbiamo quindi tracciato una curva di urgenza, in modo che fosse necessario risolvere tutti i problemi riscontrati.
 
 \begin{figure}[H]
     \centering
@@ -121,4 +121,5 @@ La curva di urgenza corrisponde è posta in modo tale da evidenziare la necessit
     \label{fig:testing-urgency-curve}
 \end{figure}
 \noindent
-Come i problemi risolti trovano riscontro nel design è illustrato nella \hyperref[s:wireframe]{Sezione 4.6}, assieme alla presentazione delle parti non oggetto di correzione e di quelle che sono invece state corrette dopo l'inspection.
+
+Le soluzioni adottate per ogni problema sono documentate nel blocchi di iterazione riportati nella \hyperref[s:wireframe]{Sezione 4.6} in cui sono trattati i wireframe: abbiamo deciso di riportare in tali blocchi tutti i raffinamenti e le correzioni apportate seguitamente all'inspection e al testing, al fine di concentrare in un'unica sezione del report l'intera storia evolutiva di ogni componente grafica.
