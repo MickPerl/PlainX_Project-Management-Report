@@ -116,7 +116,7 @@ Ogni linea guida individuata ha un codice identificativo nel formato $x.y$ dove 
     \end{itemize}
     Sempre all'interno del selettore della data è possibile scegliere anche l'ora. La presenza di questo elemento è completamente fuorviante e inutile poiché i dati nella dashboard vengono inseriti solamente una volta al giorno, tra le 17 e le 18. Se  si prova a selezionare un orario diverso dalle 18 però (anche inserendo l'orario esatto di caricamento dei dati) non viene visualizzato alcunché;
     \item nel selettore delle regioni non vi sono problemi particolari, il feedback è adeguato;
-    \item nel menu raggiungibile mediante il \textit{pulsante hamburger}\footnote{Il \textit{pulsante hamburger}, così chiamato per la sua somiglianza involontaria con un hamburger, è in genere un pulsante posizionato in un angolo superiore di un'interfaccia utente grafica. } ci sono dei link a siti correlati (governo, DPC, Ministero della Salute): è usato impropriamente poiché un menu dovrebbe fornire delle opzioni o funzionalità e non dei link. Sarebbe stato più corretto inserire questi link nella parte della dashboard chiamata ``Altri dati e informazioni" oppure in un'altra chiamata ``Contatti" o simile.
+    \item nel menu raggiungibile mediante il \textit{pulsante hamburger}\footnote{Il \textit{pulsante hamburger}, così chiamato per la sua somiglianza involontaria con un hamburger, è in genere un pulsante posizionato in un angolo superiore di un'interfaccia utente grafica. } ci sono dei link a siti correlati (Governo, DPC, Ministero della Salute): è usato impropriamente poiché un menu dovrebbe fornire delle opzioni o funzionalità e non dei link. Sarebbe stato più corretto inserire questi link nella parte della dashboard chiamata ``Altri dati e informazioni" oppure in un'altra chiamata ``Contatti" o simile.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -190,14 +190,14 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
     \item nei controlli per lo zoom (+ e -) manca un reset a 0, cioè alla visualizzazione iniziale della mappa;
     \item in alto a destra alla mappa c'è un pulsante che sembra offrire opzioni per configurare la mappa e invece mostra solamente una legenda per far capire quanto la dimensione di un pallino giallo sulla mappa sia rapportato al numero di casi attuali positivi (ma è molto complicato notare differenze, in particolare fra pallini di regioni vicine per numero di casi). Inoltre, il numero di casi preciso è scritto accanto al nome perciò il pallino realizzato in questo modo ha poco senso. Sarebbe stato più utile differenziarle per colore, tipo heat map;
     \item lo zoom non viene ricordato dalla mappa delle regioni e dalla mappa delle provincie e viceversa;
-    \item riguardo la finestrella che si apre premendo il pallino giallo delle regioni, si può notare che vengono visualizzata una collezione di coppie chiave valore in cui le chiavi non sono human-readable (sono le etichette delle basi di dati in cui vengono memorizzati i dati che servono alla pubblicazione giornaliera tramite dashboard ed \textit{Excel});
+    \item riguardo la finestrella che si apre premendo il pallino giallo delle regioni, si può notare che vengono visualizzata una collezione di coppie chiave valore in cui le chiavi non sono human-readable (sono le etichette delle basi di dati in cui vengono memorizzati i dati che servono alla pubblicazione giornaliera tramite dashboard e fogli di calcolo);
     \item esiste un campo note fra le coppie chiave-valore ma essendo la finestrella molto stretta queste vengono visualizzate in una maniera che non ne semplifica la lettura;
     \item alla fine della presentazione della collezione di coppie chiave-valore vi è una sezione ``Suddivisione per stato" (a cosa si riferisce la parola stato lo si scopre solo scorrendo ancora un po'), poi molto spazio vuoto, poi un aerogramma molto molto piccolo, assolutamente illeggibile e quindi inutile;
     \item nella parte inferiore della finestrella ci sono due pulsanti, uno che sembra atto a spostare la finestrella dove si vuole all'interno della mappa e invece permette soltanto di centrare la regione all'interno della area di visualizzazione della mappa. L'altro invece, a forma di lente d'ingrandimento, permette di zoomare inutilmente sulla città capoluogo di provincia se selezionato il pallino, sulla regione (più utile) se selezionata la regione;
     \item essendo la dashboard indirizzata ad un pubblico italiano (deducibile dall'assenza di un selettore per la lingua) bisogna mantenere la lingua italiana in tutte le parti, invece, i nomi di alcune regioni sono state tradotte in inglese;
     \item la visualizzazione dei numeri nella finestrella potrebbe avere un alignment a destra per aumentare la leggibilità;
     \item tra i controlli della mappa, potrebbe essere inserito un pulsante, cliccato il quale, la mappa viene zoomata direttamente sulla regione da cui l'utente sta visualizzando la dashboard, presentando i dati a livello provinciale;
-    \item sarebbe utile un selettore radio per permettere di cambiare metrica rispetto cui visualizzare i dati nella mappa: deceduti, deceduti ogni 102.000 abitanti, totale casi, dimessi/guariti.
+    \item sarebbe utile un selettore radio per permettere di cambiare metrica rispetto cui visualizzare i dati nella mappa: deceduti, deceduti ogni 10.000 abitanti, totale casi, dimessi/guariti.
 \end{itemize}
 In questa sezione di dashboard non sono state rispettate le seguenti linee guida:
 \begin{itemize}
@@ -214,7 +214,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \label{sss:regioni_province-totale_casi-attuali-incremento}
 \begin{itemize}
     \item Il titolo è del colore e del livello di grassetto corretto (rispetto agli altri titoli) ma ha un font più piccolo rendendolo non conforme al resto della dashboard;
-    \item le regioni sono cliccabili, ovvero ogni riga della lista delle regioni è cliccabile , ma al clic non succede nulla;
+    \item le regioni sono cliccabili, ovvero ogni riga della lista delle regioni è cliccabile, ma al clic non succede nulla;
     \item i dati potrebbero venire messi sotto forma di tabella  per una maggior leggibilità e semplificare il confronto e per fornire funzionalità di filtraggio;
     \item i colori sono consistenti con i box in alto alla pagina;
     \item non ci sono differenze sostanziali di visualizzazione e layout fra la tab ``Regioni" e ``Province" ma purtroppo il dato attuali positivi non è raccolto a livello provinciale e quindi non è disponibile per la visualizzazione.
@@ -266,7 +266,7 @@ In questa sezione di dashboard non sono state rispettate le seguenti linee guida
 \begin{itemize}
     \item Il logo è di grandezza sufficiente;
     \item aprendola copre una sezione di dashboard; una soluzione migliore sarebbe stata farla comparire come una finestra modale\footnote{Nella progettazione delle interfacce utente, una finestra modale è una finestra ``figlia" che richiede all'utente di interagire con essa prima di ritornare ad operare con la finestra ``madre", impedendo la prosecuzione del flusso di lavoro sulla finestra principale dell'applicazione in esecuzione.};
-    \item vi è la possibilità di fissarla facendo scorrere i contenuti della dashboard a destra:
+    \item vi è la possibilità di fissarla facendo scorrere i contenuti della dashboard a destra;
     \item la lunghezza media delle righe è inferiore ai 50 caratteri;
     \item l'interlinea potrebbe essere leggermente aumentata.
 \end{itemize}
@@ -383,7 +383,7 @@ In questa sezione di dashboard non sono rispettate le seguenti linee guida:
     \item flessibilità ed efficienza all'uso:
         \begin{enumerate}[label=\alph*.]
             \item [\ref{lg:27.a}] un utente ``PRO" non ha modo di salvare le sue preferenze/modalità di visualizzazione;
-            \item [\ref{lg:27.b}] non ci sono shortcut utilizzabili.
+            \item [\ref{lg:27.b}] non ci sono shortcut utilizzabili;
         \end{enumerate}
     \item non ci sono spiegazioni su come usare il sistema;
     \item il sistema non è prevedibile: se si clicca sul nome di una regione oppure se sulla mappa si effettua uno zoom su di una regione ci si aspetta di visualizzare le province con i rispettivi valori e invece ciò non accade come mostrato in Figura \ref{fig:guidelines-violations-10};
