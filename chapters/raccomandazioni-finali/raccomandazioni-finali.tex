@@ -5,4 +5,30 @@
 \chapter{Raccomandazioni finali}
 \label{c:raccomandazioni-finali}
 
+\let\oldquote\quote
+\let\endoldquote\endquote
+\renewenvironment{quote}[2][]
+{\if\relax\detokenize{#1}\relax
+        \def\quoteauthor{#2}%
+    \else
+        \def\quoteauthor{#2~---~#1}%
+    \fi
+    \oldquote}
+{\par\nobreak\smallskip\hfill(\quoteauthor)%
+    \endoldquote\addvspace{\bigskipamount}}
+
+\begin{quote}{M.T. Island}
+    In questi mesi ci siamo affidati ai numeri per avere risposte asettiche, prive di condizionamenti.
+    Tuttavia anche i numeri possono mentire: se li costringiamo a farlo, per esempio, ma anche se li guardiamo inquadrandoli nel contesto sbagliato.
+    Ed è quello che, in molti casi, sta accadendo con l'interpretazione della fase attuale dell'epidemia di Covid-19: non sempre i numeri sono raccolti ed esposti in modo corretto, e soprattutto non li analizziamo nel giusto contesto.
+\end{quote}
+\noindent
+L'interfaccia frutto della nostra riprogettazione ha raggiunto l'obiettivo di fornire il giusto contesto alle analisi dei giornalisti, così da permetter loro di maturare comprensioni corrette e profonde della metriche epidemiologiche.\\
+In dettaglio, siamo partiti conducendo una ricerca etnografica che ci ha permesso di raccogliere le esigenze e le testimonianze dei giornalisti, in qualità di utenti diretti dell'interfaccia.
+In seguito, abbiamo individuato linee guida ritenute di valore nella valutazione di dashboard e le abbiamo analizzate sull'interfaccia originale, giungendo così alla raccolta di una serie di criticità.
+Siamo passati, quindi, a studiare la fattibilità della nostra riprogettazione, definendo il contesto d'uso, i task e le persona da supportare, nonché gli scenari in cui credibilmente operano.
+A questo punto, siamo entrati nel vivo della definizione della nostra riprogettazione, effettuando scelte relativamente all'architettura delle informazioni e dell'interazione da realizzare e seguendo il modello CAO=S: il frutto di questi studi sono stati i blueprint e i wireframe.
+Infine, abbiamo condotto l'ispezione e il testing con degli utenti reali, raccogliendo insight circa le criticità risolte e gli aspetti ancora da raffinare.
+Ogni fase ha visto susseguirsi diverse iterazioni, necessarie per giungere alla versione finale dell'interfaccia.\\
+Sulla base di ciò, siamo fiduciosi che la nostra riprogettazione sia di qualità e possa apportare grandi benefici sulla comprensione della pandemia in atto da parte dei giornalisti o chiunque ne sia interessato: con riferimento all'interfaccia originaria della dashboard, quella da noi proposta offre ai suoi utenti facilità di utilizzo, flessibilità, un'esperienza d'uso proficua e soddisfacente.
 \end{document}
