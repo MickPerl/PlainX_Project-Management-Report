@@ -6,8 +6,8 @@
 Abbiamo realizzato i wireframe utilizzando il software \textit{Balsamiq}: per giungere alla loro versione finale sono state necessarie molte iterazioni.\\
 Nelle sezioni che seguono, presentiamo ciascun wireframe, argomentando le scelte progettuali e le riflessioni alla loro base.
 
-\subsubsection{Header e footer}\label{ss:header-e-footer}
-Ogni schermata possiede un medesimo header nella parte superiore e uno stesso footer nella parte inferiore: l'unica eccezione è fatta dall'header della schermata ``Analisi di periodi'' che presenta due selettori di date, dovendo permettere all'utente d'inserire due range di date.
+\subsection{Header e footer}\label{ss:header-e-footer}
+Ogni schermata possiede un header nella parte superiore e uno footer, comune ovunque, nella parte inferiore: gli header variano in base alle necessità della schermata, come illustrato nelle figure seguenti.
 
 \paragraph{Header}\mbox{}\\
 \begin{figure}[H]
@@ -30,10 +30,10 @@ Ogni schermata possiede un medesimo header nella parte superiore e uno stesso fo
     \caption{Header di ``Analisi di periodi''.}
     \label{fig:header-due-date}
 \end{figure}
-
+\noindent
 Gli elementi che compaiono nell'header, partendo da destra, sono:
 \begin{itemize}
-    \item logo della protezione civile;
+    \item logo del DPC;
     \item titolo e sottotitolo della dashboard;
     \item pulsante per aprire il menù per selezionare quali widget visualizzare;
     \item pulsante per ottenere un link condivisibile della dashboard e dell'organizzazione delle schermate (Figura \ref{fig:box-condividi});
@@ -59,15 +59,15 @@ Gli elementi che compaiono nell'header, partendo da destra, sono:
     \end{subfigure}
     \caption{Pulsanti per aprire i widget per selezionare una data o un range di date.}
 \end{figure}
-
+\noindent
 Alla prima visita della dashboard viene richiesto di abilitare la ricezione di notifiche: se accettata l'utente potrà ricevere una notifica di aggiornamento dei dati del giorno corrente.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\columnwidth]{wireframes/richiesta-notifiche}
     \caption{Tooltip per richiedere l'abilitazione delle notifiche.}\label{fig:richiesta-notifiche}
 \end{figure}
-
-\`E possibile condividere l'organizzazione della dashboard inviando il link ottenibile premendo il pulsante ``Condividi'' (Figura \ref{fig:box-condividi})
+\noindent
+\`E possibile condividere l'organizzazione della dashboard inviando il link ottenibile premendo il pulsante ``Condividi'' (Figura \ref{fig:box-condividi}).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\columnwidth]{wireframes/box-condividi}
@@ -143,8 +143,7 @@ I widget per selezionare la data, apribili tramite il bottone tra le due frecce,
     \end{subfigure}
     \caption{Widget per selezionare la data.}
 \end{figure}
-
-
+\noindent
 Nel widget per selezionare una data singola (Figura \ref{fig:header-data-singola}) vi è bottone ``Vai ad oggi" per tornare rapidamente alla data odierna.\\
 Nel widget per selezionare un range di date (Figura \ref{fig:header-data-range}) vi sono diversi bottoni che permettono agevolmente di andare al mese precedente, ai quindici giorni precedenti, ai sette giorni precedenti o di deselezionare il range.\\
 In Figura \ref{fig:header-data-aperta}, è mostrato l'header e il widget calendario aperto.
@@ -156,7 +155,7 @@ In Figura \ref{fig:header-data-aperta}, è mostrato l'header e il widget calenda
 \end{figure}
 
 \begin{bclogo}{Iterazioni sul widget calendario}
-    Inizialmente avevamo usato un semplice selettore di date (Figura \ref{selettore-data-singola-vecchia}): solo in iterazioni successive, abbiamo arricchito l'interazione con bottoni di shortcut alla base del widget stesso.
+    Inizialmente avevamo usato un semplice selettore di date (Figura \ref{fig:selettore-data-singola-vecchia}): solo in iterazioni successive, abbiamo arricchito l'interazione con bottoni di shortcut alla base del widget stesso.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\columnwidth]{wireframes/selettore-data-singola-vecchia}
@@ -175,12 +174,12 @@ In Figura \ref{fig:header-data-aperta}, è mostrato l'header e il widget calenda
 Nel footer (Figura \ref{fig:footer}) vi sono alcune informazioni, quali link per le pagine istituzionali e le fonti dai quali i dati sono stati recuperati; a partire da destra, compaiono:
 \begin{itemize}
     \item logo della Repubblica Italiana;
-    \item logo e nome della Protezione Civile;
+    \item logo e nome della DPC;
     \item link alle fonti e data dell'ultimo aggiornamento;
     \item link ai siti istituzionali.
 \end{itemize}
 
-\begin{bclogo}{Iterazioni sul Footer}
+\begin{bclogo}{Iterazioni sul footer}
     Le prime versioni del footer erano sprovviste della data dell'ultimo aggiornamento, tuttavia ci siamo resi conto che tale informazione era essenziale per i giornalisti, i quali hanno necessità di conoscere l'ultimo aggiornamento dei dati che stanno riportando nei loro articoli.
 \begin{figure}[H]
     \centering
@@ -208,7 +207,7 @@ La schermata ``Panoramica'' è la prima schermata che un utente incontra aprendo
     \caption{Esempio di box numerico.}
     \label{fig:box-numerico}
 \end{figure}
-
+\noindent
 I cinque box numerici, di cui Figura \ref{fig:box-numerico} ne è un esempio, sono composti dal nome della metrica, posto in basso e avente la dimensione del font maggiore, e tre valori numerici, ognuno dei quali è preceduto da un'etichetta che esplicita a cosa si riferisce.\\
 In ogni box, è presente, in basso a sinistra, un'icona che aiuta il giornalista nell'individuare la metrica trattata e a ridurne il carico il carico cognitivo. Come sfondo del box vi è la curva che rappresenta l'andamento della metrica.\\
 Al di sotto di ogni box numerico vi sono dei pulsanti che cambiano il contenuto del box numerico: al netto di bottoni auto-esplicativi, il pulsante ``Andamento'' mostra un grafico con l'andamento della metrica (Figura \ref{fig:box-andamento}), il pulsante ``Tasso di \dots'' mostra una \textit{gauge} (Figura \ref{fig:box-gauge}) mentre il pulsante ``Situazione'' mostra il box numerico mostrato di default all'apertura della pagina.
@@ -248,7 +247,7 @@ Al di sotto di ogni box numerico vi sono dei pulsanti che cambiano il contenuto 
     \caption{Prime versione dei box numerici}
     \label{fig:box-numerici-prima-versione}
 \end{figure}
-
+\noindent
 Dopo aver scelto di proseguire lo sviluppo del design di Figura \ref{fig:box-numerici-prima-versione1}, abbiamo riorganizzato i componenti all'interno del box ottenendo quando mostrato in Figura \ref{fig:box-numerici-seconda-versione}.
 
 \begin{figure}[H]
@@ -257,7 +256,7 @@ Dopo aver scelto di proseguire lo sviluppo del design di Figura \ref{fig:box-num
     \caption{Seconda versione dei box numerici.}
     \label{fig:box-numerici-seconda-versione}
 \end{figure}
-
+\noindent
 Infine, rendendoci conto che avevamo ancora spazio a disposizione abbiamo aggiunto un ulteriore valore, quale un valore percentuale, ottenendo così il design finale.
 \end{bclogo}
 \clearpage
@@ -278,10 +277,10 @@ I box con andamento possono avere due tipi di grafico in base alla metrica di cu
     \end{subfigure}
     \caption{Differenti tipi di grafico dell'andamento di una metrica.}
 \end{figure}
-
+\noindent
 In Figura \ref{fig:box-andamento-no-monotonia} è presente un indicatore al valore massimo raggiunto, che, a differenza, in Figura \ref{fig:box-andamento-monotono} non è presente.\\
-In comune a entrambi in grafici vi è uno slider sotto l'asse delle X con due selettori, muovendo i quali si può modificare la data di inizio e di fine della finestra temporale d'interesse.\\
-Inoltre in caso si passi sopra al grafico con il cursore, compare un tooltip che indica i valori raggiunti il giorno indicato dalla proiezione sull'asse delle X.\\
+In comune a entrambi in grafici vi è uno slider sotto l'asse delle $x$ con due selettori, muovendo i quali si può modificare la data di inizio e di fine della finestra temporale d'interesse.\\
+Inoltre in caso si passi sopra al grafico con il cursore, compare un tooltip che indica i valori raggiunti il giorno indicato dalla proiezione sull'asse delle $x$.\\
 In questi grafici è presente un pulsante in alto a destra che permette di visualizzare il grafico a schermo intero, come mostrato in Figura \ref{fig:grafico-full-screen}. Lo stesso pulsante può essere utilizzato per far tornare il grafico alla sua dimensione originaria.
 \begin{figure}[H]
     \centering
@@ -344,6 +343,7 @@ Sulla destra, vi sono due pulsanti che al click aprono due sidebar: una che most
     \end{subfigure}
     \caption{Differenti tipi di grafico dell'andamento di una metrica.}
 \end{figure}
+\noindent
 In caso venga pubblicata una nuova nota o un nuovo provvedimento mentre si sta utilizzando la dashboard, l'utente viene notificato con la comparsa del numero di nuove note o nuovi provvedimenti sul pulsante; nel caso di Figura \ref{fig:note} abbiamo simulato la presenza di due nuove note.
 
 \clearpage
@@ -354,6 +354,7 @@ In caso venga pubblicata una nuova nota o un nuovo provvedimento mentre si sta u
     \caption{Tabella delle regioni.}
     \label{fig:tabella}
 \end{figure}
+\noindent
 Nella tabella in Figura \ref{fig:tabella} vi è l'elenco delle regioni italiane e i valori che hanno di certe metriche: queste possono essere modificate cliccando sul pulsante con icona a ghiera, cliccando sul quale si apre una lista di metriche come in Figura \ref{fig:lista-metriche-tabella} che possono essere selezionate tramite una \textit{check-box}.\\
 Le colonne della tabella offrono la funzionalità di ordinamento per semplificare il confronto tra le diverse regioni, inoltre è presente una riga rappresentante la situazione dell'Italia in modo da permettere il confronto tra una regione e la media nazionale. In ogni cella i valori delle metriche sono affiancati a una barra che permette di confrontare più velocemente le diverse righe.\\
 Cliccando su una regione i dati dell'intera schermata vengono aggiornati con i dati relativi a essa: a mo' d'esempio, cliccando sulla regione Molise si ottiene la schermata in Figura \ref{fig:panoramica-regione}. Nella tabella di questa vista sono presenti i dati relativi alle province della regione selezionata, alla regione stessa e alla nazione. Per tornare alla vista nazionale è possibile cliccare sulla riga dell'Italia nella tabella.
@@ -388,7 +389,7 @@ La mappa (Figura \ref{fig:mappa-panoramica}) è uno strumento utile per avere un
         \label{fig:lista-metriche-mappa}
     \end{subfigure}
 \end{figure}
-
+\noindent
 Oltre alle interazioni possibili nella tabella, cliccando sull'area di regione nella mappa è possibile passare alla vista regionale della schermata ``Panoramica'' come in Figura \ref{fig:panoramica-regione}, mentre per tornare alla panoramica nazionale è possibile cliccare al di fuori dei confini regionali nella mappa.
 
 \paragraph{Caricamento dei dati}\mbox{}\\
@@ -407,15 +408,15 @@ Abbiamo previsto una schermata di caricamento in attesa che i dati vengano scari
     \caption{Schermata ``Confronto fra regioni''.}
     \label{fig:confronto-regioni}
 \end{figure}
-La schermata ``Confronto fra regioni'' è raggiungibile cliccando sul link omonimo in alto a destra. In questa schermata è possibile selezionare una o più regioni per confrontare alcune metriche mediante dei grafici. La selezione avviene per mezzo una lista \textit{ComboBox} posizionata al di sopra dell mappa, come mostrato in Figura \ref{fig:seleziona-regione}, oppure cliccando direttamente sull'area della regione che si vuole aggiungere al confronto. Le regione selezionate sono indicate tramite una spunta (\checkmark) e i loro confini sono colorati con gli stessi colori assunti poi nei grafici.
+La schermata ``Confronto fra regioni'' è raggiungibile cliccando sul link omonimo in alto a destra. In questa schermata è possibile selezionare una o più regioni per confrontare alcune metriche mediante dei grafici. La selezione avviene per mezzo una lista \textit{combo-box} posizionata al di sopra della mappa, come mostrato in Figura \ref{fig:seleziona-regione}, oppure cliccando direttamente sull'area della regione che si vuole aggiungere al confronto. Le regione selezionate sono indicate tramite una spunta (\checkmark) e i loro confini sono colorati con gli stessi colori assunti poi nei grafici.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\columnwidth]{wireframes/seleziona-regione}
-    \caption{ComboBox per la selezione delle regioni.}
+    \caption{Combo-box per la selezione delle regioni.}
     \label{fig:seleziona-regione}
 \end{figure}
-
+\noindent
 I grafici presenti sulla parte sinistra della schermata, di cui Figura \ref{fig:esempio-grafico-confronto-regioni} ne è un esempio, sono formati da una curva per ogni regione selezionata: le curve sono distinte tanto per colore quanto per tipo di tratteggio, cosicché la distinzione è chiara anche ai soggetti aventi difficoltà nel riconoscere i colori.
 
 \begin{figure}[H]
@@ -444,11 +445,11 @@ I grafici presenti sulla parte sinistra della schermata, di cui Figura \ref{fig:
 \end{figure}
 La schermata ``Analisi di periodi'' è raggiungibile dal link omonimo in alto a destra. In questa schermata è possibile analizzare l'andamento della pandemia per uno o due periodi.\\
 La schermata può, per semplicità, essere divisa in due fasce: nella fascia superiore vi è una componente assimilabile a una tabella, le cui righe sono relative ai periodi temporali specificati, e le cui colonne sono relative alle metriche d'interesse; i valori numerici che compaiono sono aggregati con riferimento alle finestre temporali indicate.\\
-Nella parte inferiore della schermata trovano spazio tre grafici, i quali, sull'asse delle X, riportano i giorni dei periodi temporali che si stanno analizzando così da permettere un più semplice confronto.
+Nella parte inferiore della schermata trovano spazio tre grafici, i quali, sull'asse delle $x$, riportano i giorni dei periodi temporali che si stanno analizzando così da permettere un più semplice confronto.
 \clearpage
 \begin{bclogo}{Iterazioni in Analisi di periodi}
 Prima di arrivare al design definitivo della schermata ``Analisi di periodi'' abbiamo considerato diverse possibilità.\\
-Inizialmente pensavamo di mantenere un'organizzazioni simile a quelle già usate con dei box numerici (Figura \ref{fig:box-numerici-analisi-di-periodi-versione-1}); ci siamo resi conto, che così facendo avremmo ripetuto le date in ogni box. Questa prima soluzione ci è sembrata un po' troppo ridondante. Abbiamo quindi pensato di riorganizzare la schermata costruendo una specie di tabella (Figura \ref{fig:analisi-di-periodi-seconda-versione}) ma, in questo caso ci siamo immediatamente resi conto che lo spazio verticale veniva usato in maniera poco intelligente.
+Inizialmente pensavamo di mantenere un'organizzazione simile a quella già usata con dei box numerici (Figura \ref{fig:box-numerici-analisi-di-periodi-versione-1}). Ci siamo resi conto che così facendo avremmo ripetuto le date in ogni box e quindi questa prima soluzione ci è sembrata un po' troppo ridondante. Abbiamo quindi pensato di riorganizzare la schermata costruendo una specie di tabella (Figura \ref{fig:analisi-di-periodi-seconda-versione}) ma, in questo caso ci siamo immediatamente resi conto che lo spazio verticale veniva usato in maniera poco intelligente.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\columnwidth]{wireframes/box-numerici-analisi-di-periodi-versione-1}
@@ -460,8 +461,9 @@ Inizialmente pensavamo di mantenere un'organizzazioni simile a quelle già usate
     \caption{Versione scartata della schermata ``Analisi di periodi''.}
     \label{fig:analisi-di-periodi-seconda-versione}
 \end{figure}
-
+\noindent
 Mantenendo per buona l'idea di ``tabella'' siamo giunti al design finale occupando la fascia in alto della schermata con una tabella e la fascia in basso con dei grafici.\\
+\noindent
 Dopo aver intervistato alcuni giornalisti abbiamo modificato il metodo con il quale visualizziamo i grafici quando i giorni selezionati sono pochi: nelle precedente versione (Figura \ref{fig:old-analisi-periodo}) mostravamo solamente i punti relativi ai giorni, questo ha destato confusione negli intervistati, abbiamo quindi decisi di aggiungere delle linee che collegano i vari punti; pur sapendo essere matematicamente scorretto non essendo dati continui, abbiamo optato per questa soluzione in quanto si è rivelata essere più chiara per gli utenti.
 \begin{figure}[H]
     \centering

@@ -8,7 +8,7 @@ Nelle varie schermate dell'interfaccia riprogettata sono state inserite componen
     \item \textbf{box con grafico seriale}: sono grafici che presentano una o più curve atte a delineare l'andamento temporale di metriche;
     \item \textbf{box con diagramma a barre}: descrive la distribuzione semplice o, nella sua versione speculare, doppia di una metrica;
     \item \textbf{box con mappa}: mostra la mappa dell'Italia o di una regione, a tinta unita o come \textit{heat map}, per avere il colpo d'occhio sul quadro epidemiologico;
-    \item \textbf{box con indicatori di livello}: mostra il valore relativo di una certa metrica rispetto ad una baseline significativa, al fine di evidenziarne la gravità effettiva e non solo assoluta;. Ad esempio, il tasso di positività può ritenersi preoccupante sopra il 15\% (area dell'indicatore di colore rosso), intermedio fra il 10\% e il 15\% (area dell'indicatore di colore gialla), tranquillo sotto il 10\% (area dell'indicatore di colore verde);
+    \item \textbf{box con indicatori di livello}: mostra il valore relativo di una certa metrica rispetto ad una baseline significativa, al fine di evidenziarne la gravità effettiva e non solo assoluta. Ad esempio, il tasso di positività può ritenersi preoccupante sopra il 15\% (area dell'indicatore di colore rosso), intermedio fra il 10\% e il 15\% (area dell'indicatore di colore gialla), tranquillo sotto il 10\% (area dell'indicatore di colore verde);
     \item \textbf{box con lista di elementi}: mostra certe proprietà sotto forma di liste di elementi, per esempio il totale degli attuali positivi per ogni regione;
     \item \textbf{box con areogramma}: mostra un cerchio diviso in sezioni, ciascuna delle quali rappresenta la proporzione sul totale di una proprietà di un concetto;
     \item \textbf{box con tabella}: mostra una tabella ed è utilizzato per visualizzare i valori delle metriche per ogni regione o provincia; le righe sono ordinabili in maniera crescente/decrescente secondo una delle metriche che si trovano sulle colonne.
@@ -35,9 +35,8 @@ Ci siamo immediatamente resi conto che questa articolazione sarebbe stata scarsa
     \includegraphics[width=1.0\columnwidth]{structure-blueprint/blueprint-prog-2}
     \caption{Seconda versione del blueprint per programmatori.}\label{fig:blueprint-prog-2}
 \end{figure}
-Questo nuovo blueprint (Figura \ref{fig:blueprint-prog-2}) mostra come la pagina principale sia ora ``Situazione odierna (nazionale/regionale)''. Le due pagine precedentemente distinte, ora, sulla scia della dashboard attuale, risultano essere la medesima: quando l'utente specifica una regione, ecco che i dati presentati sono relativi a quella regione e non più alla nazione intera, il tutto senza dover cambiare schermata.
-\clearpage
-
+Questo nuovo blueprint (Figura \ref{fig:blueprint-prog-2}) mostra come la pagina principale sia ora ``Situazione odierna (nazionale/regionale)''. Le due pagine precedentemente distinte, ora, sulla scia della dashboard attuale, risultano essere la medesima: quando l'utente specifica una regione, ecco che i dati presentati sono relativi a quella regione e non più alla nazione intera, il tutto senza dover cambiare schermata.\\
+\noindent
 Per maggior chiarezza, abbiamo deciso di aggiungere anche un secondo blueprint (Figura \ref{fig:blueprint-cont-2}) che presenti una diversa prospettiva della struttura della dashboard: in dettaglio, il nostro focus si è spostato sul comunicare i concetti che sono presenti in ogni schermata, così da fornire una più chiara e pragmatica panoramica.
 Riguardo al concetto ``Andamento giornaliero'', il livello di granularità provinciale sarà presentato all'utente solo qualora si trovi a visualizzare quel concetto a livello regionale.
 
@@ -59,7 +58,8 @@ La terza iterazione ci ha portato alla realizzazione di un'ulteriore versione  d
     \includegraphics[width=1.0\columnwidth]{structure-blueprint/blueprint-cont-3}
     \caption{Terza versione del blueprint per contenuti.}\label{fig:blueprint-cont-3}
 \end{figure}
-Durante la realizzazione dei Wireframe abbiamo individuato alcune criticità nella \hyperref{ss:seconda-iterazione}{versione due} del blueprint; abbiamo quindi apportato alcune modifiche per risolvere le problematiche individuate:
+\noindent
+Durante la realizzazione dei wireframe abbiamo individuato alcune criticità nella \hyperref[ss:seconda-iterazione]{seconda versione} del blueprint; abbiamo quindi apportato alcune modifiche per risolvere le problematiche individuate:
 \begin{itemize}
     \item abbiamo aggiunto un ``Box con calendario'' apribile mediante un bottone nella barra di navigazione;
     \item abbiamo aggiunto un ``Box con tabella'' in ``Situazione odierna'' per poter visualizzare in maniera più completa le metriche divise per regioni;

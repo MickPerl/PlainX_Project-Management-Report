@@ -4,18 +4,18 @@
 \label{ss:utenti-sistema}
 Da una prima analisi delle dashboard esistenti sul Covid-19, inclusa quella oggetto della riprogettazione, siamo giunti alla consapevolezza che fosse necessario un background scientifico per consultarle agevolmente e trarne informazioni.\\
 A seguito di una valutazione più approfondita, abbiamo ravvisato innumerevoli criticità in termini di presentazione ed elaborazione dei dati: queste criticità sono le cause principali della scarsa usabilità e della misera esperienza utente che  fanno preferire ai giornalisti i bollettini e i lanci di agenzia.\\
-Il nostro processo iterativo, a questo punto, si è spinto a considerare possibile una riprogettazione della dashboard principale, ossia quella pubblicata dal Dipartimento della Protezione Civile, indirizzando il nostro design a giornalisti con solo background umanistico; tuttavia, ci siamo resi conto che questa impostazione avrebbe reso la dashboard certamente chiara per chiunque, ma forse limitata nelle funzionalità.\\ 
+Il nostro processo iterativo, a questo punto, si è spinto a considerare possibile una riprogettazione della dashboard principale, ossia quella pubblicata dal DPC, indirizzando il nostro design a giornalisti con solo background umanistico; tuttavia, ci siamo resi conto che questa impostazione avrebbe reso la dashboard certamente chiara per chiunque, ma forse limitata nelle funzionalità.\\ 
 Ancora una volta, pertanto, abbiamo cambiato la nostra platea di riferimento, decidendo di rivolgerci tanto a giornalisti con background umanistico quanto a quelli dalla formazione scientifica: l'inesperienza dei primi ci imporrà la progettazione di un sistema all'insegna dell'usabilità, la perizia dei secondi ci porterà a implementare funzionalità più avanzate.\\
 In maggior dettaglio, il segmento di utenza cui è indirizzata la nostra riprogettazione considera i giornalisti che pubblicano articoli sull'andamento di vari aspetti (quantitativi) della pandemia Covid-19 (contagi giornalieri, decessi, guariti, tamponi, occupazione terapie intensive, ricoveri, ecc.): questi possono vantare una formazione umanistica (per esempio avendo frequentato corsi di studio superiori e/o universitari in ambito umanistico) oppure scientifica (avendo frequentato corsi di studio superiori o universitari in Scienze matematiche, fisiche e naturali (in sigla MM.FF.NN.)).
 
 \subsection{Elenco delle attività}
 \label{ss:elenco-attivita}
-L'individuazione delle attività di seguito elencate deriva dalla lettura di numerosi articoli sul tema e dai risultati del questionario sottoposto ai giornalisti, nonché dall'intervista alla giornalista Roberta, di \textit{SkyTg24}, presentata in §1.2.1: rivolgendoci ai soggetti che beneficeranno direttamente della nostra dashboard riprogettata, abbiamo potuto scoprire tecnicismi professionali e attività da essi svolte che ignoravamo precedentemente.
+L'individuazione delle attività di seguito elencate deriva dalla lettura di numerosi articoli sul tema e dai risultati del questionario sottoposto ai giornalisti, nonché dall'intervista alla giornalista presentata in \hyperref[ss:intervista-telefonica]{Sezione 1.2.1 Intervista telefonica}: rivolgendoci ai soggetti che beneficeranno direttamente della nostra dashboard riprogettata, abbiamo potuto scoprire tecnicismi professionali e attività da essi svolte che ignoravamo precedentemente.
 \noindent
 Le attività individuate sono:
 \begin{enumerate}
     \item comprendere l'andamento della curva epidemiologica sulla base di alcune metriche (per esempio, i nuovi casi positivi, i tamponi effettuati, il tasso di positività, i decessi e i guariti odierni) a livello nazionale e/o regionale;\label{itm:1}
-    \item monitorare l'occupazione delle strutture sanitarie (le ospedalizzazioni e i ricoveri in terapia intensiva) a livello nazionale e/o regionale;\label{itm:2}
+    \item monitorare l'occupazione delle strutture sanitarie (i ricoveri in terapia intensiva oppure con sintomi) a livello nazionale e/o regionale;\label{itm:2}
     \item monitorare come i numeri della pandemia si distribuiscono sulla popolazione in un determinato periodo (età, genere, categoria di impiego: operatore sanitario);\label{itm:3}
     \item monitorare come i numeri della pandemia si distribuiscono sulla popolazione in un determinato periodo (età, malattie pregresse, impiego, ecc.);\label{itm:4}
     \item confronto dell'andamento della pandemia tra due o più regioni;\label{itm:5}
@@ -24,7 +24,7 @@ Le attività individuate sono:
 
 \subsection{Vincoli tecnici e d'ambiente}
 \label{ss:vincoli-tecnici-ambiente}
-A partire dalle risposte raccolte mediante il questionario sottoposto ai giornalisti e dai feedback preziosi della giornalista di \emph{SkyTg24} di cui sopra, abbiamo individuato i seguenti vincoli di natura tecnica o imposti dall'ambiente in cui il nostro utente di riferimento opera:
+A partire dalle risposte raccolte mediante il questionario sottoposto ai giornalisti e dai feedback preziosi della giornalista di cui sopra, abbiamo individuato i seguenti vincoli di natura tecnica o imposti dall'ambiente in cui il nostro utente di riferimento opera:
 \begin{itemize}
     \item il layout della dashboard deve essere adatto a schermi in modalità orizzontale dai 13" in su:
     \begin{itemize}

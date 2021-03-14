@@ -30,8 +30,8 @@ Rappresenta le informazioni sull'evoluzione della pandemia a livello nazionale r
     \item note sui dati pubblicati;
 \end{itemize}
 \begin{bclogo}{Iterazioni}
-Inizialmente, questo concetto era stato denominato ``Andamento giornaliero nazionale" ma, potendo confondersi con alcune parti dell'interfaccia presentate nella Sezione 4.5, abbiamo ritenuto necessario rinominarlo.
-
+Inizialmente, questo concetto era stato denominato ``Andamento giornaliero nazionale" ma, potendo confondersi con alcune parti dell'interfaccia presentate nella \hyperref[s:struttura-blueprint]{Sezione 4.5 Struttura del blueprint}, abbiamo ritenuto necessario rinominarlo.\\
+\noindent
 In qualche iterazione precedente, erano indicati in maniera generale i tamponi e il tasso di positività: tuttavia in una delle sessioni di testing è emerso l'accresciuta importanza di distinguere i tamponi in antigenici e molecolari e, conseguentemente, anche il tasso di positività, tra il tasso di positività sui tamponi antigenici e quello sui molecolari. Abbiamo accolto l'esigenza del giornalista in questione, riflettendo sull'interfaccia riprogettata tale distinzione. 
 
 \end{bclogo}
@@ -78,7 +78,7 @@ Rappresenta la situazione epidemiologica in Italia alla data corrente, ossia il 
     \item totale ospedalizzati ogni 100K abitanti = $\frac{totale \; ospedalizzati \; \cdot \; 100.000}{totale \; abitanti}$;
     \item totale dimessi/guariti;
     \item totale in isolamento domiciliare (ossia il numero di persone attualmente positive e non in ospedale, di cui vengono conteggiate solamente coloro che non hanno avuto cure da parte degli ospedali, i dimessi ma non ancora guariti non sono inseriti in questo conteggio);
-    \item totale in isolamento domiciliare ogni 100K abitanti = $\frac{totale \; isolati \; nel \; proprio \; domicilio \; \cdot \; 100.000}{totale \; abitanti}$;
+    \item totale in isolamento domiciliare ogni 100K abitanti = $\frac{totale \; in \; isolamento \; domiciliare \; \cdot \; 100.000}{totale \; abitanti}$;
     \item attuali positivi (ossia quanti sono ancora positivi al tampone molecolare);
     \item \% attuali positivi sull'intera popolazione;
     \item attuali positivi ogni 100K abitanti = $\frac{nuovi \; positivi \; \cdot \; 100.000}{totale \; abitanti}$;
@@ -96,7 +96,9 @@ Rappresenta la situazione epidemiologica in Italia alla data corrente, ossia il 
     \item tasso occupazione terapie intensive = $\frac{totale \; terapie \; intensive}{posti \; totali \; disponibili \; in \; terapia \; intensiva}$.
     \item note sui dati pubblicati.
 \end{itemize}
-In corrispondenza della proprietà ``Attuali positivi" abbiamo riscontrato un problema di standardizzazione: gli attori diretti, quali i giornalisti, usano l'espressione ``Attuali positivi" mentre l'attore indiretto rivestito dall'Amministratore della base di dati è solito riferirsi alla medesima proprietà con ``totale\_casi". Abbiamo risolto questa discrepanza, adottando l'espressione utilizzata dall'attore diretto nella consapevolezza che, per definizione, è lui a consultare direttamente la dashboard.
+\begin{bclogo}{Iterazioni}
+    In corrispondenza della proprietà ``Attuali positivi" abbiamo riscontrato un problema di standardizzazione: gli attori diretti, quali i giornalisti, usano l'espressione ``Attuali positivi" mentre l'attore indiretto rivestito dall'Amministratore della base di dati è solito riferirsi alla medesima proprietà con ``totale\_casi". Abbiamo risolto questa discrepanza, adottando l'espressione utilizzata dall'attore diretto nella consapevolezza che, per definizione, è lui a consultare direttamente la dashboard.
+\end{bclogo}
 
 \subsubsection{Situazione a livello regionale}
 \label{sss:situazione-livello-regionale}
